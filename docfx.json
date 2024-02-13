@@ -1,0 +1,45 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "./src",
+                    "files": [
+                        "**/*.csproj"
+                    ]
+                }
+            ],
+            "dest": ".artifacts/api"
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/*.{md,yml}"
+                ],
+                "exclude": [
+                    "_site/**"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "images/**"
+                ]
+            }
+        ],
+        "output": ".artifacts/_site",
+        "template": [
+            "default",
+            "modern"
+        ],
+        "globalMetadata": {
+            "_appName": "Hadron",
+            "_appTitle": "Hadron",
+            "_enableSearch": true,
+            "pdf": false
+        }
+    }
+}

@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{794C8D2B-C344-41B3-9B80-94BB3966E3DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{DFB86F64-163E-4F66-87AF-A87201296DCD}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		docfx.json = docfx.json
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hadron.Benchmark", "test\Hadron.Benchmark\Hadron.Benchmark.csproj", "{F8495C78-25F3-4819-963C-AF30312487C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FBC57BFC-828B-4F15-8F7C-5E3982DC1A9A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\getting-started.md = docs\getting-started.md
+		docs\index.md = docs\index.md
+		docs\introduction.md = docs\introduction.md
+		docs\toc.yml = docs\toc.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hadron.Test", "test\Hadron.Test\Hadron.Test.csproj", "{8B028DC2-8317-43EF-8667-F81B32A1BFAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hadron", "src\Hadron\Hadron.csproj", "{AF46392E-D5BB-47FF-91FC-8D675E62FC8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8495C78-25F3-4819-963C-AF30312487C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8495C78-25F3-4819-963C-AF30312487C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8495C78-25F3-4819-963C-AF30312487C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8495C78-25F3-4819-963C-AF30312487C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B028DC2-8317-43EF-8667-F81B32A1BFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B028DC2-8317-43EF-8667-F81B32A1BFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B028DC2-8317-43EF-8667-F81B32A1BFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B028DC2-8317-43EF-8667-F81B32A1BFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF46392E-D5BB-47FF-91FC-8D675E62FC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF46392E-D5BB-47FF-91FC-8D675E62FC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF46392E-D5BB-47FF-91FC-8D675E62FC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF46392E-D5BB-47FF-91FC-8D675E62FC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8495C78-25F3-4819-963C-AF30312487C6} = {2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}
+		{8B028DC2-8317-43EF-8667-F81B32A1BFAA} = {2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}
+		{AF46392E-D5BB-47FF-91FC-8D675E62FC8B} = {794C8D2B-C344-41B3-9B80-94BB3966E3DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F5E6E83-28F9-4F69-A554-439357157F8F}
+	EndGlobalSection
+EndGlobal
