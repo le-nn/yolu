@@ -5,7 +5,8 @@ and extend the .NET API with unique features.
 
 ## Features
 
-- **[Result](#result)**: A type that represents either a success or a failure.
+- **[Range Expression Foreach](#result)**: Make range expression available in foreach.
+
 - **[Option](#option)**: A type that represents an optional value.
 - **[Either](#either)**: A type that represents either a left or a right value.
 - **[Task Extensions](#task-extensions)**: Extensions for `Task` and `ValueTask`.
