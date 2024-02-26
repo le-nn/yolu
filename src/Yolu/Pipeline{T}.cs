@@ -1,13 +1,22 @@
 ﻿namespace Yolu;
 
 /// <summary>
-/// Represents pipeline operator with async operation.
+/// Represents Express functional programming-like pipeline operators with method chains
 /// </summary>
 /// <typeparam name="T">The type of the value.</typeparam>
 /// <remarks>
 /// Initializes a new instance of the <see cref="Pipeline{T}" /> struct.
 /// </remarks>
 /// <param name="func">The value selector.</param>
+/// <code>
+/// var result = Pipeline.Create(10)
+///     .Pipe(x => x * 2)
+///     .Pipe(x => x + 10)
+///     .Pipe(x => x / 2)
+///     .Pipe(x => x - 5)
+///     .Execute();
+/// Consol.WriteLine(result); // 20
+/// </code>
 public readonly struct Pipeline<T>(Func<T> func) {
     private readonly Func<T>? _func = func;
 
