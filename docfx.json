@@ -38,11 +38,9 @@
         "globalMetadata": {
             "_appName": "Yolu",
             "_appTitle": "Yolu",
-            "_gitUrlPattern": "https://github.com/le-nn/yolu",
             "_appLogoUrl": "https://github.com/le-nn/yolu",
             "_enableSearch": true,
             "pdf": false,
-            "_appFooter": ""
         }
     }
 }
