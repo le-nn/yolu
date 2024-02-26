@@ -251,7 +251,7 @@ public partial class Array<T> : IArray<T> {
     [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     public bool IsDefault {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        get => _array is not null;
+        get => _array is [];
     }
 
     /// <summary>
