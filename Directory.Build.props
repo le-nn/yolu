@@ -6,7 +6,7 @@
         <LangVersion>preview</LangVersion>
 
         <UseArtifactsOutput>true</UseArtifactsOutput>
-        <ArtifactsPath>$(MSBuildThisFileDirectory).artifacts</ArtifactsPath>
+        <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
     </PropertyGroup>
 
     <ItemGroup>

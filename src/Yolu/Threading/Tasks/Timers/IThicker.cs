@@ -1,4 +1,4 @@
-﻿namespace Luminus.Tasks.Timers;
+﻿namespace Yolu.Threading.Tasks.Timers;
 
 /// <summary>
 /// A ticker makes sure that animations get triggered to advance and progress through their different stages.

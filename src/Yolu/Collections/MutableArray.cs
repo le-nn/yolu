@@ -1,6 +1,6 @@
 ﻿namespace Yolu.Collections;
 
-public static class MutableArrayClassBuilder {
+internal static class MutableArrayClassBuilder {
     /// <summary>
     /// Creates a new instance of <see cref="IMutableArray{T}"/> from the specified span.
     /// </summary>

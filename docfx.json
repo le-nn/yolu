@@ -9,7 +9,7 @@
                     ]
                 }
             ],
-            "dest": ".artifacts/api"
+            "dest": "api"
         }
     ],
     "build": {
@@ -30,7 +30,7 @@
                 ]
             }
         ],
-        "output": ".artifacts/_site",
+        "output": "artifacts/_site",
         "template": [
             "default",
             "modern"
@@ -38,8 +38,11 @@
         "globalMetadata": {
             "_appName": "Yolu",
             "_appTitle": "Yolu",
+            "_gitUrlPattern": "https://github.com/le-nn/yolu",
+            "_appLogoUrl": "https://github.com/le-nn/yolu",
             "_enableSearch": true,
-            "pdf": false
+            "pdf": false,
+            "_appFooter": ""
         }
     }
 }

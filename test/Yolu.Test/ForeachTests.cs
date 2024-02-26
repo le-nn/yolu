@@ -1,7 +1,6 @@
 ﻿namespace Yolu.Test;
 
 public class ForeachTests {
-
     [Fact]
     public void Foreach_ShouldEnumerateAllElements() {
         // Arrange

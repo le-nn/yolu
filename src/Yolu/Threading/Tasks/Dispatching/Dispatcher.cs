@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using Yolu.Tasks;
 
-namespace Luminus.Tasks.Dispatching;
+namespace Yolu.Threading.Tasks.Dispatching;
 
 public class Dispatcher {
     private readonly ConcurrentQueue<Action> _actions = new();

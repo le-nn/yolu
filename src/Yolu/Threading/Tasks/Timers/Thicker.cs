@@ -1,11 +1,10 @@
 ﻿using System.Timers;
-using Timer = System.Timers.Timer;
 
-namespace Luminus.Tasks.Timers;
+namespace Yolu.Threading.Tasks.Timers;
 
 /// <inheritdoc/>
 public class Ticker : ITicker {
-    private Timer? _timer;
+    private System.Timers.Timer? _timer;
 
     /// <inheritdoc/>
     public virtual int MaxFps { get; set; } = 60;
@@ -24,7 +23,7 @@ public class Ticker : ITicker {
         if (_timer != null)
             return;
 
-        _timer = new Timer {
+        _timer = new System.Timers.Timer {
             AutoReset = true,
             Interval = 1000 / MaxFps,
         };

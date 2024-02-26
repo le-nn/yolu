@@ -9,10 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{DFB86F64
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		.github\workflows\build-and-deploy.yml = .github\workflows\build-and-deploy.yml
 		Directory.Build.props = Directory.Build.props
 		docfx.json = docfx.json
+		index.md = index.md
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
+		toc.yml = toc.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}"
@@ -20,8 +23,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FBC57BFC-828B-4F15-8F7C-5E3982DC1A9A}"
 	ProjectSection(SolutionItems) = preProject
 		docs\getting-started.md = docs\getting-started.md
-		docs\index.md = docs\index.md
-		docs\introduction.md = docs\introduction.md
 		docs\toc.yml = docs\toc.yml
 	EndProjectSection
 EndProject

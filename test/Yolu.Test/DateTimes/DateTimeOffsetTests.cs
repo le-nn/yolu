@@ -2,7 +2,7 @@
 using Yolu.DateTimes;
 
 public class DateTimeOffsetTests {
-    private const int DaysPerWeek = 7;
+    private const int _daysPerWeek = 7;
 
     [Theory]
     [InlineData(0)]

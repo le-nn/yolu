@@ -1,13 +1,4 @@
-﻿/* Unmerged change from project 'Luminus.Core (net8.0)'
-Before:
-namespace Luminus.Commons;
-After:
-using Luminus;
-using Luminus;
-using Luminus.Commons;
-*/
-
-namespace Luminus;
+﻿namespace Yolu;
 
 /// <summary>
 /// A generic interface for a deeply cloneable type.

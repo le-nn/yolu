@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Yolu.Collections;
 
-public static class ArrayClassBuilder {
+internal static class ArrayClassBuilder {
     /// <summary>
     /// Creates a new instance of the <see cref="Array{T}"/> class with the specified span.
     /// </summary>
