@@ -1,3 +1,4 @@
+
 {
     "metadata": [
         {
@@ -33,7 +34,7 @@
         "output": "./artifacts/_site",
         "template": [
             "default",
-            "modern"
+            "templates"
         ],
         "globalMetadata": {
             "_appName": "Yolu",

@@ -32,6 +32,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yolu.Test", "test\Yolu.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yolu.Benchmark", "test\Yolu.Benchmark\Yolu.Benchmark.csproj", "{0180BEC4-D89C-4054-9C3A-A7DC47F7F348}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{E08A3E2B-F4E7-4B63-80B1-47D580E22ECB}"
+	ProjectSection(SolutionItems) = preProject
+		templates\styles\main.css = templates\styles\main.css
+		templates\styles\main.js = templates\styles\main.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +64,7 @@ Global
 		{45E5421B-6937-437C-9697-2E3988CF1D89} = {794C8D2B-C344-41B3-9B80-94BB3966E3DD}
 		{E5AA72B8-F4B3-433D-9AF2-07C74163FE16} = {2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}
 		{0180BEC4-D89C-4054-9C3A-A7DC47F7F348} = {2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}
+		{E08A3E2B-F4E7-4B63-80B1-47D580E22ECB} = {DFB86F64-163E-4F66-87AF-A87201296DCD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F5E6E83-28F9-4F69-A554-439357157F8F}
