@@ -233,7 +233,7 @@ body * {
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -617,7 +617,8 @@ article {
     }
 
     article h4 {
-        border-bottom: none;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #f3f3f3;
     }
 
 .code-like,
