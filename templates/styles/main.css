@@ -90,11 +90,6 @@ button {
 }
 
 button,
-select {
-    text-transform: none;
-}
-
-button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -265,7 +260,6 @@ h1 {
 }
 
     h1[data-uid] {
-        text-transform: none;
         font-size: 2rem;
     }
 
@@ -297,10 +291,6 @@ a,
         color: #0a58ca;
         text-decoration: underline;
     }
-
-.a {
-    text-transform: uppercase;
-}
 
 h1 a,
 h2 a,
@@ -345,10 +335,6 @@ h3 a {
 
 svg:hover path {
     fill: initial;
-}
-
-header .navbar {
-    text-transform: uppercase;
 }
 
 .navbar-inverse {
@@ -689,7 +675,6 @@ pre {
 
 .sideaffix > div.contribution > ul > li > a.contribution-link {
     font-weight: normal;
-    text-transform: uppercase;
 }
 
 .affix ul > li.active > a {
