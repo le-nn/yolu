@@ -35,7 +35,6 @@ public ref struct SpanOwner<T> {
     /// directly in your code.
     /// </remarks>
     [EditorBrowsable(EditorBrowsableState.Never)]
-    [CLSCompliant(false)]
     public static int StackallocThreshold { get; } = 1 + (LibrarySettings.StackallocThreshold / Unsafe.SizeOf<T>());
 
     private readonly object? _owner;
@@ -129,8 +128,8 @@ public ref struct SpanOwner<T> {
     [StructLayout(LayoutKind.Sequential)]
     [ExcludeFromCodeCoverage]
     private readonly struct AlignmentHelperType<U> {
-        private readonly byte field1;
-        private readonly U field2;
+        private readonly byte _field1;
+        private readonly U _field2;
     }
 
     /// <summary>

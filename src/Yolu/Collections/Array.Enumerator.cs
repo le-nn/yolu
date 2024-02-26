@@ -63,7 +63,7 @@ public partial class Array<T> : IArray<T> {
         /// <summary>
         /// A shareable singleton for enumerating empty arrays.
         /// </summary>
-        private static readonly IEnumerator<T> s_EmptyEnumerator = new EnumeratorObject(Array<T>.Empty._array);
+        private static readonly IEnumerator<T> _emptyEnumerator = new EnumeratorObject(Array<T>.Empty._array);
 
         /// <summary>
         /// The array being enumerated.
@@ -106,9 +106,7 @@ public partial class Array<T> : IArray<T> {
         /// <summary>
         /// Gets the currently enumerated value.
         /// </summary>
-        object IEnumerator.Current {
-            get { return Current; }
-        }
+        object? IEnumerator.Current => Current;
 
         /// <summary>
         /// If another item exists in the array, advances to the next value to be enumerated.
@@ -153,7 +151,7 @@ public partial class Array<T> : IArray<T> {
                 return new EnumeratorObject(array);
             }
             else {
-                return s_EmptyEnumerator;
+                return _emptyEnumerator;
             }
         }
     }

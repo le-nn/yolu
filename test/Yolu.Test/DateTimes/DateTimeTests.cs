@@ -148,22 +148,6 @@ public class DateTimeTests {
         DateAssert.Equal(new(2008, 11, 1, 12, 0, 0, DateTimeKind.Local), saturday.Next(DayOfWeek.Saturday));
 
         DateAssert.Equal(new(2008, 10, 18, 12, 0, 0, DateTimeKind.Local), saturday.Previous(DayOfWeek.Saturday));
-
-        // ReSharper disable UnusedVariable
-        var nextWeek = DateTime.Now + 1.Weeks();
-
-        var tomorrow = DateTime.Now + 1.Days();
-        var yesterday = DateTime.Now - 1.Days();
-        var changedHourTo14H = DateTime.Now.SetHour(14);
-        var todayNoon = DateTime.Now.Noon();
-        var tomorrowNoon = DateTime.Now.NextDay().Noon();
-        var fiveDaysAgo = 5.Days().Ago();
-        var twoDaysFromNow = 2.Days().FromNow();
-        var nextYearSameDateAsTodayNoon = 1.Years().FromNow().Noon();
-
-        var twoWeeksFromNow = 2.Weeks().FromNow();
-
-        // ReSharper restore UnusedVariable
     }
 
     [Fact]

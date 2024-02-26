@@ -124,20 +124,10 @@ public class DateTimeOffsetTests {
 
         Assert.Equal(24.Hours(), 1.Days());
 
-        sampleDate = new(2008, 1, 1, 0, 0, 0, 0, TimeSpan.Zero);
-
         var saturday = new DateTimeOffset(2008, 10, 25, 12, 0, 0, TimeSpan.Zero);
         Assert.Equal(new(2008, 11, 1, 12, 0, 0, TimeSpan.Zero), saturday.Next(DayOfWeek.Saturday));
 
         Assert.Equal(new(2008, 10, 18, 12, 0, 0, TimeSpan.Zero), saturday.Previous(DayOfWeek.Saturday));
-
-        var nextWeek = DateTimeOffset.UtcNow + 1.Weeks();
-
-        var tomorrow = DateTimeOffset.UtcNow + 1.Days();
-        var yesterday = DateTimeOffset.UtcNow - 1.Days();
-        var changedHourTo14H = DateTimeOffset.UtcNow.SetHour(14);
-        var todayNoon = DateTimeOffset.UtcNow.Noon();
-        var tomorrowNoon = DateTimeOffset.UtcNow.NextDay().Noon();
     }
 
     [Fact]
