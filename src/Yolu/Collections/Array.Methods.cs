@@ -1,6 +1,6 @@
-﻿using Yolu.Collections.Internal;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Diagnostics.Contracts;
+using Yolu.Collections.Internal;
 
 namespace Yolu.Collections;
 

@@ -1,5 +1,5 @@
-﻿using Yolu.DateTimes;
-using System.Globalization;
+﻿using System.Globalization;
+using Yolu.DateTimes;
 
 public class DateTimeOffsetTests {
     private const int DaysPerWeek = 7;

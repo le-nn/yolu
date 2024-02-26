@@ -1,11 +1,11 @@
-﻿using Yolu.Buffers;
-using Yolu.Collections;
-using Yolu.Numerics;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using Yolu.Buffers;
+using Yolu.Collections;
+using Yolu.Numerics;
 
 namespace Yolu.Randoms;
 
@@ -139,7 +139,7 @@ public partial class RandomUtils {
     private static unsafe void GetItems<TRandom, T>(TRandom random, Span<T> values)
         where TRandom : struct, IRandomBytesSource
         where T : unmanaged {
-        for (int maxLength = Array.MaxLength / sizeof(T), length; !values.IsEmpty; values = values.Slice(length)) {
+        for (int maxLength = Array.MaxLength / sizeof(T), length; !values.IsEmpty; values = values[length..]) {
             length = Math.Min(values.Length, maxLength);
             random.GetBytes(MemoryMarshal.CreateSpan(ref Unsafe.As<T, byte>(ref MemoryMarshal.GetReference(values)), length * sizeof(T)));
         }

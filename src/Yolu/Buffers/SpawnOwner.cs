@@ -55,7 +55,7 @@ public ref struct SpanOwner<T> {
     /// <param name="span">The span that references the memory to rent.</param>
     /// <param name="length">The actual length of the data.</param>
     public SpanOwner(Span<T> span, int length)
-        : this(span.Slice(0, length)) {
+        : this(span[..length]) {
     }
 
     /// <summary>
@@ -73,7 +73,7 @@ public ref struct SpanOwner<T> {
         var owner = pool.Rent(minBufferSize);
         _memory = owner.Memory.Span;
         if (exactSize)
-            _memory = _memory.Slice(0, minBufferSize);
+            _memory = _memory[..minBufferSize];
         this._owner = owner;
     }
 

@@ -1,5 +1,5 @@
-﻿using Yolu.Tasks;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
+using Yolu.Tasks;
 
 namespace Luminus.Tasks.Dispatching;
 

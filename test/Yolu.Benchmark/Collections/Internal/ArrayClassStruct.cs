@@ -1,7 +1,7 @@
-﻿using Yolu.Collections;
-using System.Collections;
+﻿using System.Collections;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
+using Yolu.Collections;
 
 namespace Yolu.Benchmark.Collections.Internal;
 

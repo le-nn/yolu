@@ -1,6 +1,6 @@
-﻿using Yolu.DateTimes;
-using System.Diagnostics.Contracts;
+﻿using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
+using Yolu.DateTimes;
 
 namespace Yolu.Randoms;
 

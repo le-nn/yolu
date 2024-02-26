@@ -1,7 +1,6 @@
-﻿using Yolu.Threading;
-using System.Numerics;
+﻿using System.Numerics;
 using System.Runtime.CompilerServices;
-
+using Yolu.Threading;
 using static System.Diagnostics.Stopwatch;
 
 namespace Yolu.DateTimes;

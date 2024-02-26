@@ -1,8 +1,8 @@
-﻿using Yolu.Buffers;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Yolu.Buffers;
 
 namespace Yolu.Collections;
 
@@ -23,7 +23,7 @@ public static partial class Span {
     public static unsafe bool BitwiseEquals<T>(this ReadOnlySpan<T> x, ReadOnlySpan<T> y)
         where T : unmanaged {
         if (x.Length == y.Length) {
-            for (int maxSize = Array.MaxLength / sizeof(T), size; !x.IsEmpty; x = x.Slice(size), y = y.Slice(size)) {
+            for (int maxSize = Array.MaxLength / sizeof(T), size; !x.IsEmpty; x = x[size..], y = y[size..]) {
                 size = Math.Min(maxSize, x.Length);
                 var sizeInBytes = size * sizeof(T);
                 var partX = MemoryMarshal.CreateReadOnlySpan(ref Unsafe.As<T, byte>(ref MemoryMarshal.GetReference(x)), sizeInBytes);
@@ -54,7 +54,7 @@ public static partial class Span {
         var result = x.Length;
         result = result.CompareTo(y.Length);
         if (result is 0) {
-            for (int maxSize = Array.MaxLength / sizeof(T), size; !x.IsEmpty; x = x.Slice(size), y = y.Slice(size)) {
+            for (int maxSize = Array.MaxLength / sizeof(T), size; !x.IsEmpty; x = x[size..], y = y[size..]) {
                 size = Math.Min(maxSize, x.Length);
                 var sizeInBytes = size * sizeof(T);
                 var partX = MemoryMarshal.CreateReadOnlySpan(ref Unsafe.As<T, byte>(ref MemoryMarshal.GetReference(x)), sizeInBytes);
@@ -208,7 +208,6 @@ public static partial class Span {
     /// <param name="pointer">The typed pointer.</param>
     /// <typeparam name="T">The type of the pointer.</typeparam>
     /// <returns>The span of contiguous memory.</returns>
-    [CLSCompliant(false)]
     public static unsafe Span<byte> AsBytes<T>(T* pointer)
         where T : unmanaged
         => AsBytes(ref pointer[0]);
@@ -313,7 +312,7 @@ public static partial class Span {
                 destinationGap;
             if (sourceIndex > destinationIndex) {
                 sourceGap = span[destinationIndex..sourceIndex];
-                destinationGap = span.Slice(destinationIndex + length);
+                destinationGap = span[(destinationIndex + length)..];
 
                 destination = span.Slice(destinationIndex, length);
             }
@@ -326,7 +325,7 @@ public static partial class Span {
                         throw new ArgumentOutOfRangeException(nameof(destinationIndex));
                     case < 0:
                         sourceGap = span[endOfLeftSegment..destinationIndex];
-                        destinationGap = span.Slice(sourceIndex);
+                        destinationGap = span[sourceIndex..];
 
                         destination = span.Slice(destinationIndex - length, length);
                         break;
