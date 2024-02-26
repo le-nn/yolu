@@ -30,7 +30,7 @@
                 ]
             }
         ],
-        "output": "artifacts/_site",
+        "output": "./artifacts/_site",
         "template": [
             "default",
             "modern"
