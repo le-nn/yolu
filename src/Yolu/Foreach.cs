@@ -8,8 +8,7 @@ namespace Yolu;
 /// <example>
 /// This example shows how to use the for loop with the <see cref="Range" /> type.
 /// <code>
-/// foreach(var i in 0..^1000)
-/// {
+/// foreach(var i in 0..^1000) {
 ///     // Your code here.
 /// }
 /// </code>
@@ -21,8 +20,7 @@ public static class Foreach {
     /// <example>
     /// This example shows how to use the GetEnumerator method.
     /// <code>
-    /// foreach(var i in 0..^1000)
-    /// {
+    /// foreach(var i in 0..^1000) {
     ///     // Your code here.
     /// }
     /// </code>
