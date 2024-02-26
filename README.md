@@ -1,6 +1,6 @@
-く# Hadron
+く# Yolu
 
-Hadron provides utilities and language extensions aimed to improve development productivity
+Yolu provides utilities and language extensions aimed to improve development productivity
 and extend the .NET API with unique features. 
 
 ## Features
