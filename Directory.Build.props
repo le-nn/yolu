@@ -7,10 +7,13 @@
 
         <UseArtifactsOutput>true</UseArtifactsOutput>
         <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" PrivateAssets="All" />
+        <None Include="../../README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     <!-- package info -->
@@ -19,12 +22,12 @@
         <PackageId>$(AssemblyName)</PackageId>
         <AssemblyName>$(AssemblyName)</AssemblyName>
 
-        <Description>Easy unidirectional store and red/undo library for state management for frontend apps on Blazor/.NET</Description>
+        <Description>Yolu is utilities and C# extensions aimed to improve development productivity and extend the .NET API with unique features.</Description>
         <Authors>le-nn</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/le-nn/luminus</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/le-nn/luminus</RepositoryUrl>
-        <Copyright>Copyright (c) 2023 le-nn</Copyright>
+        <PackageProjectUrl>https://github.com/le-nn/yolu</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/le-nn/yolu</RepositoryUrl>
+        <Copyright>Copyright (c) 2024 le-nn</Copyright>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 </Project>

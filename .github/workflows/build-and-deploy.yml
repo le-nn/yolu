@@ -35,7 +35,7 @@ jobs:
 
       - name: Pack NuGet Package
         if: (github.event_name == 'release')
-        run: dotnet pack -c Release --include-symbols --include-source -p:PackageVersion=${VERSION}
+        run:  dotnet pack ./src/Yolu/Yolu.csproj -c Release --include-symbols --include-source -p:PackageVersion=${VERSION}
 
       - name: Publish NuGet Package
         if: (github.event_name == 'release')
