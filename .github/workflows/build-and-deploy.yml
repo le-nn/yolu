@@ -1,0 +1,53 @@
+name: "Publish"
+on:
+  release:
+    types: [released]
+  push:
+    branches: 
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the code
+      - uses: actions/checkout@v2
+
+      # Install .NET Core SDK
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 8.x
+
+      - name: Update docfx
+        run: dotnet tool update -g docfx
+
+      - name: Build and Test
+        run: |
+            dotnet build
+            dotnet test
+      
+      - name : Set Version variable from tag
+        if: (github.event_name == 'release')
+        run: |
+          TAG=${{ github.event.release.tag_name }}
+          echo "VERSION=${TAG#v}" >> $GITHUB_ENV
+
+      - name: Pack NuGet Package
+        if: (github.event_name == 'release')
+        run: dotnet pack -c Release --include-symbols --include-source -p:PackageVersion=${VERSION}
+
+      - name: Publish NuGet Package
+        if: (github.event_name == 'release')
+        run: dotnet nuget push '.artifacts/**/*.nupkg' -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+
+      - name: Generate Docs
+        run: docfx ./docfx.json
+
+      # Deploy the site
+      - name: Deploy Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./.artifacts/_site
+          force_orphan: true
