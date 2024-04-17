@@ -2,11 +2,8 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
 
-        <EnablePreviewFeatures>True</EnablePreviewFeatures>
-        <LangVersion>preview</LangVersion>
-
-        <UseArtifactsOutput>true</UseArtifactsOutput>
-        <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+        <!--<UseArtifactsOutput>true</UseArtifactsOutput>-->
+        <!--<ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>-->
 
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>

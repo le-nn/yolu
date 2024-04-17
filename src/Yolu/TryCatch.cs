@@ -1,4 +1,6 @@
-﻿namespace Yolu;
+﻿using System.Runtime.CompilerServices;
+
+namespace Yolu;
 
 
 public static class TryCatchUtils {
@@ -8,6 +10,7 @@ public static class TryCatchUtils {
     /// <typeparam name="T">The type of the return value.</typeparam>
     /// <param name="func">The function to execute.</param>
     /// <returns>The result of the function, or the default value for the type if an exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static T? Try<T>(Func<T> func) {
         try {
             return func();
@@ -24,6 +27,7 @@ public static class TryCatchUtils {
     /// <param name="func">The function to execute.</param>
     /// <param name="whenCatch">The value to return if an exception is thrown.</param>
     /// <returns>The result of the function, or the specified value if an exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static T Try<T>(Func<T> func, T whenCatch) {
         try {
             return func();
@@ -41,6 +45,7 @@ public static class TryCatchUtils {
     /// <param name="func">The function to execute.</param>
     /// <param name="whenCatch">The function to execute if the specified exception is thrown.</param>
     /// <returns>The result of the function, or the result of the second function if the specified exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static T Try<T, TException>(Func<T> func, Func<TException, T> whenCatch) where TException : Exception {
         try {
             return func();
@@ -56,6 +61,7 @@ public static class TryCatchUtils {
     /// <typeparam name="T">The type of the return value.</typeparam>
     /// <param name="func">The asynchronous function to execute.</param>
     /// <returns>A task that represents the asynchronous operation. The task result is the result of the function, or the default value for the type if an exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static async Task<T?> Try<T>(Func<Task<T>> func) {
         try {
             return await func()!;
@@ -72,6 +78,7 @@ public static class TryCatchUtils {
     /// <param name="func">The asynchronous function to execute.</param>
     /// <param name="whenCatch">The value to return if an exception is thrown.</param>
     /// <returns>A task that represents the asynchronous operation. The task result is the result of the function, or the specified value if an exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static async Task<T> Try<T>(Func<Task<T>> func, T whenCatch) {
         try {
             return await func();
@@ -89,6 +96,7 @@ public static class TryCatchUtils {
     /// <param name="func">The asynchronous function to execute.</param>
     /// <param name="whenCatch">The function to execute if the specified exception is thrown.</param>
     /// <returns>A task that represents the asynchronous operation. The task result is the result of the function, or the result of the second function if the specified exception is thrown.</returns>
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static async Task<T> Try<T, TException>(Func<Task<T>> func, Func<TException, T> whenCatch) where TException : Exception {
         try {
             return await func();
