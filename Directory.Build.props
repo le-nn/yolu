@@ -2,12 +2,12 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" PrivateAssets="All" />
-        <PackageIcon>logo.png</PackageIcon>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
         <None Include="../../README.md" Pack="true" PackagePath="\"/>
         <None Include="../../logo.png" Pack="true" PackagePath="\"/>
     </ItemGroup>
