@@ -33,10 +33,10 @@ a {
     -webkit-text-decoration-skip: objects;
 }
 
-    a:active,
-    a:hover {
-        outline: 0;
-    }
+a:active,
+a:hover {
+    outline: 0;
+}
 
 abbr[title] {
     border-bottom: none;
@@ -97,18 +97,18 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-    button::-moz-focus-inner,
-    input::-moz-focus-inner {
-        border-style: none;
-        padding: 0;
-    }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
 
-    [type="button"]:-moz-focusring,
-    [type="reset"]:-moz-focusring,
-    [type="submit"]:-moz-focusring,
-    button:-moz-focusring {
-        outline: 1px dotted ButtonText;
-    }
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -206,19 +206,19 @@ body * {
     scrollbar-width: thin;
 }
 
-    /* Works on Chrome, Edge, and Safari */
-    body * ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
+/* Works on Chrome, Edge, and Safari */
+body * ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
-    body * ::-webkit-scrollbar-track {
-        background: #fff;
-    }
+body * ::-webkit-scrollbar-track {
+    background: #fff;
+}
 
-    body * ::-webkit-scrollbar-thumb {
-        border: 3px solid #fff;
-    }
+body * ::-webkit-scrollbar-thumb {
+    border: 3px solid #fff;
+}
 
 /* ##################
  * ### TYPOGRAPHY ###
@@ -231,8 +231,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
+    color: #ffffff;
+    background: #1f1832;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
@@ -259,9 +259,9 @@ h1 {
     margin: 1rem 0;
 }
 
-    h1[data-uid] {
-        font-size: 2rem;
-    }
+h1[data-uid] {
+    font-size: 2rem;
+}
 
 h2 {
     font-size: 2rem;
@@ -280,17 +280,17 @@ h5 {
 
 a,
 .a {
-    color: #71c9ce;
+    color: #9998da;
     text-decoration: none;
 }
 
-    a:hover,
-    a:hover .a,
-    a:focus,
-    a:focus .a {
-        color: #0a58ca;
-        text-decoration: underline;
-    }
+a:hover,
+a:hover .a,
+a:focus,
+a:focus .a {
+    color: #400aca;
+    text-decoration: underline;
+}
 
 h1 a,
 h2 a,
@@ -300,27 +300,27 @@ h3 a {
 
 .btn-primary {
     color: #fff;
-    background-color: #35c5e2;
-    border-color: #35c5e2;
+    background-color: #4930ca;
+    border-color: #4930ca;
 }
 
-    .btn-primary:hover,
-    .btn-primary:focus {
-        color: #fff;
-        background-color: #38b8d2;
-        border-color: #0a58ca;
-    }
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #38b8d2;
+    border-color: #0a58ca;
+}
 
-    .btn-primary:active,
-    .btn-primary:active:focus {
-        color: #fff;
-        background-color: #0a58ca;
-        border-color: #0a53be;
-    }
+.btn-primary:active,
+.btn-primary:active:focus {
+    color: #fff;
+    background-color: #0a58ca;
+    border-color: #0a53be;
+}
 
-        .btn-primary:active:focus {
-            box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
-        }
+.btn-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
 
 /* #######################
  * ### MAIN NAVIGATION ###
@@ -328,41 +328,41 @@ h3 a {
  */
 
 #logo {
-    width: 160px;
-    height: 50px;
-    margin-right: 1rem;
+    width: 44px;
+    height: 44px;
 }
 
 svg:hover path {
     fill: initial;
 }
+.navbar-brand{
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+}
 
 .navbar-inverse {
-    background-color: #fff;
+    background: linear-gradient(144deg, rgba(14, 13, 48, 1) 0%, rgba(27, 27, 79, 1) 65%, rgba(108, 60, 104, 1) 100%);;
     border-color: #fff;
-    box-shadow: 0 0 8px rgb(0 0 0 / 12%);
-    position: relative;
-    color: inherit;
-    z-index: 1;
 }
 
 .navbar-default {
     border: none;
 }
 
-.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-text {
     color: inherit;
 }
 
-    .navbar-inverse .navbar-nav > li > a:focus,
-    .navbar-inverse .navbar-nav > li > a:hover,
-    .navbar-inverse .navbar-nav > .active > a,
-    .navbar-inverse .navbar-nav > .active > a:focus,
-    .navbar-inverse .navbar-nav > .active > a:hover {
-        color: #60c7ce;
-        text-decoration: none;
-    }
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #60c7ce;
+    text-decoration: none;
+}
 
 .navbar-form {
     padding: 0;
@@ -373,19 +373,42 @@ svg:hover path {
     border-color: #fff;
 }
 
-    .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: #212529;
-    }
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #212529;
+}
 
-    .navbar-inverse .navbar-toggle:focus,
-    .navbar-inverse .navbar-toggle:hover {
-        background-color: #fff;
-    }
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
     border: none;
 }
+
+.tabGroup a[role="tab"]:hover,
+.tabGroup a[role="tab"]:focus,
+.tabGroup a[role="tab"][aria-selected="true"] {
+    border-bottom: 2px solid #7975ab;
+}
+
+.tabGroup a[role="tab"] {
+    color: #f8f8f8;
+}
+
+.toc {
+    background: #fff0;
+}
+
+.sidetoc {
+    background: #fff0;
+}
+
+.navbar-default {
+    background: #f8f8f821;
+}
+
 /* Fix loss of drop shadow by overriding DocFX "static"*/
 
 @media only screen and (max-width: 768px) {
@@ -424,33 +447,33 @@ svg:hover path {
  */
 
 .sidefilter {
-    background-color: #fff;
-    top: 106px;
-    padding: 15px 0;
-    border: none;
+    background-color: #ffffff00;
 }
 
 .toc-filter {
     border-radius: 0;
-    background: #fff;
+    background-color: #ffffff00;
     color: inherit;
     padding: 0;
     position: relative;
     margin: 0;
 }
 
-    .toc-filter > input {
-        border: 1px solid #dcdcdc;
-        color: inherit;
-        font-size: 0.875rem;
-        height: 36px;
-        line-height: 1.8;
-        padding: 0 10px 0 20px;
-    }
+input {
+    border: 1px solid #8d5cc4;
+    color: inherit;
+    font-size: 0.875rem;
+    height: 36px;
+    line-height: 1.8;
+    border-radius: 9px !important;
+    color: #ffffff !important;
+    background: #24232f !important;
+    padding: 0 10px 0 20px;
+}
 
-    .toc-filter > .filter-icon {
-        top: 8px;
-    }
+.toc-filter>.filter-icon {
+    top: 8px;
+}
 
 .filter-icon::before {
     content: "\f0b0" !important;
@@ -461,12 +484,12 @@ svg:hover path {
     font-size: 0.75rem;
 }
 
-.toc-filter > input:focus {
+.toc-filter>input:focus {
     outline: #3b99fc solid 1px;
 }
 
 .sidetoc {
-    background-color: #fff;
+    background-color: #ffffff00;
     border: none;
     top: 166px;
     bottom: auto;
@@ -474,54 +497,54 @@ svg:hover path {
     overflow-x: auto !important;
 }
 
-    .sidetoc.shiftup {
-        bottom: auto;
-    }
+.sidetoc.shiftup {
+    bottom: auto;
+}
 
-    /* Blast the default styles out of the way so the side nav is usable*/
-    .sidetoc * {
-        font-size: 13px !important;
-        overflow-x: visible !important;
-    }
+/* Blast the default styles out of the way so the side nav is usable*/
+.sidetoc * {
+    font-size: 13px !important;
+    overflow-x: visible !important;
+}
 
-    .sidetoc .toc {
-        width: fit-content;
-    }
+.sidetoc .toc {
+    width: fit-content;
+}
 
 .toc {
     margin: 0;
     padding: 0;
 }
 
-    .toc ul {
-        font-size: inherit;
-        margin: 0;
-    }
+.toc ul {
+    font-size: inherit;
+    margin: 0;
+}
 
 /* Prevent double scroll bar */
 
 body .toc {
-    background-color: #fff;
+    background-color: #ffffff00;
     overflow-x: initial;
 }
 
-.toc .level1 > li {
+.toc .level1>li {
     font-weight: bold;
     margin-top: 2px;
     position: relative;
     font-size: 15px;
 }
 
-toc .nav > li > a {
+.toc .nav>li>a {
     font-weight: normal;
     color: inherit;
     padding: 5px 0 0 15px;
     margin: 0;
 }
 
-.toc .nav > li > .expand-stub::before,
-.toc .nav > li.active > .expand-stub::before,
-.toc .nav > li.filtered > .expand-stub::before {
+.toc .nav>li>.expand-stub::before,
+.toc .nav>li.active>.expand-stub::before,
+.toc .nav>li.filtered>.expand-stub::before {
     /*DOCFX selectors far too specific!*/
     content: "\f054" !important;
     position: absolute;
@@ -533,17 +556,17 @@ toc .nav > li > a {
     transform: rotate(0deg);
 }
 
-.level2 li > .expand-stub::before {
+.level2 li>.expand-stub::before {
     left: 0 !important;
 }
 
-.toc .nav > li.active > .expand-stub::before {
+.toc .nav>li.active>.expand-stub::before {
     color: #fff;
 }
 
-.toc .nav > li.in > .expand-stub::before,
-.toc .nav > li.in.active > .expand-stub::before,
-.toc .nav > li > .expand-stub.in::before {
+.toc .nav>li.in>.expand-stub::before,
+.toc .nav>li.in.active>.expand-stub::before,
+.toc .nav>li>.expand-stub.in::before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
@@ -552,7 +575,7 @@ toc .nav > li > a {
     font-weight: normal;
 }
 
-.toc .nav > li > a {
+.toc .nav>li>a {
     padding: 4px 18px;
     border-radius: 8px;
     margin: 0;
@@ -562,22 +585,22 @@ toc .nav > li > a {
     padding-left: 5px;
 }
 
-.toc .nav > li > a:hover,
-.toc .nav > li > a:focus {
+.toc .nav>li>a:hover,
+.toc .nav>li>a:focus {
     color: #23527c;
     text-decoration: underline;
 }
 
-.toc .nav > li.in.active > a:hover,
-.toc .nav > li.in.active > a:focus {
+.toc .nav>li.in.active>a:hover,
+.toc .nav>li.in.active>a:focus {
     color: #fff;
-    background-color: #32acc5;
+    background-color: #4a30caaf;
     text-decoration: none;
 }
 
-.toc .nav > li.active > a {
+.toc .nav>li.active>a {
     color: #fff;
-    background-color: #35c5e2;
+    background-color: #4930ca;
 }
 
 /* ###################
@@ -598,14 +621,14 @@ article {
     line-height: 1.6;
 }
 
-    article h1 {
-        margin-top: 16px;
-    }
+article h1 {
+    margin-top: 16px;
+}
 
-    article h4 {
-        padding-bottom: 8px;
-        border-bottom: 2px solid #f3f3f3;
-    }
+article h4 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f3f3f3;
+}
 
 .code-like,
 code,
@@ -626,10 +649,10 @@ pre {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
 
-    pre code {
-        word-wrap: normal;
-        white-space: pre;
-    }
+pre code {
+    word-wrap: normal;
+    white-space: pre;
+}
 
 pre {
     border-radius: 0.75rem;
@@ -638,13 +661,16 @@ pre {
     overflow-x: none;
 }
 
-    pre code {
-        padding: 0.75rem !important;
-        max-width: 100%;
-        overflow-x: auto;
-    }
+pre code {
+    padding: 0.75rem !important;
+    max-width: 100%;
+    overflow-x: auto;
+}
 
 /* Fix for bad word break in tables.*/
+table {
+    background-color: #393846d1;
+}
 
 .table tr td:first-child,
 .table tr td:first-child * {
@@ -668,38 +694,38 @@ pre {
     content: "\f044";
 }
 
-.contribution li + li a::before {
+.contribution li+li a::before {
     /*Github*/
     content: "\f09b";
 }
 
-.sideaffix > div.contribution > ul > li > a.contribution-link {
+.sideaffix>div.contribution>ul>li>a.contribution-link {
     font-weight: normal;
 }
 
-.affix ul > li.active > a {
+.affix ul>li.active>a {
     color: #337ab7;
 }
 
-.affix .level2 > li.active > a {
+.affix .level2>li.active>a {
     text-decoration: underline;
 }
 
-.affix ul ul > li > a:before {
+.affix ul ul>li>a:before {
     content: "";
 }
 
-.affix > ul > li > a:before {
+.affix>ul>li>a:before {
     content: "";
     width: 2px;
-    background-color: #71c9ce;
+    background-color: #9998da;
     top: 0;
     left: 0;
     bottom: 0;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
     text-decoration: underline;
 }
 
@@ -720,26 +746,26 @@ pre {
     line-height: 1;
 }
 
-    .expand-stub::before,
-    .contribution a::before,
-    .filter-icon::before {
-        margin-right: 4px;
-    }
+.expand-stub::before,
+.contribution a::before,
+.filter-icon::before {
+    margin-right: 4px;
+}
 
-    /*fab*/
+/*fab*/
 
-    .contribution a::before {
-        font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
-        font-weight: 400;
-    }
+.contribution a::before {
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+    font-weight: 400;
+}
 
-    /*fa, fas*/
+/*fa, fas*/
 
-    .expand-stub::before,
-    .filter-icon::before {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-    }
+.expand-stub::before,
+.filter-icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
 /* ###################
  * ### FONTAWESOME ###
@@ -752,13 +778,13 @@ pre {
 
 .footer {
     border-top: none;
-    background-color: #222;
+    background: #090817;
     color: #fff;
 }
 
-    .footer a {
-        color: #fff !important;
-    }
+.footer a {
+    color: #fff !important;
+}
 
 /* ###################
  * ###### TABS #######
@@ -767,17 +793,20 @@ pre {
 
 .tabGroup {
     margin-bottom: 1rem;
+    color: #fff;
+}
+.tabGroup a[role="tab"][aria-selected="true"] {
+    color: #cdcdcd;
+}
+.tabGroup section[role="tabpanel"] {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
 }
 
-    .tabGroup section[role="tabpanel"] {
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 0;
-    }
-
-        .tabGroup section[role="tabpanel"] > pre:last-child {
-            margin-bottom: -8px;
-        }
+.tabGroup section[role="tabpanel"]>pre:last-child {
+    margin-bottom: -8px;
+}
 
 /* ###################
  * ##### PRODUCTS ####
@@ -820,13 +849,13 @@ pre {
     font-size: 1.25rem;
 }
 
-    .product h5 a {
-        text-decoration: none;
-    }
+.product h5 a {
+    text-decoration: none;
+}
 
-        .product h5 a::after {
-            display: none;
-        }
+.product h5 a::after {
+    display: none;
+}
 
 .product .btn {
     position: absolute;
@@ -873,7 +902,11 @@ pre {
     max-height: calc(100% - 100px);
 }
 
-    .bs-docs-sidebar.affix > ul.level1 {
-        overflow: initial;
-        max-height: 100%;
-    }
+.bs-docs-sidebar.affix>ul.level1 {
+    overflow: initial;
+    max-height: 100%;
+}
+
+.sideaffix > div.contribution > ul > li > a.contribution-link:hover {
+    background-color: #ffffff00;
+}

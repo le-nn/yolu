@@ -6,6 +6,8 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" PrivateAssets="All" />
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <None Include="../../README.md" Pack="true" PackagePath="\"/>
         <None Include="../../logo.png" Pack="true" PackagePath="\"/>
     </ItemGroup>
