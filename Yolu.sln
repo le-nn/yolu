@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{DFB86F64
 		docfx.json = docfx.json
 		index.md = index.md
 		LICENSE.txt = LICENSE.txt
+		logo.svg = logo.svg
 		README.md = README.md
 		toc.yml = toc.yml
 	EndProjectSection

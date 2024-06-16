@@ -7,10 +7,6 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-
-
-        <EnablePreviewFeatures>True</EnablePreviewFeatures>
-        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,10 +26,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\Yolu\Yolu.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Randoms\" />
     </ItemGroup>
 
 </Project>

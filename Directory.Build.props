@@ -1,16 +1,13 @@
 <Project>
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-
-        <!--<UseArtifactsOutput>true</UseArtifactsOutput>-->
-        <!--<ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>-->
-
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" PrivateAssets="All" />
         <None Include="../../README.md" Pack="true" PackagePath="\"/>
+        <None Include="../../logo.svg" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     <!-- package info -->

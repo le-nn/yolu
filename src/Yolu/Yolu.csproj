@@ -6,8 +6,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-        <EnablePreviewFeatures>True</EnablePreviewFeatures>
-        <LangVersion>preview</LangVersion>
 
     </PropertyGroup>
 
