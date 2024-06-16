@@ -7,7 +7,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="*" PrivateAssets="All" />
         <None Include="../../README.md" Pack="true" PackagePath="\"/>
-        <None Include="../../logo.svg" Pack="true" PackagePath="\"/>
+        <None Include="../../logo.png" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     <!-- package info -->
