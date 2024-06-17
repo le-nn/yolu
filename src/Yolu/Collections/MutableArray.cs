@@ -35,7 +35,7 @@ public class MutableArray<T> : List<T>, IMutableArray<T> {
     /// Initializes a new instance of the <see cref="MutableArray{T}"/> class with the specified size.
     /// </summary>
     /// <param name="size">The size of the array.</param>
-    public MutableArray(int size) : base(size) {
+    public MutableArray(int size = 0) : base(size) {
 
     }
 
