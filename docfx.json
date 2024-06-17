@@ -1,5 +1,5 @@
-
 {
+    "$schema"   : "https://json.schemastore.org/docfx.json",
     "metadata": [
         {
             "src": [
@@ -20,14 +20,15 @@
                     "**/*.{md,yml}"
                 ],
                 "exclude": [
-                    "_site/**"
+                    "**/_site/**"
                 ]
             }
         ],
         "resource": [
             {
                 "files": [
-                    "images/**"
+                    "images/**",
+                    "index.html"
                 ]
             }
         ],
@@ -36,12 +37,17 @@
             "default",
             "templates"
         ],
+        "sitemap": {
+            "baseUrl": "https://le-nn.github.io/yolu/",
+            "priority": 0.1,
+            "changefreq": "monthly"
+        },
         "globalMetadata": {
             "_appName": "Yolu",
             "_appTitle": "Yolu",
-            "_appFaviconPath": "logo.png",
-            "_appLogoPath": "logo.png",
-            "_appLogoUrl": "https://le-nn.github.io/yolu/",
+            "_appFaviconPath": "images/logo.png",
+            "_appLogoPath": "images/logo.png",
+            "_appLogoUrl": "https://le-nn.github.io/yolu",
             "_appFooter": "Copyright © 2024 le-nn",
             "_enableSearch": true,
             "pdf": false

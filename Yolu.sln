@@ -12,10 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{DFB86F64
 		.github\workflows\build-and-deploy.yml = .github\workflows\build-and-deploy.yml
 		Directory.Build.props = Directory.Build.props
 		docfx.json = docfx.json
-		index.md = index.md
+		index.html = index.html
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 		toc.yml = toc.yml
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		E_5_4Devs_4_3sharp_3lib_4yolu_4docfx_1json__JsonSchema = 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2CBCF1CF-8B5D-49DA-89A5-7BC8F160D558}"
