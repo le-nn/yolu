@@ -1,10 +1,24 @@
 @import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swaps");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swaps");
 @import url("https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/tomorrow-night-bright.min.css");
+
 /* #############
  * ### RESET ###
  * #############
  */
+
+:root {
+    --primary: #5336e7;
+    --second: rgb(239, 239, 185);
+    --primary-text: #f2ecd6;
+    --primary-secondary: #9998da;
+    --divider: #6363636b;
+}
+
+pre{
+    border: none;
+    background: #00000000;
+}
 
 details,
 main,
@@ -153,38 +167,48 @@ h3,
 h4,
 h5,
 h6 {
+    text-decoration: none;
+    line-height: 1.15;
+    word-wrap: none !important;
+    word-break: normal !important;
     text-rendering: optimizeLegibility;
     page-break-after: avoid;
 }
 
 h1 {
-    font-size: 2rem;
     margin: 1.34rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 1.5rem;
     margin: 1.245rem 0;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 1.17rem;
     margin: 1.17rem 0;
+    font-weight: 500;
 }
 
 h4 {
     font-size: 1rem;
     margin: 1.33rem 0;
+    font-weight: 400;
 }
 
 h5 {
     font-size: 0.83rem;
     margin: 1.386rem 0;
+    font-weight: 400;
 }
 
 h6 {
     font-size: 0.67rem;
     margin: 1.561rem 0;
+    font-weight: 400;
 }
 
 ::selection {
@@ -244,40 +268,6 @@ body {
     }
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 800;
-    text-decoration: none;
-    line-height: 1.15;
-    word-wrap: none !important;
-    word-break: normal !important;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-}
-
-h1[data-uid] {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 1.34rem 0;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin: 1.245rem 0;
-}
-
-h4,
-h5 {
-    font-weight: 600;
-}
-
 a,
 .a {
     color: #9998da;
@@ -299,22 +289,22 @@ h3 a {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #4930ca;
-    border-color: #4930ca;
+    color: var(--primary-text);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: #fff;
-    background-color: #38b8d2;
-    border-color: #0a58ca;
+    color: var(--primary-text);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-primary:active,
 .btn-primary:active:focus {
-    color: #fff;
-    background-color: #0a58ca;
+    color: var(--primary-text);
+    background-color: var(--primary);
     border-color: #0a53be;
 }
 
@@ -335,15 +325,17 @@ h3 a {
 svg:hover path {
     fill: initial;
 }
-.navbar-brand{
+
+.navbar-brand {
     align-items: center;
     display: flex;
     margin-right: 1rem;
 }
 
 .navbar-inverse {
-    background: linear-gradient(144deg, rgba(14, 13, 48, 1) 0%, rgba(27, 27, 79, 1) 65%, rgba(108, 60, 104, 1) 100%);;
-    border-color: #fff;
+    background: linear-gradient(144deg, rgba(14, 13, 48, 1) 0%, rgba(27, 27, 79, 1) 65%, rgba(108, 60, 104, 1) 100%);
+    ;
+    border-color: var(--primary-text);
 }
 
 .navbar-default {
@@ -370,7 +362,7 @@ svg:hover path {
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #fff;
+    border-color: var(--primary-text);
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -379,22 +371,12 @@ svg:hover path {
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-    background-color: #fff;
+    background-color: var(--primary-text);
 }
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
     border: none;
-}
-
-.tabGroup a[role="tab"]:hover,
-.tabGroup a[role="tab"]:focus,
-.tabGroup a[role="tab"][aria-selected="true"] {
-    border-bottom: 2px solid #7975ab;
-}
-
-.tabGroup a[role="tab"] {
-    color: #f8f8f8;
 }
 
 .toc {
@@ -561,7 +543,7 @@ body .toc {
 }
 
 .toc .nav>li.active>.expand-stub::before {
-    color: #fff;
+    color: var(--primary-text);
 }
 
 .toc .nav>li.in>.expand-stub::before,
@@ -593,13 +575,13 @@ body .toc {
 
 .toc .nav>li.in.active>a:hover,
 .toc .nav>li.in.active>a:focus {
-    color: #fff;
+    color: var(--primary-text);
     background-color: #4a30caaf;
     text-decoration: none;
 }
 
 .toc .nav>li.active>a {
-    color: #fff;
+    color: var(--primary-text);
     background-color: #4930ca;
 }
 
@@ -627,7 +609,7 @@ article h1 {
 
 article h4 {
     padding-bottom: 8px;
-    border-bottom: 2px solid #f3f3f3;
+    border-bottom: 1px solid var(--divider);
 }
 
 .code-like,
@@ -779,7 +761,7 @@ table {
 .footer {
     border-top: none;
     background: #090817;
-    color: #fff;
+    color: var(--primary-text);
 }
 
 .footer a {
@@ -793,19 +775,25 @@ table {
 
 .tabGroup {
     margin-bottom: 1rem;
-    color: #fff;
-}
-.tabGroup a[role="tab"][aria-selected="true"] {
-    color: #cdcdcd;
-}
-.tabGroup section[role="tabpanel"] {
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    color: var(--primary-text);
 }
 
-.tabGroup section[role="tabpanel"]>pre:last-child {
-    margin-bottom: -8px;
+.tabGroup a[role="tab"] {
+    color: var(--primary-text);
+    border-bottom: 0px;
+}
+
+.tabGroup a[role="tab"][aria-selected="true"] {
+    color: var(--primary);
+}
+
+.tabGroup a[role="tab"]:focus {
+    outline: none;
+    outline-offset: -1px;
+}
+
+.tabGroup section[role="tabpanel"] {
+    border: 0;
 }
 
 /* ###################
@@ -823,7 +811,7 @@ table {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: var(--primary-text);
     background-clip: border-box;
     text-align: center;
     height: 100%;
@@ -907,6 +895,6 @@ table {
     max-height: 100%;
 }
 
-.sideaffix > div.contribution > ul > li > a.contribution-link:hover {
+.sideaffix>div.contribution>ul>li>a.contribution-link:hover {
     background-color: #ffffff00;
 }

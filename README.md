@@ -23,6 +23,8 @@ dotnet add package Yolu --version VERSION_NUMBER
 <PackageReference Include="Yolu" Version="VERSION_NUMBER" />
 ```
 
+---
+
 ### Install from Nuget
 
 [https://www.nuget.org/packages/yolu](https://www.nuget.org/packages/yolu)
