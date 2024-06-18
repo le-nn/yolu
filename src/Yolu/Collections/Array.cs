@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 namespace Yolu.Collections;
 
@@ -87,6 +88,14 @@ public partial class Array<T> : IArray<T> {
     /// <param name="values">The collection of elements.</param>
     public Array(IEnumerable<T>? values) {
         _array = values?.ToArray() ?? [];
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Array{T}"/> class with the elements from the specified collection.
+    /// </summary>
+    /// <param name="values">The collection of elements.</param>
+    public Array(List<T> values) {
+        _array = CollectionsMarshal.AsSpan( values).ToArray();
     }
 
     /// <summary>

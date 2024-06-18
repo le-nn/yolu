@@ -155,4 +155,19 @@ public class ArrayTests {
         // Assert
         Assert.False(result);
     }
+
+    [Fact]
+    public void List_to_Array_Conversion_ShouldReturnCorrectArray() {
+        // Arrange
+        List<int> values =[1, 2, 3, 4, 5 ];
+
+        // Act
+        var array = new Array<int>(values);
+
+        // Assert
+        Assert.Equal(values.Count, array.Length);
+        for (var i = 0; i < values.Count; i++) {
+            Assert.Equal(values[i], array[i]);
+        }
+    }
 }
