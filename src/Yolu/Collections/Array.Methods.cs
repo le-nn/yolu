@@ -723,7 +723,7 @@ public partial class Array<T> {
     public IEnumerable<TResult> OfType<TResult>() {
         var self = this;
         if (self._array == null || self._array.Length == 0) {
-            return Enumerable.Empty<TResult>();
+            return [];
         }
 
         return self._array.OfType<TResult>();

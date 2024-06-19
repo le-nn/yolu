@@ -23,138 +23,25 @@ public readonly struct Ulid : IEquatable<Ulid>, IComparable<Ulid> {
     private static readonly char[] _base32Text = "0123456789ABCDEFGHJKMNPQRSTVWXYZ".ToCharArray();
     private static readonly byte[] _base32Bytes = Encoding.UTF8.GetBytes(_base32Text);
     private static readonly byte[] _charToBase32 = [
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        255,
-        18,
-        19,
-        255,
-        20,
-        21,
-        255,
-        22,
-        23,
-        24,
-        25,
-        26,
-        255,
-        27,
-        28,
-        29,
-        30,
-        31,
-        255,
-        255,
-        255,
-        255,
-        255,
-        255,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        255,
-        18,
-        19,
-        255,
-        20,
-        21,
-        255,
-        22,
-        23,
-        24,
-        25,
-        26,
-        255,
-        27,
-        28,
-        29,
-        30,
-        31
-];
+        255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 
+        255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 
+        255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+        255, 255, 255, 255, 255, 255, 255, 10, 11, 12, 13, 14, 15, 16, 17, 255, 18, 19, 255, 20, 21,
+        255, 22, 23, 24, 25, 26, 255, 27, 28, 29, 30, 31, 255, 255, 255, 255, 255, 255, 10, 11, 12,
+        13, 14, 15, 16, 17, 255, 18,19, 255, 20, 21, 255, 22, 23, 24, 25, 26, 255, 27, 28, 29, 30, 31
+    ];
 
     private static readonly DateTimeOffset _unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-    public static readonly Ulid MinValue = new(_unixEpoch.ToUnixTimeMilliseconds(),
-        new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
+    public static readonly Ulid MinValue = new(
+        _unixEpoch.ToUnixTimeMilliseconds(),
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    );
 
-    public static readonly Ulid MaxValue = new(DateTimeOffset.MaxValue.ToUnixTimeMilliseconds(),
-        new byte[] { 255, 255, 255, 255, 255, 255, 255, 255, 255, 255 });
+    public static readonly Ulid MaxValue = new(
+        DateTimeOffset.MaxValue.ToUnixTimeMilliseconds(),
+        [255, 255, 255, 255, 255, 255, 255, 255, 255, 255]
+    );
 
     public static readonly Ulid Empty;
 
@@ -699,7 +586,7 @@ public readonly struct Ulid : IEquatable<Ulid>, IComparable<Ulid> {
     /// <returns>The converted <c>Guid</c> value</returns>
     public Guid ToGuid() {
         Span<byte> buf = stackalloc byte[16];
-        MemoryMarshal.Write(buf, ref Unsafe.AsRef(this));
+        MemoryMarshal.Write(buf, in Unsafe.AsRef(in this));
         if (BitConverter.IsLittleEndian) {
             byte tmp;
             tmp = buf[0];

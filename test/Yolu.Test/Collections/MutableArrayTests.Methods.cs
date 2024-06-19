@@ -20,8 +20,8 @@ public partial class MutableArrayTests {
         MutableArray<int> array = [1, 2, 3, 4, 5];
 
         // Assert
-        Assert.True(array.Contains(3));
-        Assert.False(array.Contains(6));
+        Assert.DoesNotContain(3, array);
+        Assert.DoesNotContain(6, array);
     }
 
     [Fact]
@@ -31,7 +31,7 @@ public partial class MutableArrayTests {
         var oldLength = array.Length;
 
         // Act
-       array.Add(6);
+        array.Add(6);
 
         // Assert
         (oldLength + 1).Should().Be(array.Length);
@@ -44,7 +44,7 @@ public partial class MutableArrayTests {
         var oldLength = array.Length;
 
         // Act
- array.Remove(3);
+        array.Remove(3);
 
         // Assert
         Assert.Equal(oldLength - 1, array.Length);
