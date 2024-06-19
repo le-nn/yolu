@@ -27,7 +27,7 @@ public class Subject<T> : IObservable<T>, IObserver<T> {
         var id = Guid.NewGuid();
         _observers.TryAdd(id, observer);
 
-        return new DisposableHandler(() => _observers.TryRemove(id, out _));
+        return new Subscription(() => _observers.TryRemove(id, out _));
     }
 
     /// <summary>

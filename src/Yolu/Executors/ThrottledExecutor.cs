@@ -19,7 +19,7 @@ public class ThrottledExecutor<T> : IObservable<T> {
             throw new InvalidOperationException("Failed to add an observer.");
         }
 
-        return new DisposableHandler(() => {
+        return new Subscription(() => {
             if (_observers.TryRemove(new(id, observer)) is false) {
                 throw new InvalidOperationException("Failed to add an observer.");
             }
