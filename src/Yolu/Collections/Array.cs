@@ -91,14 +91,6 @@ public partial class Array<T> : IArray<T> {
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Array{T}"/> class with the elements from the specified collection.
-    /// </summary>
-    /// <param name="values">The collection of elements.</param>
-    public Array(List<T> values) {
-        _array = CollectionsMarshal.AsSpan( values).ToArray();
-    }
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="Array{T}"/> class with the specified size.
     /// </summary>
     /// <param name="size">The size of the array.</param>

@@ -2,17 +2,17 @@ using Yolu.Collections;
 
 namespace Yolu.Core.Collections.Tests;
 
-public class ArrayTests {
+public partial class MutableArrayTests {
     [Fact]
     public void Array_InitializedWithArray_ShouldHaveCorrectLengthAndElements() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
 
         // Act
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Assert
-        Assert.Equal(values.Length, array.Length);
+        Assert.Equal(values.Length, array.Count);
         for (var i = 0; i < values.Length; i++) {
             Assert.Equal(values[i], array[i]);
         }
@@ -25,7 +25,7 @@ public class ArrayTests {
         ReadOnlySpan<int> span = values.AsSpan();
 
         // Act
-        var array = new Array<int>(span);
+        var array = new MutableArray<int>(span);
 
         // Assert
         Assert.Equal(values.Length, array.Length);
@@ -40,7 +40,7 @@ public class ArrayTests {
         var values = new List<int> { 1, 2, 3, 4, 5 };
 
         // Act
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Assert
         Assert.Equal(values.Count, array.Length);
@@ -53,7 +53,7 @@ public class ArrayTests {
     public void Array_GetEnumerator_ShouldEnumerateAllElements() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Act
         var result = array.ToList();
@@ -70,8 +70,8 @@ public class ArrayTests {
         // Arrange
         int[] values1 = [1, 2, 3, 4, 5];
         int[] values2 = [5, 4, 3, 2, 1];
-        var array1 = new Array<int>(values1);
-        var array2 = new Array<int>(values2);
+        var array1 = new MutableArray<int>(values1);
+        var array2 = new MutableArray<int>(values2);
 
         // Act
         var result = array1.Equals(array2);
@@ -83,7 +83,7 @@ public class ArrayTests {
     [Fact]
     public void Array_IsEmpty_ShouldReturnTrueForEmptyArray() {
         // Arrange
-        var array = Array<int>.Empty;
+        var array = MutableArray<int>.Empty;
 
         // Act
         var result = array.IsEmpty;
@@ -96,7 +96,7 @@ public class ArrayTests {
     public void Array_IsEmpty_ShouldReturnFalseForNonEmptyArray() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Act
         var result = array.IsEmpty;
@@ -109,7 +109,7 @@ public class ArrayTests {
     public void Array_Length_ShouldReturnCorrectLength() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Act
         var result = array.Length;
@@ -122,7 +122,7 @@ public class ArrayTests {
     public void Array_Count_ShouldReturnCorrectCount() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Act
         var result = array.Count;
@@ -132,37 +132,12 @@ public class ArrayTests {
     }
 
     [Fact]
-    public void Array_IsDefault_ShouldReturnTrueForUninitializedArray() {
-        // Arrange
-        var array = new Array<int>(null);
-
-        // Act
-        var result = array.IsDefault;
-
-        // Assert
-        Assert.True(result);
-    }
-
-    [Fact]
-    public void Array_IsDefault_ShouldReturnFalseForInitializedArray() {
-        // Arrange
-        int[] values = [1, 2, 3, 4, 5];
-        var array = new Array<int>(values);
-
-        // Act
-        var result = array.IsDefault;
-
-        // Assert
-        Assert.False(result);
-    }
-
-    [Fact]
     public void List_to_Array_Conversion_ShouldReturnCorrectArray() {
         // Arrange
         List<int> values = [1, 2, 3, 4, 5];
 
         // Act
-        var array = new Array<int>(values);
+        var array = new MutableArray<int>(values);
 
         // Assert
         Assert.Equal(values.Count, array.Length);
