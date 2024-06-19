@@ -20,7 +20,7 @@ public partial class MutableArrayTests {
         MutableArray<int> array = [1, 2, 3, 4, 5];
 
         // Assert
-        Assert.DoesNotContain(3, array);
+        Assert.Contains(3, array);
         Assert.DoesNotContain(6, array);
     }
 

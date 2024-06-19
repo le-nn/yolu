@@ -175,7 +175,7 @@ public readonly struct Ulid : IEquatable<Ulid>, IComparable<Ulid> {
     // source: https://github.com/dotnet/runtime/blob/4f9ae42d861fcb4be2fcd5d3d55d5f227d30e723/src/libraries/System.Private.CoreLib/src/System/Guid.cs
     public Ulid(Guid guid) {
         Span<byte> buf = stackalloc byte[16];
-        MemoryMarshal.Write(buf, ref guid);
+        MemoryMarshal.Write(buf, in guid);
         if (BitConverter.IsLittleEndian) {
             byte tmp;
             tmp = buf[0];
