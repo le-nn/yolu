@@ -27,7 +27,7 @@ jobs:
         run: |
             dotnet build
             dotnet test
-      
+  
       - name : Set Version variable from tag
         if: (github.event_name == 'release')
         run: |
@@ -43,10 +43,12 @@ jobs:
         run: dotnet nuget push './src/**/*.nupkg' -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: Generate Docs
+        if: (github.event_name == 'release')
         run: docfx ./docfx.json
 
       # Deploy the site
       - name: Deploy Github Pages
+        if: (github.event_name == 'release')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
