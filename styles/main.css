@@ -1,0 +1,900 @@
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swaps");
+@import url("https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/tomorrow-night-bright.min.css");
+
+/* #############
+ * ### RESET ###
+ * #############
+ */
+
+:root {
+    --primary: #5336e7;
+    --second: rgb(239, 239, 185);
+    --primary-text: #f2ecd6;
+    --primary-secondary: #9998da;
+    --divider: #6363636b;
+}
+
+pre{
+    border: none;
+    background: #00000000;
+}
+
+details,
+main,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+template {
+    display: none;
+}
+
+a {
+    -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+b,
+strong {
+    font-weight: inherit;
+    font-weight: 700;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.25rem;
+}
+
+sub {
+    bottom: -0.5rem;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+html {
+    -webkit-overflow-scrolling: touch;
+    color: #222;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+[tabindex="-1"]:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    line-height: 1.15;
+    word-wrap: none !important;
+    word-break: normal !important;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+}
+
+h1 {
+    margin: 1.34rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1.245rem 0;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.17rem;
+    margin: 1.17rem 0;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 1.33rem 0;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 0.83rem;
+    margin: 1.386rem 0;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.67rem;
+    margin: 1.561rem 0;
+    font-weight: 400;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid silver;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+/* Works on Firefox */
+body * {
+    scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+body * ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body * ::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body * ::-webkit-scrollbar-thumb {
+    border: 3px solid #fff;
+}
+
+/* ##################
+ * ### TYPOGRAPHY ###
+ * ##################
+ */
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background: #1f1832;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 95%;
+        max-width: 1400px;
+    }
+}
+
+a,
+.a {
+    color: #9998da;
+    text-decoration: none;
+}
+
+a:hover,
+a:hover .a,
+a:focus,
+a:focus .a {
+    color: #400aca;
+    text-decoration: underline;
+}
+
+h1 a,
+h2 a,
+h3 a {
+    color: inherit;
+}
+
+.btn-primary {
+    color: var(--primary-text);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: var(--primary-text);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:active,
+.btn-primary:active:focus {
+    color: var(--primary-text);
+    background-color: var(--primary);
+    border-color: #0a53be;
+}
+
+.btn-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+/* #######################
+ * ### MAIN NAVIGATION ###
+ * #######################
+ */
+
+#logo {
+    width: 44px;
+    height: 44px;
+}
+
+svg:hover path {
+    fill: initial;
+}
+
+.navbar-brand {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.navbar-inverse {
+    background: linear-gradient(144deg, rgba(14, 13, 48, 1) 0%, rgba(27, 27, 79, 1) 65%, rgba(108, 60, 104, 1) 100%);
+    ;
+    border-color: var(--primary-text);
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-text {
+    color: inherit;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #60c7ce;
+    text-decoration: none;
+}
+
+.navbar-form {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: var(--primary-text);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #212529;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: var(--primary-text);
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border: none;
+}
+
+.toc {
+    background: #fff0;
+}
+
+.sidetoc {
+    background: #fff0;
+}
+
+.navbar-default {
+    background: #f8f8f821;
+}
+
+/* Fix loss of drop shadow by overriding DocFX "static"*/
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+}
+
+.icon-bar {
+    transition: 0.4s;
+}
+
+[aria-expanded="true"] .icon-bar:nth-of-type(2) {
+    /* Rotate first bar */
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+[aria-expanded="true"] .icon-bar:nth-of-type(3) {
+    /* Fade out the second bar */
+    opacity: 0;
+}
+
+[aria-expanded="true"] .icon-bar:nth-of-type(4) {
+    /* Rotate last bar */
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.collapse.in,
+.collapsing {
+    text-align: unset;
+}
+
+/* #######################
+ * ### SIDE NAVIGATION ###
+ * #######################
+ */
+
+.sidefilter {
+    background-color: #ffffff00;
+}
+
+.toc-filter {
+    border-radius: 0;
+    background-color: #ffffff00;
+    color: inherit;
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+
+input {
+    border: 1px solid #8d5cc4;
+    color: inherit;
+    font-size: 0.875rem;
+    height: 36px;
+    line-height: 1.8;
+    border-radius: 9px !important;
+    color: #ffffff !important;
+    background: #24232f !important;
+    padding: 0 10px 0 20px;
+}
+
+.toc-filter>.filter-icon {
+    top: 8px;
+}
+
+.filter-icon::before {
+    content: "\f0b0" !important;
+    font-size: 0.75rem;
+}
+
+#toc_filter_clear::before {
+    font-size: 0.75rem;
+}
+
+.toc-filter>input:focus {
+    outline: #3b99fc solid 1px;
+}
+
+.sidetoc {
+    background-color: #ffffff00;
+    border: none;
+    top: 166px;
+    bottom: auto;
+    max-height: calc(100% - 166px);
+    overflow-x: auto !important;
+}
+
+.sidetoc.shiftup {
+    bottom: auto;
+}
+
+/* Blast the default styles out of the way so the side nav is usable*/
+.sidetoc * {
+    font-size: 13px !important;
+    overflow-x: visible !important;
+}
+
+.sidetoc .toc {
+    width: fit-content;
+}
+
+.toc {
+    margin: 0;
+    padding: 0;
+}
+
+.toc ul {
+    font-size: inherit;
+    margin: 0;
+}
+
+/* Prevent double scroll bar */
+
+body .toc {
+    background-color: #ffffff00;
+    overflow-x: initial;
+}
+
+.toc .level1>li {
+    font-weight: bold;
+    margin-top: 2px;
+    position: relative;
+    font-size: 15px;
+}
+
+.toc .nav>li>a {
+    font-weight: normal;
+    color: inherit;
+    padding: 5px 0 0 15px;
+    margin: 0;
+}
+
+.toc .nav>li>.expand-stub::before,
+.toc .nav>li.active>.expand-stub::before,
+.toc .nav>li.filtered>.expand-stub::before {
+    /*DOCFX selectors far too specific!*/
+    content: "\f054" !important;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 9px;
+    font-size: 0.75rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.level2 li>.expand-stub::before {
+    left: 0 !important;
+}
+
+.toc .nav>li.active>.expand-stub::before {
+    color: var(--primary-text);
+}
+
+.toc .nav>li.in>.expand-stub::before,
+.toc .nav>li.in.active>.expand-stub::before,
+.toc .nav>li>.expand-stub.in::before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.toc a {
+    font-weight: normal;
+}
+
+.toc .nav>li>a {
+    padding: 4px 18px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.toc .nav .level2 a {
+    padding-left: 5px;
+}
+
+.toc .nav>li>a:hover,
+.toc .nav>li>a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.toc .nav>li.in.active>a:hover,
+.toc .nav>li.in.active>a:focus {
+    color: var(--primary-text);
+    background-color: #4a30caaf;
+    text-decoration: none;
+}
+
+.toc .nav>li.active>a {
+    color: var(--primary-text);
+    background-color: #4930ca;
+}
+
+/* ###################
+ * ### API ARTICLE ###
+ * ###################
+ */
+
+.article {
+    margin-top: 94px;
+}
+
+article span.small.pull-right {
+    /* The styling for these is mental and causes odd offsets all over the place*/
+    display: none;
+}
+
+article {
+    line-height: 1.6;
+}
+
+article h1 {
+    margin-top: 16px;
+}
+
+article h4 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--divider);
+}
+
+.code-like,
+code,
+kbd,
+pre,
+samp {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif;
+}
+
+pre {
+    word-break: unset;
+    word-wrap: unset;
+    overflow-x: auto;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+pre code {
+    word-wrap: normal;
+    white-space: pre;
+}
+
+pre {
+    border-radius: 0.75rem;
+    position: relative;
+    z-index: 1;
+    overflow-x: none;
+}
+
+pre code {
+    padding: 0.75rem !important;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Fix for bad word break in tables.*/
+table {
+    background-color: #393846d1;
+}
+
+.table tr td:first-child,
+.table tr td:first-child * {
+    word-wrap: unset;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+/* ########################
+ * ### AFFIX NAVIGATION ###
+ * ########################
+ */
+
+.sideaffix {
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.contribution a::before {
+    /*Edit*/
+    content: "\f044";
+}
+
+.contribution li+li a::before {
+    /*Github*/
+    content: "\f09b";
+}
+
+.sideaffix>div.contribution>ul>li>a.contribution-link {
+    font-weight: normal;
+}
+
+.affix ul>li.active>a {
+    color: #337ab7;
+}
+
+.affix .level2>li.active>a {
+    text-decoration: underline;
+}
+
+.affix ul ul>li>a:before {
+    content: "";
+}
+
+.affix>ul>li>a:before {
+    content: "";
+    width: 2px;
+    background-color: #9998da;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: underline;
+}
+
+/* ###################
+ * ### FONTAWESOME ###
+ * ###################
+ */
+
+.expand-stub,
+.contribution a,
+.filter-icon {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.expand-stub::before,
+.contribution a::before,
+.filter-icon::before {
+    margin-right: 4px;
+}
+
+/*fab*/
+
+.contribution a::before {
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+/*fa, fas*/
+
+.expand-stub::before,
+.filter-icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* ###################
+ * ### FONTAWESOME ###
+ * ###################
+ */
+
+.grad-bottom {
+    display: none;
+}
+
+.footer {
+    border-top: none;
+    background: #090817;
+    color: var(--primary-text);
+}
+
+.footer a {
+    color: #fff !important;
+}
+
+/* ###################
+ * ###### TABS #######
+ * ###################
+ */
+
+.tabGroup {
+    margin-bottom: 1rem;
+    color: var(--primary-text);
+}
+
+.tabGroup a[role="tab"] {
+    color: var(--primary-text);
+    border-bottom: 0px;
+}
+
+.tabGroup a[role="tab"][aria-selected="true"] {
+    color: var(--primary);
+}
+
+.tabGroup a[role="tab"]:focus {
+    outline: none;
+    outline-offset: -1px;
+}
+
+.tabGroup section[role="tabpanel"] {
+    border: 0;
+}
+
+/* ###################
+ * ##### PRODUCTS ####
+ * ###################
+ */
+
+.products {
+    margin-top: 2rem;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--primary-text);
+    background-clip: border-box;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 2.3667rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+    .products {
+        display: flex;
+    }
+
+    .product {
+        padding-bottom: 0;
+    }
+}
+
+.product img {
+    max-height: 150px;
+}
+
+.product h5 {
+    font-size: 1.25rem;
+}
+
+.product h5 a {
+    text-decoration: none;
+}
+
+.product h5 a::after {
+    display: none;
+}
+
+.product .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .product .btn {
+        max-width: 50%;
+    }
+}
+
+.icon {
+    max-width: 20px;
+    margin-right: 0.5rem;
+}
+
+/* ###################
+ * ####### BUGS ######
+ * ###################
+ */
+
+.inheritance .level0:before,
+.inheritance .level1:before,
+.inheritance .level2:before,
+.inheritance .level3:before,
+.inheritance .level4:before,
+.inheritance .level5:before {
+    content: "\21B3";
+    margin-right: 5px;
+}
+
+/*
+* Fix the sidebar so content is not cut off and indicate scroll.
+*/
+
+.bs-docs-sidebar.affix {
+    overflow-y: auto;
+    overflow-x: auto;
+    height: fit-content;
+    max-height: calc(100% - 100px);
+}
+
+.bs-docs-sidebar.affix>ul.level1 {
+    overflow: initial;
+    max-height: 100%;
+}
+
+.sideaffix>div.contribution>ul>li>a.contribution-link:hover {
+    background-color: #ffffff00;
+}

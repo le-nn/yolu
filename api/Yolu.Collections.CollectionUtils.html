@@ -1,0 +1,1090 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CollectionUtils | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CollectionUtils | Yolu ">
+    
+    <meta name="description" content="Provides utility methods to work with collections.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Collections.CollectionUtils">
+
+
+
+  <h1 id="Yolu_Collections_CollectionUtils" data-uid="Yolu.Collections.CollectionUtils" class="text-break">Class CollectionUtils</h1>
+  <div class="markdown level0 summary"><p>Provides utility methods to work with collections.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CollectionUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Collections_CollectionUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CollectionUtils</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_AddAll__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.AddAll%60%601(System.Collections.Generic.ICollection%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L69">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_AddAll_" data-uid="Yolu.Collections.CollectionUtils.AddAll*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_AddAll__1_System_Collections_Generic_ICollection___0__System_Collections_Generic_IEnumerable___0__" data-uid="Yolu.Collections.CollectionUtils.AddAll``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEnumerable{``0})">AddAll&lt;T&gt;(ICollection&lt;T&gt;, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds multiple items into collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAll&lt;T&gt;(this ICollection&lt;T&gt; collection, IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to modify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>An items to add into collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of elements in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_Append__1_System_Collections_Generic_IEnumerable___0____0___.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.Append%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L265">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_Append_" data-uid="Yolu.Collections.CollectionUtils.Append*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_Append__1_System_Collections_Generic_IEnumerable___0____0___" data-uid="Yolu.Collections.CollectionUtils.Append``1(System.Collections.Generic.IEnumerable{``0},``0[])">Append&lt;T&gt;(IEnumerable&lt;T&gt;, params T[])</h4>
+  <div class="markdown level1 summary"><p>Adds <code class="paramref">items</code> to the end of <code class="paramref">collection</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Append&lt;T&gt;(this IEnumerable&lt;T&gt; collection, params T[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The collection to be concatenated with the items.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to be added to the end of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>The concatenated collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_Convert__2_System_Collections_Generic_IReadOnlyCollection___0__System_Converter___0___1__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.Convert%60%602(System.Collections.Generic.IReadOnlyCollection%7B%60%600%7D%2CSystem.Converter%7B%60%600%2C%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L20">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_Convert_" data-uid="Yolu.Collections.CollectionUtils.Convert*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_Convert__2_System_Collections_Generic_IReadOnlyCollection___0__System_Converter___0___1__" data-uid="Yolu.Collections.CollectionUtils.Convert``2(System.Collections.Generic.IReadOnlyCollection{``0},System.Converter{``0,``1})">Convert&lt;TInput, TOutput&gt;(IReadOnlyCollection&lt;TInput&gt;, Converter&lt;TInput, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns lazily converted read-only collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlyCollectionView&lt;TInput, TOutput&gt; Convert&lt;TInput, TOutput&gt;(this IReadOnlyCollection&lt;TInput&gt; collection, Converter&lt;TInput, TOutput&gt; converter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;TInput&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>Read-only collection to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.converter-2">Converter</a>&lt;TInput, TOutput&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>A collection item conversion function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.ReadOnlyCollectionView-2.html">ReadOnlyCollectionView</a>&lt;TInput, TOutput&gt;</td>
+        <td><p>Lazily converted read-only collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TInput</span></td>
+        <td><p>Type of items in the source collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>Type of items in the target collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ElementAt__1_System_Collections_Generic_IEnumerable___0__System_Int32___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ElementAt%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Int32%2C%60%600%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L168">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ElementAt_" data-uid="Yolu.Collections.CollectionUtils.ElementAt*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ElementAt__1_System_Collections_Generic_IEnumerable___0__System_Int32___0__" data-uid="Yolu.Collections.CollectionUtils.ElementAt``1(System.Collections.Generic.IEnumerable{``0},System.Int32,``0@)">ElementAt&lt;T&gt;(IEnumerable&lt;T&gt;, int, out T)</h4>
+  <div class="markdown level1 summary"><p>Obtains element at the specified index in the sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ElementAt&lt;T&gt;(this IEnumerable&lt;T&gt; collection, int index, out T element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>Source collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index of the element to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Obtained element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, if element is available in the collection and obtained successfully; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of elements in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_Collections_CollectionUtils_ElementAt__1_System_Collections_Generic_IEnumerable___0__System_Int32___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is optimized for types <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ForEachAsync%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.ValueTask%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L151">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ForEachAsync_" data-uid="Yolu.Collections.CollectionUtils.ForEachAsync*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__System_Threading_CancellationToken_" data-uid="Yolu.Collections.CollectionUtils.ForEachAsync``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask},System.Threading.CancellationToken)">ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, CancellationToken, ValueTask&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Applies the specified asynchronous action to each collection element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValueTask ForEachAsync&lt;T&gt;(this IEnumerable&lt;T&gt; collection, Func&lt;T, CancellationToken, ValueTask&gt; action, CancellationToken token = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to enumerate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>An action to applied for each element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token that can be used to cancel the enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td><p>The task representing asynchronous execution of this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of elements in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>The enumeration has been canceled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ForEach%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L107">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ForEach_" data-uid="Yolu.Collections.CollectionUtils.ForEach*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__" data-uid="Yolu.Collections.CollectionUtils.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Applies specified action to each collection element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this IEnumerable&lt;T&gt; collection, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to enumerate. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>An action to applied for each element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of elements in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_GetConsumer__1_System_Collections_Concurrent_IProducerConsumerCollection___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.GetConsumer%60%601(System.Collections.Concurrent.IProducerConsumerCollection%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.ConsumingEnumerable.cs/#L74">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_GetConsumer_" data-uid="Yolu.Collections.CollectionUtils.GetConsumer*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_GetConsumer__1_System_Collections_Concurrent_IProducerConsumerCollection___0__" data-uid="Yolu.Collections.CollectionUtils.GetConsumer``1(System.Collections.Concurrent.IProducerConsumerCollection{``0})">GetConsumer&lt;T&gt;(IProducerConsumerCollection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets consumer of thread-safe concurrent collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollectionUtils.ConsumingEnumerable&lt;T&gt; GetConsumer&lt;T&gt;(this IProducerConsumerCollection&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.concurrent.iproducerconsumercollection-1">IProducerConsumerCollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The concurrent collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.CollectionUtils.html">CollectionUtils</a>.<a class="xref" href="Yolu.Collections.CollectionUtils.ConsumingEnumerable-1.html">ConsumingEnumerable</a>&lt;T&gt;</td>
+        <td><p>The consumer in the form of enumerable collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of elements in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_Prepend__1_System_Collections_Generic_IEnumerable___0____0___.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.Prepend%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L255">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_Prepend_" data-uid="Yolu.Collections.CollectionUtils.Prepend*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_Prepend__1_System_Collections_Generic_IEnumerable___0____0___" data-uid="Yolu.Collections.CollectionUtils.Prepend``1(System.Collections.Generic.IEnumerable{``0},``0[])">Prepend&lt;T&gt;(IEnumerable&lt;T&gt;, params T[])</h4>
+  <div class="markdown level1 summary"><p>Adds <code class="paramref">items</code> to the beginning of <code class="paramref">collection</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Prepend&lt;T&gt;(this IEnumerable&lt;T&gt; collection, params T[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>The collection to be concatenated with the items.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to be added to the beginning of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>The concatenated collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__System_Boolean_.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.SequenceHashCode%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L92">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_SequenceHashCode_" data-uid="Yolu.Collections.CollectionUtils.SequenceHashCode*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__System_Boolean_" data-uid="Yolu.Collections.CollectionUtils.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">SequenceHashCode&lt;T&gt;(IEnumerable&lt;T&gt;, bool)</h4>
+  <div class="markdown level1 summary"><p>Computes hash code for the sequence of objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SequenceHashCode&lt;T&gt;(this IEnumerable&lt;T&gt; sequence, bool salted = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>The sequence of elements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">salted</span></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to include randomized salt data into hashing; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to use data from memory only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The hash code computed from each element in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the elements in the sequence.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_SkipNulls__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.SkipNulls%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L233">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_SkipNulls_" data-uid="Yolu.Collections.CollectionUtils.SkipNulls*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_SkipNulls__1_System_Collections_Generic_IEnumerable___0__" data-uid="Yolu.Collections.CollectionUtils.SkipNulls``1(System.Collections.Generic.IEnumerable{``0})">SkipNulls&lt;T&gt;(IEnumerable&lt;T?&gt;)</h4>
+  <div class="markdown level1 summary"><p>Skip <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> values in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; SkipNulls&lt;T&gt;(this IEnumerable&lt;T?&gt; collection) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to check. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>Modified lazy collection without <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of elements in the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ToArray__1_System_Collections_Generic_ICollection___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ToArray%60%601(System.Collections.Generic.ICollection%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L29">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ToArray_" data-uid="Yolu.Collections.CollectionUtils.ToArray*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ToArray__1_System_Collections_Generic_ICollection___0__" data-uid="Yolu.Collections.CollectionUtils.ToArray``1(System.Collections.Generic.ICollection{``0})">ToArray&lt;T&gt;(ICollection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts collection into single-dimensional array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ToArray&lt;T&gt;(ICollection&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Array of collection items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of collection items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ToArray__1_System_Collections_Generic_IReadOnlyCollection___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ToArray%60%601(System.Collections.Generic.IReadOnlyCollection%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L49">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ToArray_" data-uid="Yolu.Collections.CollectionUtils.ToArray*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ToArray__1_System_Collections_Generic_IReadOnlyCollection___0__" data-uid="Yolu.Collections.CollectionUtils.ToArray``1(System.Collections.Generic.IReadOnlyCollection{``0})">ToArray&lt;T&gt;(IReadOnlyCollection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts read-only collection into single-dimensional array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ToArray&lt;T&gt;(IReadOnlyCollection&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>A collection to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Array of collection items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of collection items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils.ToString%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.cs/#L245">View Source</a>
+  </span>
+  <a id="Yolu_Collections_CollectionUtils_ToString_" data-uid="Yolu.Collections.CollectionUtils.ToString*"></a>
+  <h4 id="Yolu_Collections_CollectionUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_" data-uid="Yolu.Collections.CollectionUtils.ToString``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String)">ToString&lt;T&gt;(IEnumerable&lt;T&gt;, string, string)</h4>
+  <div class="markdown level1 summary"><p>Concatenates each element from the collection into single string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToString&lt;T&gt;(this IEnumerable&lt;T&gt; collection, string delimiter, string ifEmpty = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>Collection to convert. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">delimiter</span></td>
+        <td><p>Delimiter between elements in the final string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">ifEmpty</span></td>
+        <td><p>A string to be returned if collection has no elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Converted collection into string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of array elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_CollectionUtils.md&amp;value=---%0Auid%3A%20Yolu.Collections.CollectionUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/CollectionUtils.NotNullEnumerable.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

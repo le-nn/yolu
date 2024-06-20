@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Disposable | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Disposable | Yolu ">
+    
+    
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Disposable">
+
+
+
+  <h1 id="Yolu_Disposable" data-uid="Yolu.Disposable" class="text-break">Class Disposable</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Disposable</span></div>
+      <div class="level2"><a class="xref" href="Yolu.DisposableHandler.html">DisposableHandler</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Disposable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Disposable : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_DisposedTask.md&amp;value=---%0Auid%3A%20Yolu.Disposable.DisposedTask%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L35">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_DisposedTask_" data-uid="Yolu.Disposable.DisposedTask*"></a>
+  <h4 id="Yolu_Disposable_DisposedTask" data-uid="Yolu.Disposable.DisposedTask">DisposedTask</h4>
+  <div class="markdown level1 summary"><p>Gets a task representing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task DisposedTask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_IsDisposed.md&amp;value=---%0Auid%3A%20Yolu.Disposable.IsDisposed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L16">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_IsDisposed_" data-uid="Yolu.Disposable.IsDisposed*"></a>
+  <h4 id="Yolu_Disposable_IsDisposed" data-uid="Yolu.Disposable.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Indicates that this object is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_IsDisposing.md&amp;value=---%0Auid%3A%20Yolu.Disposable.IsDisposing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L21">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_IsDisposing_" data-uid="Yolu.Disposable.IsDisposing*"></a>
+  <h4 id="Yolu_Disposable_IsDisposing" data-uid="Yolu.Disposable.IsDisposing">IsDisposing</h4>
+  <div class="markdown level1 summary"><p>Indicates that <a class="xref" href="Yolu.Disposable.html#Yolu_Disposable_DisposeAsync">DisposeAsync()</a> is called but not yet completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsDisposing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_IsDisposingOrDisposed.md&amp;value=---%0Auid%3A%20Yolu.Disposable.IsDisposingOrDisposed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L27">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_IsDisposingOrDisposed_" data-uid="Yolu.Disposable.IsDisposingOrDisposed*"></a>
+  <h4 id="Yolu_Disposable_IsDisposingOrDisposed" data-uid="Yolu.Disposable.IsDisposingOrDisposed">IsDisposingOrDisposed</h4>
+  <div class="markdown level1 summary"><p>Indicates that <a class="xref" href="Yolu.Disposable.html#Yolu_Disposable_DisposeAsync">DisposeAsync()</a> is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsDisposingOrDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_Dispose.md&amp;value=---%0Auid%3A%20Yolu.Disposable.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L113">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_Dispose_" data-uid="Yolu.Disposable.Dispose*"></a>
+  <h4 id="Yolu_Disposable_Dispose" data-uid="Yolu.Disposable.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Releases all resources associated with this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Yolu.Disposable.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L67">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_Dispose_" data-uid="Yolu.Disposable.Dispose*"></a>
+  <h4 id="Yolu_Disposable_Dispose_System_Boolean_" data-uid="Yolu.Disposable.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"><p>Releases managed and unmanaged resources associated with this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if called from <a class="xref" href="Yolu.Disposable.html#Yolu_Disposable_Dispose">Dispose()</a>; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if called from finalizer <a class="xref" href="Yolu.Disposable.html#Yolu_Disposable_Finalize">~Disposable()</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_DisposeAsync.md&amp;value=---%0Auid%3A%20Yolu.Disposable.DisposeAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L96">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_DisposeAsync_" data-uid="Yolu.Disposable.DisposeAsync*"></a>
+  <h4 id="Yolu_Disposable_DisposeAsync" data-uid="Yolu.Disposable.DisposeAsync">DisposeAsync()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources associated with this object asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ValueTask DisposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td><p>The task representing asynchronous execution of this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_Disposable_DisposeAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If derived class implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a> then <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync">DisposeAsync()</a>
+can be trivially implemented through delegation of the call to this method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_DisposeAsyncCore.md&amp;value=---%0Auid%3A%20Yolu.Disposable.DisposeAsyncCore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L77">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_DisposeAsyncCore_" data-uid="Yolu.Disposable.DisposeAsyncCore*"></a>
+  <h4 id="Yolu_Disposable_DisposeAsyncCore" data-uid="Yolu.Disposable.DisposeAsyncCore">DisposeAsyncCore()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources associated with this object asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ValueTask DisposeAsyncCore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td><p>The task representing asynchronous execution of this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_Disposable_DisposeAsyncCore_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method makes sense only if derived class implements <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a> interface.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_Finalize.md&amp;value=---%0Auid%3A%20Yolu.Disposable.Finalize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L123">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_Finalize_" data-uid="Yolu.Disposable.Finalize*"></a>
+  <h4 id="Yolu_Disposable_Finalize" data-uid="Yolu.Disposable.Finalize">~Disposable()</h4>
+  <div class="markdown level1 summary"><p>Throws an exception if this object is collected without being disposed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~Disposable()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown if the object is collected without being disposed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_GetDisposedTask__1.md&amp;value=---%0Auid%3A%20Yolu.Disposable.GetDisposedTask%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L43">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_GetDisposedTask_" data-uid="Yolu.Disposable.GetDisposedTask*"></a>
+  <h4 id="Yolu_Disposable_GetDisposedTask__1" data-uid="Yolu.Disposable.GetDisposedTask``1">GetDisposedTask&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns a task representing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;T&gt; GetDisposedTask&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td><p>The task representing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_TryBeginDispose.md&amp;value=---%0Auid%3A%20Yolu.Disposable.TryBeginDispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L106">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_TryBeginDispose_" data-uid="Yolu.Disposable.TryBeginDispose*"></a>
+  <h4 id="Yolu_Disposable_TryBeginDispose" data-uid="Yolu.Disposable.TryBeginDispose">TryBeginDispose()</h4>
+  <div class="markdown level1 summary"><p>Starts disposing this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryBeginDispose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if cleanup operations can be performed; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if the object is already disposing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_TrySetDisposedException_System_Threading_Tasks_TaskCompletionSource_.md&amp;value=---%0Auid%3A%20Yolu.Disposable.TrySetDisposedException(System.Threading.Tasks.TaskCompletionSource)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L60">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_TrySetDisposedException_" data-uid="Yolu.Disposable.TrySetDisposedException*"></a>
+  <h4 id="Yolu_Disposable_TrySetDisposedException_System_Threading_Tasks_TaskCompletionSource_" data-uid="Yolu.Disposable.TrySetDisposedException(System.Threading.Tasks.TaskCompletionSource)">TrySetDisposedException(TaskCompletionSource)</h4>
+  <div class="markdown level1 summary"><p>Attempts to complete the task with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TrySetDisposedException(TaskCompletionSource source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcompletionsource">TaskCompletionSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The task completion source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if operation was successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable_TrySetDisposedException__1_System_Threading_Tasks_TaskCompletionSource___0__.md&amp;value=---%0Auid%3A%20Yolu.Disposable.TrySetDisposedException%60%601(System.Threading.Tasks.TaskCompletionSource%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L52">View Source</a>
+  </span>
+  <a id="Yolu_Disposable_TrySetDisposedException_" data-uid="Yolu.Disposable.TrySetDisposedException*"></a>
+  <h4 id="Yolu_Disposable_TrySetDisposedException__1_System_Threading_Tasks_TaskCompletionSource___0__" data-uid="Yolu.Disposable.TrySetDisposedException``1(System.Threading.Tasks.TaskCompletionSource{``0})">TrySetDisposedException&lt;T&gt;(TaskCompletionSource&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attempts to complete the task with <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a> exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TrySetDisposedException&lt;T&gt;(TaskCompletionSource&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskcompletionsource-1">TaskCompletionSource</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The task completion source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if operation was successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsTask__1___0_">TaskUtils.AsTask&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsValueTask__1___0_">TaskUtils.AsValueTask&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Disposable.md&amp;value=---%0Auid%3A%20Yolu.Disposable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Disposable.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

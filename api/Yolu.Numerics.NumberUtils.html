@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class NumberUtils | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class NumberUtils | Yolu ">
+    
+    <meta name="description" content="Represents Generic Math extensions.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Numerics.NumberUtils">
+
+
+
+  <h1 id="Yolu_Numerics_NumberUtils" data-uid="Yolu.Numerics.NumberUtils" class="text-break">Class NumberUtils</h1>
+  <div class="markdown level0 summary"><p>Represents Generic Math extensions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">NumberUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.Numerics.html">Numerics</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Numerics_NumberUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NumberUtils</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_GetMaxByteCount__1.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.GetMaxByteCount%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L28">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_GetMaxByteCount_" data-uid="Yolu.Numerics.NumberUtils.GetMaxByteCount*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_GetMaxByteCount__1" data-uid="Yolu.Numerics.NumberUtils.GetMaxByteCount``1">GetMaxByteCount&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets maximum number of bytes that can be used by <code class="typeparamref">T</code> type
+when encoded in little-endian or big-endian format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxByteCount&lt;T&gt;() where T : notnull, IBinaryInteger&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The maximum numbers bytes that can be occupied by the value of <code class="typeparamref">T</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The integer type to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_IsSigned__1.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.IsSigned%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L18">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_IsSigned_" data-uid="Yolu.Numerics.NumberUtils.IsSigned*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_IsSigned__1" data-uid="Yolu.Numerics.NumberUtils.IsSigned``1">IsSigned&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified numeric type is signed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSigned&lt;T&gt;() where T : notnull, INumberBase&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="typeparamref">T</code> is a signed numeric type;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_Normalize_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.Normalize(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L92">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_Normalize_" data-uid="Yolu.Numerics.NumberUtils.Normalize*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_Normalize_System_Int32_" data-uid="Yolu.Numerics.NumberUtils.Normalize(System.Int32)">Normalize(int)</h4>
+  <div class="markdown level1 summary"><p>Normalizes 32-bit signed integer to interval [0..1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Normalize(this int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The normalized value in range [0..1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_Normalize_System_Int64_.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.Normalize(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L73">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_Normalize_" data-uid="Yolu.Numerics.NumberUtils.Normalize*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_Normalize_System_Int64_" data-uid="Yolu.Numerics.NumberUtils.Normalize(System.Int64)">Normalize(long)</h4>
+  <div class="markdown level1 summary"><p>Normalizes 64-bit signed integer to interval [0..1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Normalize(this long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The normalized value in range [0..1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_Normalize_System_UInt32_.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.Normalize(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L81">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_Normalize_" data-uid="Yolu.Numerics.NumberUtils.Normalize*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_Normalize_System_UInt32_" data-uid="Yolu.Numerics.NumberUtils.Normalize(System.UInt32)">Normalize(uint)</h4>
+  <div class="markdown level1 summary"><p>Normalizes 32-bit unsigned integer to interval [0..1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Normalize(this uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The normalized value in range [0..1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_Normalize_System_UInt64_.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.Normalize(System.UInt64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L62">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_Normalize_" data-uid="Yolu.Numerics.NumberUtils.Normalize*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_Normalize_System_UInt64_" data-uid="Yolu.Numerics.NumberUtils.Normalize(System.UInt64)">Normalize(ulong)</h4>
+  <div class="markdown level1 summary"><p>Normalizes 64-bit unsigned integer to interval [0..1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Normalize(this ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The normalized value in range [0..1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils_Normalize__2___0___0___0_.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils.Normalize%60%602(%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L41">View Source</a>
+  </span>
+  <a id="Yolu_Numerics_NumberUtils_Normalize_" data-uid="Yolu.Numerics.NumberUtils.Normalize*"></a>
+  <h4 id="Yolu_Numerics_NumberUtils_Normalize__2___0___0___0_" data-uid="Yolu.Numerics.NumberUtils.Normalize``2(``0,``0,``0)">Normalize&lt;TInput, TOutput&gt;(TInput, TInput, TInput)</h4>
+  <div class="markdown level1 summary"><p>Normalizes value in the specified range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TOutput Normalize&lt;TInput, TOutput&gt;(this TInput value, TInput min, TInput max) where TInput : struct, INumberBase&lt;TInput&gt;, IComparisonOperators&lt;TInput, TInput, bool&gt; where TOutput : struct, IFloatingPoint&lt;TOutput&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be normalized. Must be in range [min..max].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>The lower bound of the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>The upper bound of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TOutput</span></td>
+        <td><p>The normalized value in range [-1..1] for signed value and [0..1] for unsigned value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TInput</span></td>
+        <td><p>The type of the input value and bounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>The type of normalized value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Numerics_NumberUtils.md&amp;value=---%0Auid%3A%20Yolu.Numerics.NumberUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Numerics/NumberUtils.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2044 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RandomUtils | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RandomUtils | Yolu ">
+    
+    <meta name="description" content="Utility class for generating random values.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Randoms.RandomUtils">
+
+
+
+  <h1 id="Yolu_Randoms_RandomUtils" data-uid="Yolu.Randoms.RandomUtils" class="text-break">Class RandomUtils</h1>
+  <div class="markdown level0 summary"><p>Utility class for generating random values.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RandomUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.Randoms.html">Randoms</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Randoms_RandomUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RandomUtils</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Chars.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Chars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Yolu_Randoms_RandomUtils_Chars" data-uid="Yolu.Randoms.RandomUtils.Chars">Chars</h4>
+  <div class="markdown level1 summary"><p>The characters used for generating random strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Chars = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_GetItems__1_System_Random_System_Span___0__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.GetItems%60%601(System.Random%2CSystem.Span%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L337">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_GetItems_" data-uid="Yolu.Randoms.RandomUtils.GetItems*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_GetItems__1_System_Random_System_Span___0__" data-uid="Yolu.Randoms.RandomUtils.GetItems``1(System.Random,System.Span{``0})">GetItems&lt;T&gt;(Random, Span&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fills the buffer with random values of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetItems&lt;T&gt;(this Random random, Span&lt;T&gt; buffer) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer to fill with random values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The blittable type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_GetItems__1_System_Security_Cryptography_RandomNumberGenerator_System_Span___0__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.GetItems%60%601(System.Security.Cryptography.RandomNumberGenerator%2CSystem.Span%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L348">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_GetItems_" data-uid="Yolu.Randoms.RandomUtils.GetItems*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_GetItems__1_System_Security_Cryptography_RandomNumberGenerator_System_Span___0__" data-uid="Yolu.Randoms.RandomUtils.GetItems``1(System.Security.Cryptography.RandomNumberGenerator,System.Span{``0})">GetItems&lt;T&gt;(RandomNumberGenerator, Span&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fills the buffer with random values of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetItems&lt;T&gt;(this RandomNumberGenerator random, Span&lt;T&gt; buffer) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer to fill with random values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The blittable type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Next_System_Security_Cryptography_RandomNumberGenerator_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Next(System.Security.Cryptography.RandomNumberGenerator)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L269">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_Next_" data-uid="Yolu.Randoms.RandomUtils.Next*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_Next_System_Security_Cryptography_RandomNumberGenerator_" data-uid="Yolu.Randoms.RandomUtils.Next(System.Security.Cryptography.RandomNumberGenerator)">Next(RandomNumberGenerator)</h4>
+  <div class="markdown level1 summary"><p>Generates non-negative integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Next(this RandomNumberGenerator random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A 32-bit signed integer that is in range [0, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.maxvalue">MaxValue</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextBool_System_Random_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextBool(System.Random)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L53">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextBool_" data-uid="Yolu.Randoms.RandomUtils.NextBool*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextBool_System_Random_" data-uid="Yolu.Randoms.RandomUtils.NextBool(System.Random)">NextBool(Random)</h4>
+  <div class="markdown level1 summary"><p>Generates a random boolean value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static bool NextBool(this Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>A random boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextBoolean_System_Random_System_Double_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextBoolean(System.Random%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L259">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextBoolean_" data-uid="Yolu.Randoms.RandomUtils.NextBoolean*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextBoolean_System_Random_System_Double_" data-uid="Yolu.Randoms.RandomUtils.NextBoolean(System.Random,System.Double)">NextBoolean(Random, double)</h4>
+  <div class="markdown level1 summary"><p>Generates a random boolean value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NextBoolean(this Random random, double trueProbability = 0.5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">trueProbability</span></td>
+        <td><p>A probability of <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> result (should be between 0.0 and 1.0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Randomly generated boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">trueProbability</code> value is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextBoolean_System_Security_Cryptography_RandomNumberGenerator_System_Double_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextBoolean(System.Security.Cryptography.RandomNumberGenerator%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L289">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextBoolean_" data-uid="Yolu.Randoms.RandomUtils.NextBoolean*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextBoolean_System_Security_Cryptography_RandomNumberGenerator_System_Double_" data-uid="Yolu.Randoms.RandomUtils.NextBoolean(System.Security.Cryptography.RandomNumberGenerator,System.Double)">NextBoolean(RandomNumberGenerator, double)</h4>
+  <div class="markdown level1 summary"><p>Generates a random boolean value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NextBoolean(this RandomNumberGenerator random, double trueProbability = 0.5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">trueProbability</span></td>
+        <td><p>A probability of <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> result (should be between 0.0 and 1.0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Randomly generated boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">trueProbability</code> value is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextChars_System_Random_System_ReadOnlySpan_System_Char__System_Span_System_Char__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextChars(System.Random%2CSystem.ReadOnlySpan%7BSystem.Char%7D%2CSystem.Span%7BSystem.Char%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L191">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextChars_" data-uid="Yolu.Randoms.RandomUtils.NextChars*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextChars_System_Random_System_ReadOnlySpan_System_Char__System_Span_System_Char__" data-uid="Yolu.Randoms.RandomUtils.NextChars(System.Random,System.ReadOnlySpan{System.Char},System.Span{System.Char})">NextChars(Random, ReadOnlySpan&lt;char&gt;, Span&lt;char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generates a random set of characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NextChars(this Random random, ReadOnlySpan&lt;char&gt; allowedChars, Span&lt;char&gt; buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The array to be filled with random characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextChars_System_Security_Cryptography_RandomNumberGenerator_System_ReadOnlySpan_System_Char__System_Span_System_Char__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextChars(System.Security.Cryptography.RandomNumberGenerator%2CSystem.ReadOnlySpan%7BSystem.Char%7D%2CSystem.Span%7BSystem.Char%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L245">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextChars_" data-uid="Yolu.Randoms.RandomUtils.NextChars*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextChars_System_Security_Cryptography_RandomNumberGenerator_System_ReadOnlySpan_System_Char__System_Span_System_Char__" data-uid="Yolu.Randoms.RandomUtils.NextChars(System.Security.Cryptography.RandomNumberGenerator,System.ReadOnlySpan{System.Char},System.Span{System.Char})">NextChars(RandomNumberGenerator, ReadOnlySpan&lt;char&gt;, Span&lt;char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generates a random set of characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NextChars(this RandomNumberGenerator random, ReadOnlySpan&lt;char&gt; allowedChars, Span&lt;char&gt; buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The array to be filled with random characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextDateOnly_System_Random_System_DateOnly_System_DateOnly_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextDateOnly(System.Random%2CSystem.DateOnly%2CSystem.DateOnly)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L94">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextDateOnly_" data-uid="Yolu.Randoms.RandomUtils.NextDateOnly*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextDateOnly_System_Random_System_DateOnly_System_DateOnly_" data-uid="Yolu.Randoms.RandomUtils.NextDateOnly(System.Random,System.DateOnly,System.DateOnly)">NextDateOnly(Random, DateOnly, DateOnly)</h4>
+  <div class="markdown level1 summary"><p>Generates a random DateTime value between the specified start and end dates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static DateOnly NextDateOnly(this Random random, DateOnly startDate, DateOnly endDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></td>
+        <td><span class="parametername">startDate</span></td>
+        <td><p>The start date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></td>
+        <td><span class="parametername">endDate</span></td>
+        <td><p>The end date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></td>
+        <td><p>A random DateTime value between the start and end dates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextDateTime_System_Random_System_DateTime_System_DateTime_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextDateTime(System.Random%2CSystem.DateTime%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L79">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextDateTime_" data-uid="Yolu.Randoms.RandomUtils.NextDateTime*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextDateTime_System_Random_System_DateTime_System_DateTime_" data-uid="Yolu.Randoms.RandomUtils.NextDateTime(System.Random,System.DateTime,System.DateTime)">NextDateTime(Random, DateTime, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Generates a random DateTime value between the specified start and end dates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static DateTime NextDateTime(this Random random, DateTime startDate, DateTime endDate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">startDate</span></td>
+        <td><p>The start date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">endDate</span></td>
+        <td><p>The end date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>A random DateTime value between the start and end dates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextDouble_System_Random_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextDouble(System.Random%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L135">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextDouble_" data-uid="Yolu.Randoms.RandomUtils.NextDouble*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextDouble_System_Random_System_Double_System_Double_" data-uid="Yolu.Randoms.RandomUtils.NextDouble(System.Random,System.Double,System.Double)">NextDouble(Random, double, double)</h4>
+  <div class="markdown level1 summary"><p>Generates a random double value between the specified minimum and maximum values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static double NextDouble(this Random random, double minValue, double maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>A random double value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextDouble_System_Security_Cryptography_RandomNumberGenerator_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextDouble(System.Security.Cryptography.RandomNumberGenerator)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L299">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextDouble_" data-uid="Yolu.Randoms.RandomUtils.NextDouble*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextDouble_System_Security_Cryptography_RandomNumberGenerator_" data-uid="Yolu.Randoms.RandomUtils.NextDouble(System.Security.Cryptography.RandomNumberGenerator)">NextDouble(RandomNumberGenerator)</h4>
+  <div class="markdown level1 summary"><p>Returns a random floating-point number that is in range [0, 1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NextDouble(this RandomNumberGenerator random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>Randomly generated floating-point number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextFloat_System_Random_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextFloat(System.Random%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L178">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextFloat_" data-uid="Yolu.Randoms.RandomUtils.NextFloat*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextFloat_System_Random_System_Single_System_Single_" data-uid="Yolu.Randoms.RandomUtils.NextFloat(System.Random,System.Single,System.Single)">NextFloat(Random, float, float)</h4>
+  <div class="markdown level1 summary"><p>Generates a random float value between the specified minimum and maximum values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static float NextFloat(this Random random, float minValue, float maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>A random float value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextGuid_System_Random_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextGuid(System.Random)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L189">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextGuid_" data-uid="Yolu.Randoms.RandomUtils.NextGuid*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextGuid_System_Random_" data-uid="Yolu.Randoms.RandomUtils.NextGuid(System.Random)">NextGuid(Random)</h4>
+  <div class="markdown level1 summary"><p>Generates a random Guid value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Guid NextGuid(this Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>A random Guid value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextInt_System_Random_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextInt(System.Random%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L148">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextInt_" data-uid="Yolu.Randoms.RandomUtils.NextInt*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextInt_System_Random_System_Int32_System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextInt(System.Random,System.Int32,System.Int32)">NextInt(Random, int, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random integer value between the specified minimum and maximum values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static int NextInt(this Random random, int minValue, int maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A random integer value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextLong_System_Random_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextLong(System.Random%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L161">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextLong_" data-uid="Yolu.Randoms.RandomUtils.NextLong*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextLong_System_Random_System_Int64_System_Int64_" data-uid="Yolu.Randoms.RandomUtils.NextLong(System.Random,System.Int64,System.Int64)">NextLong(Random, long, long)</h4>
+  <div class="markdown level1 summary"><p>Generates a random long value between the specified minimum and maximum values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static long NextLong(this Random random, long minValue, long maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>A random long value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextString_System_Random_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextString(System.Random%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L65">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextString_" data-uid="Yolu.Randoms.RandomUtils.NextString*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextString_System_Random_System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextString(System.Random,System.Int32)">NextString(Random, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random string of the specified length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static string NextString(this Random random, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A random string of the specified length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextString_System_Random_System_ReadOnlySpan_System_Char__System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextString(System.Random%2CSystem.ReadOnlySpan%7BSystem.Char%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L157">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextString_" data-uid="Yolu.Randoms.RandomUtils.NextString*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextString_System_Random_System_ReadOnlySpan_System_Char__System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextString(System.Random,System.ReadOnlySpan{System.Char},System.Int32)">NextString(Random, ReadOnlySpan&lt;char&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random string of the given length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextString(this Random random, ReadOnlySpan&lt;char&gt; allowedChars, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the random string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Randomly generated string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">length</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextString_System_Random_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextString(System.Random%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L181">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextString_" data-uid="Yolu.Randoms.RandomUtils.NextString*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextString_System_Random_System_String_System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextString(System.Random,System.String,System.Int32)">NextString(Random, string, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random string of the given length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextString(this Random random, string allowedChars, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The string of allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the random string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Randomly generated string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">length</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextString_System_Security_Cryptography_RandomNumberGenerator_System_ReadOnlySpan_System_Char__System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextString(System.Security.Cryptography.RandomNumberGenerator%2CSystem.ReadOnlySpan%7BSystem.Char%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L207">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextString_" data-uid="Yolu.Randoms.RandomUtils.NextString*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextString_System_Security_Cryptography_RandomNumberGenerator_System_ReadOnlySpan_System_Char__System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextString(System.Security.Cryptography.RandomNumberGenerator,System.ReadOnlySpan{System.Char},System.Int32)">NextString(RandomNumberGenerator, ReadOnlySpan&lt;char&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random string of the given length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextString(this RandomNumberGenerator random, ReadOnlySpan&lt;char&gt; allowedChars, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the random string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Randomly generated string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">length</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextString_System_Security_Cryptography_RandomNumberGenerator_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextString(System.Security.Cryptography.RandomNumberGenerator%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L235">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextString_" data-uid="Yolu.Randoms.RandomUtils.NextString*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextString_System_Security_Cryptography_RandomNumberGenerator_System_String_System_Int32_" data-uid="Yolu.Randoms.RandomUtils.NextString(System.Security.Cryptography.RandomNumberGenerator,System.String,System.Int32)">NextString(RandomNumberGenerator, string, int)</h4>
+  <div class="markdown level1 summary"><p>Generates a random string of the given length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextString(this RandomNumberGenerator random, string allowedChars, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">allowedChars</span></td>
+        <td><p>The string of allowed characters for the random string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the random string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Randomly generated string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">random</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">length</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextTimeOnly_System_Random_System_TimeOnly_System_TimeOnly_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextTimeOnly(System.Random%2CSystem.TimeOnly%2CSystem.TimeOnly)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L105">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextTimeOnly_" data-uid="Yolu.Randoms.RandomUtils.NextTimeOnly*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextTimeOnly_System_Random_System_TimeOnly_System_TimeOnly_" data-uid="Yolu.Randoms.RandomUtils.NextTimeOnly(System.Random,System.TimeOnly,System.TimeOnly)">NextTimeOnly(Random, TimeOnly, TimeOnly)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static TimeOnly NextTimeOnly(this Random random, TimeOnly minValue, TimeOnly maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeonly">TimeOnly</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeonly">TimeOnly</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeonly">TimeOnly</a></td>
+        <td><p>A random TimeOnly value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_NextTimeSpan_System_Random_System_TimeSpan_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.NextTimeSpan(System.Random%2CSystem.TimeSpan%2CSystem.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L120">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_NextTimeSpan_" data-uid="Yolu.Randoms.RandomUtils.NextTimeSpan*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_NextTimeSpan_System_Random_System_TimeSpan_System_TimeSpan_" data-uid="Yolu.Randoms.RandomUtils.NextTimeSpan(System.Random,System.TimeSpan,System.TimeSpan)">NextTimeSpan(Random, TimeSpan, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Generates a random TimeSpan value between the specified minimum and maximum values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static TimeSpan NextTimeSpan(this Random random, TimeSpan minValue, TimeSpan maxValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">minValue</span></td>
+        <td><p>The minimum value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">maxValue</span></td>
+        <td><p>The maximum value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><p>A random TimeSpan value between the minimum and maximum values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Next__1_System_Random_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Next%60%601(System.Random)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L308">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_Next_" data-uid="Yolu.Randoms.RandomUtils.Next*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_Next__1_System_Random_" data-uid="Yolu.Randoms.RandomUtils.Next``1(System.Random)">Next&lt;T&gt;(Random)</h4>
+  <div class="markdown level1 summary"><p>Generates a random value of blittable type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Next&lt;T&gt;(this Random random) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The randomly generated value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The blittable type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Next__1_System_Security_Cryptography_RandomNumberGenerator_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Next%60%601(System.Security.Cryptography.RandomNumberGenerator)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L322">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_Next_" data-uid="Yolu.Randoms.RandomUtils.Next*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_Next__1_System_Security_Cryptography_RandomNumberGenerator_" data-uid="Yolu.Randoms.RandomUtils.Next``1(System.Security.Cryptography.RandomNumberGenerator)">Next&lt;T&gt;(RandomNumberGenerator)</h4>
+  <div class="markdown level1 summary"><p>Generates a random value of blittable type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Next&lt;T&gt;(this RandomNumberGenerator random) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.randomnumbergenerator">RandomNumberGenerator</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random numbers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The randomly generated value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The blittable type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Shuffle__1_System_Random_System_Collections_Generic_IList___0__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Shuffle%60%601(System.Random%2CSystem.Collections.Generic.IList%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L358">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_Shuffle_" data-uid="Yolu.Randoms.RandomUtils.Shuffle*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_Shuffle__1_System_Random_System_Collections_Generic_IList___0__" data-uid="Yolu.Randoms.RandomUtils.Shuffle``1(System.Random,System.Collections.Generic.IList{``0})">Shuffle&lt;T&gt;(Random, IList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Randomizes elements in the list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(this Random random, IList&lt;T&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The source of random values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The list to shuffle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_TakeOne__1_System_Random_System_Collections_Generic_IReadOnlyList___0__.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.TakeOne%60%601(System.Random%2CSystem.Collections.Generic.IReadOnlyList%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L23">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_TakeOne_" data-uid="Yolu.Randoms.RandomUtils.TakeOne*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_TakeOne__1_System_Random_System_Collections_Generic_IReadOnlyList___0__" data-uid="Yolu.Randoms.RandomUtils.TakeOne``1(System.Random,System.Collections.Generic.IReadOnlyList{``0})">TakeOne&lt;T&gt;(Random, IReadOnlyList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Takes a random item from the given list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static T TakeOne&lt;T&gt;(this Random random, IReadOnlyList&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The list of items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A random item from the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils_Take__1_System_Random_System_Collections_Generic_IReadOnlyList___0__System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils.Take%60%601(System.Random%2CSystem.Collections.Generic.IReadOnlyList%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils.cs/#L37">View Source</a>
+  </span>
+  <a id="Yolu_Randoms_RandomUtils_Take_" data-uid="Yolu.Randoms.RandomUtils.Take*"></a>
+  <h4 id="Yolu_Randoms_RandomUtils_Take__1_System_Random_System_Collections_Generic_IReadOnlyList___0__System_Int32_" data-uid="Yolu.Randoms.RandomUtils.Take``1(System.Random,System.Collections.Generic.IReadOnlyList{``0},System.Int32)">Take&lt;T&gt;(Random, IReadOnlyList&lt;T&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>Takes a specified number of random items from the given list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IReadOnlyList&lt;T&gt; Take&lt;T&gt;(this Random random, IReadOnlyList&lt;T&gt; items, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The list of items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of items to take.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</td>
+        <td><p>A list of random items from the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Randoms_RandomUtils.md&amp;value=---%0Auid%3A%20Yolu.Randoms.RandomUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Randoms/RandomUtils2.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

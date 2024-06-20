@@ -1,0 +1,1945 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TaskUtils | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TaskUtils | Yolu ">
+    
+    <meta name="description" content="Utility methods for working with tasks.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Tasks.TaskUtils">
+
+
+
+  <h1 id="Yolu_Tasks_TaskUtils" data-uid="Yolu.Tasks.TaskUtils" class="text-break">Class TaskUtils</h1>
+  <div class="markdown level0 summary"><p>Utility methods for working with tasks.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">TaskUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.Tasks.html">Tasks</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Tasks_TaskUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TaskUtils</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_AsTask__1___0_.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.AsTask%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.AsTask.cs/#L12">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_AsTask_" data-uid="Yolu.Tasks.TaskUtils.AsTask*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_AsTask__1___0_" data-uid="Yolu.Tasks.TaskUtils.AsTask``1(``0)">AsTask&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified object to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; AsTask&lt;T&gt;(this T obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a> representing the specified object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_AsValueTask__1___0_.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.AsValueTask%60%601(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.AsTask.cs/#L23">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_AsValueTask_" data-uid="Yolu.Tasks.TaskUtils.AsValueTask*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_AsValueTask__1___0_" data-uid="Yolu.Tasks.TaskUtils.AsValueTask``1(``0)">AsValueTask&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified object to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask&lt;TResult&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValueTask&lt;T&gt; AsValueTask&lt;T&gt;(this T obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;T&gt;</td>
+        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask&lt;TResult&gt;</a> representing the specified object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_CreateTask_System_Action_System_Action_System_Action_System_Exception___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.CreateTask(System.Action%7BSystem.Action%2CSystem.Action%7BSystem.Exception%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.Promise.cs/#L10">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_CreateTask_" data-uid="Yolu.Tasks.TaskUtils.CreateTask*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_CreateTask_System_Action_System_Action_System_Action_System_Exception___System_Threading_CancellationToken_" data-uid="Yolu.Tasks.TaskUtils.CreateTask(System.Action{System.Action,System.Action{System.Exception}},System.Threading.CancellationToken)">CreateTask(Action&lt;Action, Action&lt;Exception&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a task with the specified initialization action and cancellation token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task CreateTask(Action&lt;Action, Action&lt;Exception&gt;&gt; initialize, CancellationToken token = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;&gt;</td>
+        <td><span class="parametername">initialize</span></td>
+        <td><p>The initialization action that sets the result or exception of the task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The cancellation token used to cancel the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>The created task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_CreateTask__1_System_Action_System_Action___0__System_Action_System_Exception___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.CreateTask%60%601(System.Action%7BSystem.Action%7B%60%600%7D%2CSystem.Action%7BSystem.Exception%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.Promise.cs/#L24">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_CreateTask_" data-uid="Yolu.Tasks.TaskUtils.CreateTask*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_CreateTask__1_System_Action_System_Action___0__System_Action_System_Exception___System_Threading_CancellationToken_" data-uid="Yolu.Tasks.TaskUtils.CreateTask``1(System.Action{System.Action{``0},System.Action{System.Exception}},System.Threading.CancellationToken)">CreateTask&lt;T&gt;(Action&lt;Action&lt;T&gt;, Action&lt;Exception&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a task with the specified initialization action, cancellation token, and result type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; CreateTask&lt;T&gt;(Action&lt;Action&lt;T&gt;, Action&lt;Exception&gt;&gt; initialize, CancellationToken token = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;&gt;</td>
+        <td><span class="parametername">initialize</span></td>
+        <td><p>The initialization action that sets the result or exception of the task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The cancellation token used to cancel the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td><p>The created task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__1_System_Threading_Tasks_Task___0__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%601(System.Threading.Tasks.Task%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L10">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__1_System_Threading_Tasks_Task___0__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``1(System.Threading.Tasks.Task{``0})">WhenAll&lt;T&gt;(Task&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of a single task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; WhenAll&lt;T&gt;(Task&lt;T&gt; task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td><span class="parametername">task</span></td>
+        <td><p>The task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td><p>The completed task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__10_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%6010(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D%2CSystem.Threading.Tasks.Task%7B%60%607%7D%2CSystem.Threading.Tasks.Task%7B%60%608%7D%2CSystem.Threading.Tasks.Task%7B%60%609%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L198">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__10_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``10(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6},System.Threading.Tasks.Task{``7},System.Threading.Tasks.Task{``8},System.Threading.Tasks.Task{``9})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;, Task&lt;T8&gt;, Task&lt;T9&gt;, Task&lt;T10&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of ten tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7, Task&lt;T8&gt; task8, Task&lt;T9&gt; task9, Task&lt;T10&gt; task10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T8&gt;</td>
+        <td><span class="parametername">task8</span></td>
+        <td><p>The eighth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T9&gt;</td>
+        <td><span class="parametername">task9</span></td>
+        <td><p>The ninth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T10&gt;</td>
+        <td><span class="parametername">task10</span></td>
+        <td><p>The tenth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10)&gt;</td>
+        <td><p>A tuple containing the results of the ten tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T8</span></td>
+        <td><p>The type of the eighth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T9</span></td>
+        <td><p>The type of the ninth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T10</span></td>
+        <td><p>The type of the tenth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__11_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__System_Threading_Tasks_Task___10__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%6011(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D%2CSystem.Threading.Tasks.Task%7B%60%607%7D%2CSystem.Threading.Tasks.Task%7B%60%608%7D%2CSystem.Threading.Tasks.Task%7B%60%609%7D%2CSystem.Threading.Tasks.Task%7B%60%6010%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L229">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__11_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__System_Threading_Tasks_Task___10__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``11(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6},System.Threading.Tasks.Task{``7},System.Threading.Tasks.Task{``8},System.Threading.Tasks.Task{``9},System.Threading.Tasks.Task{``10})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;, Task&lt;T8&gt;, Task&lt;T9&gt;, Task&lt;T10&gt;, Task&lt;T11&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of eleven tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7, Task&lt;T8&gt; task8, Task&lt;T9&gt; task9, Task&lt;T10&gt; task10, Task&lt;T11&gt; task11)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T8&gt;</td>
+        <td><span class="parametername">task8</span></td>
+        <td><p>The eighth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T9&gt;</td>
+        <td><span class="parametername">task9</span></td>
+        <td><p>The ninth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T10&gt;</td>
+        <td><span class="parametername">task10</span></td>
+        <td><p>The tenth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T11&gt;</td>
+        <td><span class="parametername">task11</span></td>
+        <td><p>The eleventh task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11)&gt;</td>
+        <td><p>A tuple containing the results of the eleven tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T8</span></td>
+        <td><p>The type of the eighth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T9</span></td>
+        <td><p>The type of the ninth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T10</span></td>
+        <td><p>The type of the tenth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T11</span></td>
+        <td><p>The type of the eleventh task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__12_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__System_Threading_Tasks_Task___10__System_Threading_Tasks_Task___11__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%6012(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D%2CSystem.Threading.Tasks.Task%7B%60%607%7D%2CSystem.Threading.Tasks.Task%7B%60%608%7D%2CSystem.Threading.Tasks.Task%7B%60%609%7D%2CSystem.Threading.Tasks.Task%7B%60%6010%7D%2CSystem.Threading.Tasks.Task%7B%60%6011%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L262">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__12_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__System_Threading_Tasks_Task___9__System_Threading_Tasks_Task___10__System_Threading_Tasks_Task___11__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``12(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6},System.Threading.Tasks.Task{``7},System.Threading.Tasks.Task{``8},System.Threading.Tasks.Task{``9},System.Threading.Tasks.Task{``10},System.Threading.Tasks.Task{``11})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;, Task&lt;T8&gt;, Task&lt;T9&gt;, Task&lt;T10&gt;, Task&lt;T11&gt;, Task&lt;T12&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of twelve tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7, Task&lt;T8&gt; task8, Task&lt;T9&gt; task9, Task&lt;T10&gt; task10, Task&lt;T11&gt; task11, Task&lt;T12&gt; task12)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T8&gt;</td>
+        <td><span class="parametername">task8</span></td>
+        <td><p>The eighth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T9&gt;</td>
+        <td><span class="parametername">task9</span></td>
+        <td><p>The ninth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T10&gt;</td>
+        <td><span class="parametername">task10</span></td>
+        <td><p>The tenth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T11&gt;</td>
+        <td><span class="parametername">task11</span></td>
+        <td><p>The eleventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T12&gt;</td>
+        <td><span class="parametername">task12</span></td>
+        <td><p>The twelfth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12)&gt;</td>
+        <td><p>A tuple containing the results of the twelve tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T8</span></td>
+        <td><p>The type of the eighth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T9</span></td>
+        <td><p>The type of the ninth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T10</span></td>
+        <td><p>The type of the tenth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T11</span></td>
+        <td><p>The type of the eleventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T12</span></td>
+        <td><p>The type of the twelfth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__2_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%602(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L22">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__2_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``2(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1})">WhenAll&lt;T1, T2&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of two tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2)&gt; WhenAll&lt;T1, T2&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2)&gt;</td>
+        <td><p>A tuple containing the results of the two tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__3_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%603(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L37">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__3_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``3(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2})">WhenAll&lt;T1, T2, T3&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of three tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3)&gt; WhenAll&lt;T1, T2, T3&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3)&gt;</td>
+        <td><p>A tuple containing the results of the three tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__4_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%604(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L54">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__4_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``4(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3})">WhenAll&lt;T1, T2, T3, T4&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of four tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4)&gt; WhenAll&lt;T1, T2, T3, T4&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4)&gt;</td>
+        <td><p>A tuple containing the results of the four tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__5_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%605(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L73">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__5_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``5(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4})">WhenAll&lt;T1, T2, T3, T4, T5&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of five tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5)&gt; WhenAll&lt;T1, T2, T3, T4, T5&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5)&gt;</td>
+        <td><p>A tuple containing the results of the five tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__6_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%606(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L94">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__6_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``6(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5})">WhenAll&lt;T1, T2, T3, T4, T5, T6&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of six tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6)&gt;</td>
+        <td><p>A tuple containing the results of the six tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__7_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%607(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L117">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__7_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``7(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of seven tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7)&gt;</td>
+        <td><p>A tuple containing the results of the seven tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__8_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%608(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D%2CSystem.Threading.Tasks.Task%7B%60%607%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L142">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__8_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``8(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6},System.Threading.Tasks.Task{``7})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;, Task&lt;T8&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of eight tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7, T8)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7, Task&lt;T8&gt; task8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T8&gt;</td>
+        <td><span class="parametername">task8</span></td>
+        <td><p>The eighth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7, T8)&gt;</td>
+        <td><p>A tuple containing the results of the eight tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T8</span></td>
+        <td><p>The type of the eighth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils_WhenAll__9_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils.WhenAll%60%609(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.Tasks.Task%7B%60%601%7D%2CSystem.Threading.Tasks.Task%7B%60%602%7D%2CSystem.Threading.Tasks.Task%7B%60%603%7D%2CSystem.Threading.Tasks.Task%7B%60%604%7D%2CSystem.Threading.Tasks.Task%7B%60%605%7D%2CSystem.Threading.Tasks.Task%7B%60%606%7D%2CSystem.Threading.Tasks.Task%7B%60%607%7D%2CSystem.Threading.Tasks.Task%7B%60%608%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L169">View Source</a>
+  </span>
+  <a id="Yolu_Tasks_TaskUtils_WhenAll_" data-uid="Yolu.Tasks.TaskUtils.WhenAll*"></a>
+  <h4 id="Yolu_Tasks_TaskUtils_WhenAll__9_System_Threading_Tasks_Task___0__System_Threading_Tasks_Task___1__System_Threading_Tasks_Task___2__System_Threading_Tasks_Task___3__System_Threading_Tasks_Task___4__System_Threading_Tasks_Task___5__System_Threading_Tasks_Task___6__System_Threading_Tasks_Task___7__System_Threading_Tasks_Task___8__" data-uid="Yolu.Tasks.TaskUtils.WhenAll``9(System.Threading.Tasks.Task{``0},System.Threading.Tasks.Task{``1},System.Threading.Tasks.Task{``2},System.Threading.Tasks.Task{``3},System.Threading.Tasks.Task{``4},System.Threading.Tasks.Task{``5},System.Threading.Tasks.Task{``6},System.Threading.Tasks.Task{``7},System.Threading.Tasks.Task{``8})">WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(Task&lt;T1&gt;, Task&lt;T2&gt;, Task&lt;T3&gt;, Task&lt;T4&gt;, Task&lt;T5&gt;, Task&lt;T6&gt;, Task&lt;T7&gt;, Task&lt;T8&gt;, Task&lt;T9&gt;)</h4>
+  <div class="markdown level1 summary"><p>Waits for the completion of nine tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9)&gt; WhenAll&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(Task&lt;T1&gt; task1, Task&lt;T2&gt; task2, Task&lt;T3&gt; task3, Task&lt;T4&gt; task4, Task&lt;T5&gt; task5, Task&lt;T6&gt; task6, Task&lt;T7&gt; task7, Task&lt;T8&gt; task8, Task&lt;T9&gt; task9)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T1&gt;</td>
+        <td><span class="parametername">task1</span></td>
+        <td><p>The first task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T2&gt;</td>
+        <td><span class="parametername">task2</span></td>
+        <td><p>The second task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T3&gt;</td>
+        <td><span class="parametername">task3</span></td>
+        <td><p>The third task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T4&gt;</td>
+        <td><span class="parametername">task4</span></td>
+        <td><p>The fourth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T5&gt;</td>
+        <td><span class="parametername">task5</span></td>
+        <td><p>The fifth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T6&gt;</td>
+        <td><span class="parametername">task6</span></td>
+        <td><p>The sixth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T7&gt;</td>
+        <td><span class="parametername">task7</span></td>
+        <td><p>The seventh task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T8&gt;</td>
+        <td><span class="parametername">task8</span></td>
+        <td><p>The eighth task to wait for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T9&gt;</td>
+        <td><span class="parametername">task9</span></td>
+        <td><p>The ninth task to wait for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(T1, T2, T3, T4, T5, T6, T7, T8, T9)&gt;</td>
+        <td><p>A tuple containing the results of the nine tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td><p>The type of the fourth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td><p>The type of the fifth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td><p>The type of the sixth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td><p>The type of the seventh task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T8</span></td>
+        <td><p>The type of the eighth task result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T9</span></td>
+        <td><p>The type of the ninth task result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Tasks_TaskUtils.md&amp;value=---%0Auid%3A%20Yolu.Tasks.TaskUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Threading/Tasks/TaskUtils.WhenAll.cs/#L3" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

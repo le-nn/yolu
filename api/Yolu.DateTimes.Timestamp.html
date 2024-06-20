@@ -1,0 +1,1365 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct Timestamp | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct Timestamp | Yolu ">
+    
+    <meta name="description" content="Represents timestamp.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.DateTimes.Timestamp">
+
+
+
+  <h1 id="Yolu_DateTimes_Timestamp" data-uid="Yolu.DateTimes.Timestamp" class="text-break">Struct Timestamp</h1>
+  <div class="markdown level0 summary"><p>Represents timestamp.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.icomparisonoperators-3">IComparisonOperators</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>, <a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>, <a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>&gt;</div>
+    <div><a class="xref" href="Yolu.Threading.IInterlockedOperations-1.html">IInterlockedOperations</a>&lt;<a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.DateTimes.html">DateTimes</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_DateTimes_Timestamp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly record struct Timestamp : IEquatable&lt;Timestamp&gt;, IComparable&lt;Timestamp&gt;, IComparisonOperators&lt;Timestamp, Timestamp, bool&gt;, IEqualityOperators&lt;Timestamp, Timestamp, bool&gt;, IAdditionOperators&lt;Timestamp, TimeSpan, Timestamp&gt;, ISubtractionOperators&lt;Timestamp, TimeSpan, Timestamp&gt;, IInterlockedOperations&lt;Timestamp&gt;</code></pre>
+  </div>
+  <h5 id="Yolu_DateTimes_Timestamp_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class can be used as allocation-free alternative to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.stopwatch">Stopwatch</a>.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp__ctor.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L29">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp__ctor_" data-uid="Yolu.DateTimes.Timestamp.#ctor*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp__ctor" data-uid="Yolu.DateTimes.Timestamp.#ctor">Timestamp()</h4>
+  <div class="markdown level1 summary"><p>Captures the current point in time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Timestamp()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp__ctor_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.%23ctor(System.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L39">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp__ctor_" data-uid="Yolu.DateTimes.Timestamp.#ctor*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp__ctor_System_TimeSpan_" data-uid="Yolu.DateTimes.Timestamp.#ctor(System.TimeSpan)">Timestamp(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Constructs timestamp from <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Timestamp(TimeSpan ts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">ts</span></td>
+        <td><p>The point in time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">ts</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_Elapsed.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.Elapsed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L78">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_Elapsed_" data-uid="Yolu.DateTimes.Timestamp.Elapsed*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_Elapsed" data-uid="Yolu.DateTimes.Timestamp.Elapsed">Elapsed</h4>
+  <div class="markdown level1 summary"><p>Gets precise difference between the current point in time and this timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Elapsed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_DateTimes_Timestamp_Elapsed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is always greater than or equal to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan.zero">Zero</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_ElapsedMilliseconds.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.ElapsedMilliseconds%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L88">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_ElapsedMilliseconds_" data-uid="Yolu.DateTimes.Timestamp.ElapsedMilliseconds*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_ElapsedMilliseconds" data-uid="Yolu.DateTimes.Timestamp.ElapsedMilliseconds">ElapsedMilliseconds</h4>
+  <div class="markdown level1 summary"><p>Gets the total elapsed time measured by the current instance, in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ElapsedMilliseconds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_ElapsedTicks.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.ElapsedTicks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L83">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_ElapsedTicks_" data-uid="Yolu.DateTimes.Timestamp.ElapsedTicks*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_ElapsedTicks" data-uid="Yolu.DateTimes.Timestamp.ElapsedTicks">ElapsedTicks</h4>
+  <div class="markdown level1 summary"><p>Gets the total elapsed time measured by the current instance, in timer ticks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ElapsedTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_IsEmpty.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.IsEmpty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L46">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_IsEmpty_" data-uid="Yolu.DateTimes.Timestamp.IsEmpty*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_IsEmpty" data-uid="Yolu.DateTimes.Timestamp.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating that the timestamp is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_IsFuture.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.IsFuture%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L51">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_IsFuture_" data-uid="Yolu.DateTimes.Timestamp.IsFuture*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_IsFuture" data-uid="Yolu.DateTimes.Timestamp.IsFuture">IsFuture</h4>
+  <div class="markdown level1 summary"><p>Gets a value indcating that the current timestamp represents the future point in time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFuture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_IsPast.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.IsPast%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L56">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_IsPast_" data-uid="Yolu.DateTimes.Timestamp.IsPast*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_IsPast" data-uid="Yolu.DateTimes.Timestamp.IsPast">IsPast</h4>
+  <div class="markdown level1 summary"><p>Gets a value indcating that the current timestamp represents the past point in time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_Value.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L70">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_Value_" data-uid="Yolu.DateTimes.Timestamp.Value*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_Value" data-uid="Yolu.DateTimes.Timestamp.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> representing this timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_DateTimes_Timestamp_Value_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property may return a value with lost precision.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_CompareExchange_Yolu_DateTimes_Timestamp__Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.CompareExchange(Yolu.DateTimes.Timestamp%40%2CYolu.DateTimes.Timestamp%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L223">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_CompareExchange_" data-uid="Yolu.DateTimes.Timestamp.CompareExchange*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_CompareExchange_Yolu_DateTimes_Timestamp__Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.CompareExchange(Yolu.DateTimes.Timestamp@,Yolu.DateTimes.Timestamp,Yolu.DateTimes.Timestamp)">CompareExchange(ref Timestamp, Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Compares two values for equality and, if they
+are equal, replaces the first value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp CompareExchange(ref Timestamp location, Timestamp value, Timestamp comparand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The destination, whose value is compared with comparand and possibly replaced.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value that replaces the destination value if the comparison results in equality.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">comparand</span></td>
+        <td><p>The value that is compared to the value at <code class="paramref">location</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The original value in <code class="paramref">location</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_CompareTo_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.CompareTo(Yolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L112">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_CompareTo_" data-uid="Yolu.DateTimes.Timestamp.CompareTo*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_CompareTo_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.CompareTo(Yolu.DateTimes.Timestamp)">CompareTo(Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Compares this timestamp with the given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Timestamp other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The timestamp to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The result of comparison.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_ElapsedSince_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.ElapsedSince(Yolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L95">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_ElapsedSince_" data-uid="Yolu.DateTimes.Timestamp.ElapsedSince*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_ElapsedSince_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.ElapsedSince(Yolu.DateTimes.Timestamp)">ElapsedSince(Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Gets a difference between two timestamps, in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ElapsedSince(Timestamp past)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">past</span></td>
+        <td><p>The timestamp in the past.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The number of milliseconds since <code class="paramref">past</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_Refresh_Yolu_DateTimes_Timestamp__.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.Refresh(Yolu.DateTimes.Timestamp%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L219">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_Refresh_" data-uid="Yolu.DateTimes.Timestamp.Refresh*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_Refresh_Yolu_DateTimes_Timestamp__" data-uid="Yolu.DateTimes.Timestamp.Refresh(Yolu.DateTimes.Timestamp@)">Refresh(ref Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Updates the timestamp to the current point in time and prevents the proces from reordering memory operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Refresh(ref Timestamp location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The location of the timestampt to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_ToString.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L118">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_ToString_" data-uid="Yolu.DateTimes.Timestamp.ToString*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_ToString" data-uid="Yolu.DateTimes.Timestamp.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets timestamp in the form of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The string representing this timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_VolatileRead_Yolu_DateTimes_Timestamp__.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.VolatileRead(Yolu.DateTimes.Timestamp%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L204">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_VolatileRead_" data-uid="Yolu.DateTimes.Timestamp.VolatileRead*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_VolatileRead_Yolu_DateTimes_Timestamp__" data-uid="Yolu.DateTimes.Timestamp.VolatileRead(Yolu.DateTimes.Timestamp@)">VolatileRead(ref readonly Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Reads the timestamp and prevents the processor from reordering memory operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp VolatileRead(ref readonly Timestamp location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The managed pointer to the timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The value at the specified location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_VolatileWrite_Yolu_DateTimes_Timestamp__Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.VolatileWrite(Yolu.DateTimes.Timestamp%40%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L212">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_VolatileWrite_" data-uid="Yolu.DateTimes.Timestamp.VolatileWrite*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_VolatileWrite_Yolu_DateTimes_Timestamp__Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.VolatileWrite(Yolu.DateTimes.Timestamp@,Yolu.DateTimes.Timestamp)">VolatileWrite(ref Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Writes the timestamp and prevents the proces from reordering memory operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void VolatileWrite(ref Timestamp location, Timestamp newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The managed pointer to the timestamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The value to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_Addition_Yolu_DateTimes_Timestamp_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_Addition(Yolu.DateTimes.Timestamp%2CSystem.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L170">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_Addition_" data-uid="Yolu.DateTimes.Timestamp.op_Addition*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_Addition_Yolu_DateTimes_Timestamp_System_TimeSpan_" data-uid="Yolu.DateTimes.Timestamp.op_Addition(Yolu.DateTimes.Timestamp,System.TimeSpan)">operator +(Timestamp, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified duration to the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp operator +(Timestamp x, TimeSpan y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The timestamp value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The modified timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_CheckedAddition_Yolu_DateTimes_Timestamp_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_CheckedAddition(Yolu.DateTimes.Timestamp%2CSystem.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L159">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_CheckedAddition_" data-uid="Yolu.DateTimes.Timestamp.op_CheckedAddition*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_CheckedAddition_Yolu_DateTimes_Timestamp_System_TimeSpan_" data-uid="Yolu.DateTimes.Timestamp.op_CheckedAddition(Yolu.DateTimes.Timestamp,System.TimeSpan)">operator checked +(Timestamp, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified duration to the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp operator checked +(Timestamp x, TimeSpan y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The timestamp value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The modified timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a></td>
+        <td><p><code class="paramref">y</code> is too large.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_CheckedSubtraction_Yolu_DateTimes_Timestamp_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_CheckedSubtraction(Yolu.DateTimes.Timestamp%2CSystem.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L182">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_CheckedSubtraction_" data-uid="Yolu.DateTimes.Timestamp.op_CheckedSubtraction*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_CheckedSubtraction_Yolu_DateTimes_Timestamp_System_TimeSpan_" data-uid="Yolu.DateTimes.Timestamp.op_CheckedSubtraction(Yolu.DateTimes.Timestamp,System.TimeSpan)">operator checked -(Timestamp, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the specified duration from the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp operator checked -(Timestamp x, TimeSpan y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The timestamp value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The modified timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a></td>
+        <td><p><code class="paramref">y</code> is too large.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_Explicit_Yolu_DateTimes_Timestamp__System_TimeSpan.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_Explicit(Yolu.DateTimes.Timestamp)~System.TimeSpan%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L105">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_Explicit_" data-uid="Yolu.DateTimes.Timestamp.op_Explicit*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_Explicit_Yolu_DateTimes_Timestamp__System_TimeSpan" data-uid="Yolu.DateTimes.Timestamp.op_Explicit(Yolu.DateTimes.Timestamp)~System.TimeSpan">explicit operator TimeSpan(Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Gets <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> representing the given timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator TimeSpan(Timestamp stamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">stamp</span></td>
+        <td><p>The timestamp to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_DateTimes_Timestamp_op_Explicit_Yolu_DateTimes_Timestamp__System_TimeSpan_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation leads to loss of precision.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_GreaterThan_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_GreaterThan(Yolu.DateTimes.Timestamp%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L126">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_GreaterThan_" data-uid="Yolu.DateTimes.Timestamp.op_GreaterThan*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_GreaterThan_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.op_GreaterThan(Yolu.DateTimes.Timestamp,Yolu.DateTimes.Timestamp)">operator &gt;(Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the first timestamp is greater than the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Timestamp first, Timestamp second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first timestamp to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second timestamp to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">first</code> is greater than <code class="paramref">second</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_GreaterThanOrEqual_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_GreaterThanOrEqual(Yolu.DateTimes.Timestamp%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L142">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_GreaterThanOrEqual_" data-uid="Yolu.DateTimes.Timestamp.op_GreaterThanOrEqual*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_GreaterThanOrEqual_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.op_GreaterThanOrEqual(Yolu.DateTimes.Timestamp,Yolu.DateTimes.Timestamp)">operator &gt;=(Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the first timestamp is greater than or equal to the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Timestamp first, Timestamp second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first timestamp to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second timestamp to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">first</code> is greater than or equal to <code class="paramref">second</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_LessThan_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_LessThan(Yolu.DateTimes.Timestamp%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L134">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_LessThan_" data-uid="Yolu.DateTimes.Timestamp.op_LessThan*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_LessThan_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.op_LessThan(Yolu.DateTimes.Timestamp,Yolu.DateTimes.Timestamp)">operator &lt;(Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the first timestamp is less than the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Timestamp first, Timestamp second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first timestamp to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second timestamp to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">first</code> is less than <code class="paramref">second</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_LessThanOrEqual_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_LessThanOrEqual(Yolu.DateTimes.Timestamp%2CYolu.DateTimes.Timestamp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L150">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_LessThanOrEqual_" data-uid="Yolu.DateTimes.Timestamp.op_LessThanOrEqual*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_LessThanOrEqual_Yolu_DateTimes_Timestamp_Yolu_DateTimes_Timestamp_" data-uid="Yolu.DateTimes.Timestamp.op_LessThanOrEqual(Yolu.DateTimes.Timestamp,Yolu.DateTimes.Timestamp)">operator &lt;=(Timestamp, Timestamp)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the first timestamp is less than or equal to the second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Timestamp first, Timestamp second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first timestamp to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second timestamp to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">first</code> is less than or equal to <code class="paramref">second</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp_op_Subtraction_Yolu_DateTimes_Timestamp_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp.op_Subtraction(Yolu.DateTimes.Timestamp%2CSystem.TimeSpan)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L194">View Source</a>
+  </span>
+  <a id="Yolu_DateTimes_Timestamp_op_Subtraction_" data-uid="Yolu.DateTimes.Timestamp.op_Subtraction*"></a>
+  <h4 id="Yolu_DateTimes_Timestamp_op_Subtraction_Yolu_DateTimes_Timestamp_System_TimeSpan_" data-uid="Yolu.DateTimes.Timestamp.op_Subtraction(Yolu.DateTimes.Timestamp,System.TimeSpan)">operator -(Timestamp, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Subtracts the specified duration from the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Timestamp operator -(Timestamp x, TimeSpan y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The timestamp value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.DateTimes.Timestamp.html">Timestamp</a></td>
+        <td><p>The modified timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.overflowexception">OverflowException</a></td>
+        <td><p><code class="paramref">y</code> is too large.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.icomparisonoperators-3">IComparisonOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Threading.IInterlockedOperations-1.html">IInterlockedOperations&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Yolu.Collections.Enumerator.html#Yolu_Collections_Enumerator_Skip__2___0__System_Int32_">Enumerator.Skip&lt;TEnumerator, T&gt;(ref TEnumerator, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsTask__1___0_">TaskUtils.AsTask&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsValueTask__1___0_">TaskUtils.AsValueTask&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_DateTimes_Timestamp.md&amp;value=---%0Auid%3A%20Yolu.DateTimes.Timestamp%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/DateTimes/Timestamp.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Array&lt;T&gt; | Yolu </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Array&lt;T&gt; | Yolu ">
+    
+    <meta name="description" content="Represents a generic immutable array collection.">
+      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://le-nn.github.io/yolu">
+                <img id="logo" class="svg" src="../images/logo.png" alt="Yolu">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yolu.Collections.Array`1">
+
+
+
+  <h1 id="Yolu_Collections_Array_1" data-uid="Yolu.Collections.Array`1" class="text-break">Class Array&lt;T&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents a generic immutable array collection.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Array&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yolu.Collections.IArray-1.html">IArray</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yolu.html">Yolu</a>.<a class="xref" href="Yolu.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Yolu.dll</h6>
+  <h5 id="Yolu_Collections_Array_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Array&lt;T&gt; : IArray&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of elements in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1__ctor_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.%23ctor(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L88">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1__ctor_" data-uid="Yolu.Collections.Array`1.#ctor*"></a>
+  <h4 id="Yolu_Collections_Array_1__ctor_System_Collections_Generic_IEnumerable__0__" data-uid="Yolu.Collections.Array`1.#ctor(System.Collections.Generic.IEnumerable{`0})">Array(IEnumerable&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> class with the elements from the specified collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(IEnumerable&lt;T&gt;? values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The collection of elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.%23ctor(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L96">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1__ctor_" data-uid="Yolu.Collections.Array`1.#ctor*"></a>
+  <h4 id="Yolu_Collections_Array_1__ctor_System_Int32_" data-uid="Yolu.Collections.Array`1.#ctor(System.Int32)">Array(int)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> class with the specified size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1__ctor_System_Int32_System_Func_System_Int32__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.%23ctor(System.Int32%2CSystem.Func%7BSystem.Int32%2C%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L110">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1__ctor_" data-uid="Yolu.Collections.Array`1.#ctor*"></a>
+  <h4 id="Yolu_Collections_Array_1__ctor_System_Int32_System_Func_System_Int32__0__" data-uid="Yolu.Collections.Array`1.#ctor(System.Int32,System.Func{System.Int32,`0})">Array(int, Func&lt;int, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> class with the specified size and factory function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(int size, Func&lt;int, T&gt; factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T&gt;</td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>The factory function used to create each element of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1__ctor_System_ReadOnlySpan__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.%23ctor(System.ReadOnlySpan%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L80">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1__ctor_" data-uid="Yolu.Collections.Array`1.#ctor*"></a>
+  <h4 id="Yolu_Collections_Array_1__ctor_System_ReadOnlySpan__0__" data-uid="Yolu.Collections.Array`1.#ctor(System.ReadOnlySpan{`0})">Array(ReadOnlySpan&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> class with the elements from the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(ReadOnlySpan&lt;T&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan&lt;T&gt;</a> containing the elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1__ctor__0___.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.%23ctor(%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L72">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1__ctor_" data-uid="Yolu.Collections.Array`1.#ctor*"></a>
+  <h4 id="Yolu_Collections_Array_1__ctor__0___" data-uid="Yolu.Collections.Array`1.#ctor(`0[])">Array(T[]?)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> class with the specified array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array(T[]? values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The array of elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Count.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L63">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Count_" data-uid="Yolu.Collections.Array`1.Count*"></a>
+  <h4 id="Yolu_Collections_Array_1_Count" data-uid="Yolu.Collections.Array`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Empty.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Empty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L37">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Empty_" data-uid="Yolu.Collections.Array`1.Empty*"></a>
+  <h4 id="Yolu_Collections_Array_1_Empty" data-uid="Yolu.Collections.Array`1.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Gets an empty array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array&lt;T&gt; Empty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IsDefault.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IsDefault%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L251">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IsDefault_" data-uid="Yolu.Collections.Array`1.IsDefault*"></a>
+  <h4 id="Yolu_Collections_Array_1_IsDefault" data-uid="Yolu.Collections.Array`1.IsDefault">IsDefault</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this struct was initialized without an actual array instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefault { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IsEmpty.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IsEmpty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L212">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IsEmpty_" data-uid="Yolu.Collections.Array`1.IsEmpty*"></a>
+  <h4 id="Yolu_Collections_Array_1_IsEmpty" data-uid="Yolu.Collections.Array`1.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this collection is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Item(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L48">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Item_" data-uid="Yolu.Collections.Array`1.Item*"></a>
+  <h4 id="Yolu_Collections_Array_1_Item_System_Int32_" data-uid="Yolu.Collections.Array`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the element at the specified index in the read-only list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the element to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The element at the specified index in the read-only list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Always thrown from the setter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown if the <a class="xref" href="Yolu.Collections.Array-1.html#Yolu_Collections_Array_1_IsDefault">IsDefault</a> property returns true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Length.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Length%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L221">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Length_" data-uid="Yolu.Collections.Array`1.Length*"></a>
+  <h4 id="Yolu_Collections_Array_1_Length" data-uid="Yolu.Collections.Array`1.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the number of elements in the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_SystemArray.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.SystemArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L260">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_SystemArray_" data-uid="Yolu.Collections.Array`1.SystemArray*"></a>
+  <h4 id="Yolu_Collections_Array_1_SystemArray" data-uid="Yolu.Collections.Array`1.SystemArray">SystemArray</h4>
+  <div class="markdown level1 summary"><p>Gets an untyped reference to the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array SystemArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Add__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L320">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Add_" data-uid="Yolu.Collections.Array`1.Add*"></a>
+  <h4 id="Yolu_Collections_Array_1_Add__0_" data-uid="Yolu.Collections.Array`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Returns a new array with the specified value inserted at the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to insert at the end of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_AddRange_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.AddRange(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L335">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_AddRange_" data-uid="Yolu.Collections.Array`1.AddRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="Yolu.Collections.Array`1.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified values to this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; AddRange(IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The values to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_AddRange_Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.AddRange(Yolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L346">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_AddRange_" data-uid="Yolu.Collections.Array`1.AddRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_AddRange_Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.AddRange(Yolu.Collections.Array{`0})">AddRange(Array&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified values to this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; AddRange(Array&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The values to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_As__1.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.As%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L709">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_As_" data-uid="Yolu.Collections.Array`1.As*"></a>
+  <h4 id="Yolu_Collections_Array_1_As__1" data-uid="Yolu.Collections.Array`1.As``1">As&lt;TOther&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates an immutable array for this array, cast to a different element type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;TOther&gt; As&lt;TOther&gt;() where TOther : class</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;TOther&gt;</td>
+        <td><p>A struct typed for the base element type. If the cast fails, an instance
+is returned whose <a class="xref" href="Yolu.Collections.Array-1.html#Yolu_Collections_Array_1_IsDefault">IsDefault</a> property returns <code>true</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOther</span></td>
+        <td><p>The type of array element to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_Collections_Array_1_As__1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Arrays of derived elements types can be cast to arrays of base element types
+without reallocating the array.
+These upcasts can be reversed via this same method, casting an array of base
+element types to their derived types. However, downcasting is only successful
+when it reverses a prior upcasting operation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_CastArray__1.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.CastArray%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L689">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_CastArray_" data-uid="Yolu.Collections.Array`1.CastArray*"></a>
+  <h4 id="Yolu_Collections_Array_1_CastArray__1" data-uid="Yolu.Collections.Array`1.CastArray``1">CastArray&lt;TOther&gt;()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> struct by casting the underlying
+array to an array of type <typeparam name="TOther"></typeparam>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;TOther&gt; CastArray&lt;TOther&gt;() where TOther : class</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;TOther&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOther</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></td>
+        <td><p>Thrown if the cast is illegal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_CastUp__1_Yolu_Collections_Array___0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.CastUp%60%601(Yolu.Collections.Array%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L678">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_CastUp_" data-uid="Yolu.Collections.Array`1.CastUp*"></a>
+  <h4 id="Yolu_Collections_Array_1_CastUp__1_Yolu_Collections_Array___0__" data-uid="Yolu.Collections.Array`1.CastUp``1(Yolu.Collections.Array{``0})">CastUp&lt;TDerived&gt;(Array&lt;TDerived&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yolu.Collections.Array-1.html">Array&lt;T&gt;</a> struct based on the contents
+of an existing instance, allowing a covariant static cast to efficiently reuse the existing array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Array&lt;T&gt; CastUp&lt;TDerived&gt;(Array&lt;TDerived&gt; items) where TDerived : class, T</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;TDerived&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The array to initialize the array with. No copy is made.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDerived</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Yolu_Collections_Array_1_CastUp__1_Yolu_Collections_Array___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Covariant upcasts from this method may be reversed by calling the
+<a class="xref" href="Yolu.Collections.Array-1.html#Yolu_Collections_Array_1_As__1">As&lt;TOther&gt;()</a>  or <a class="xref" href="Yolu.Collections.Array-1.html#Yolu_Collections_Array_1_CastArray__1">CastArray&lt;TOther&gt;()</a>method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Contains__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Contains(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L194">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Contains_" data-uid="Yolu.Collections.Array`1.Contains*"></a>
+  <h4 id="Yolu_Collections_Array_1_Contains__0_" data-uid="Yolu.Collections.Array`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified item exists in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if an equal value was found in the array; <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_CopyTo_System_Int32__0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.CopyTo(System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L229">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_CopyTo_" data-uid="Yolu.Collections.Array`1.CopyTo*"></a>
+  <h4 id="Yolu_Collections_Array_1_CopyTo_System_Int32__0___System_Int32_System_Int32_" data-uid="Yolu.Collections.Array`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">CopyTo(int, T[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this array to the specified array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public void CopyTo(int sourceIndex, T[] destination, int destinationIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sourceIndex</span></td>
+        <td><p>The index into this collection of the first element to copy.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">destinationIndex</span></td>
+        <td><p>The index into the destination array to which the first copied element is written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of elements to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_CopyTo__0___.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.CopyTo(%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L203">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_CopyTo_" data-uid="Yolu.Collections.Array`1.CopyTo*"></a>
+  <h4 id="Yolu_Collections_Array_1_CopyTo__0___" data-uid="Yolu.Collections.Array`1.CopyTo(`0[])">CopyTo(T[])</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this array to the specified array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public void CopyTo(T[] destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L215">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_CopyTo_" data-uid="Yolu.Collections.Array`1.CopyTo*"></a>
+  <h4 id="Yolu_Collections_Array_1_CopyTo__0___System_Int32_" data-uid="Yolu.Collections.Array`1.CopyTo(`0[],System.Int32)">CopyTo(T[], int)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of this array to the specified array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public void CopyTo(T[] destination, int destinationIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The array to copy to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">destinationIndex</span></td>
+        <td><p>The index into the destination array to which the first copied element is written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Equals(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L648">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Equals_" data-uid="Yolu.Collections.Array`1.Equals*"></a>
+  <h4 id="Yolu_Collections_Array_1_Equals_System_Object_" data-uid="Yolu.Collections.Array`1.Equals(System.Object)">Equals(object?)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> is equal to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a> is equal to this instance; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Equals_Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Equals(Yolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L664">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Equals_" data-uid="Yolu.Collections.Array`1.Equals*"></a>
+  <h4 id="Yolu_Collections_Array_1_Equals_Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.Equals(Yolu.Collections.Array{`0})">Equals(Array&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public bool Equals(Array&lt;T&gt;? other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>true if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_ForEach_System_Action__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.ForEach(System.Action%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L200">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_ForEach_" data-uid="Yolu.Collections.Array`1.ForEach*"></a>
+  <h4 id="Yolu_Collections_Array_1_ForEach_System_Action__0__" data-uid="Yolu.Collections.Array`1.ForEach(System.Action{`0})">ForEach(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs the specified action on each element of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The action to perform on each element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_GetEnumerator.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.GetEnumerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L139">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_GetEnumerator_" data-uid="Yolu.Collections.Array`1.GetEnumerator*"></a>
+  <h4 id="Yolu_Collections_Array_1_GetEnumerator" data-uid="Yolu.Collections.Array`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Array&lt;T&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;.<a class="xref" href="Yolu.Collections.Array-1.Enumerator.html">Enumerator</a></td>
+        <td><p>An enumerator that can be used to iterate through the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_GetHashCode.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.GetHashCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L635">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_GetHashCode_" data-uid="Yolu.Collections.Array`1.GetHashCode*"></a>
+  <h4 id="Yolu_Collections_Array_1_GetHashCode" data-uid="Yolu.Collections.Array`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IndexOf__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IndexOf(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L13">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IndexOf_" data-uid="Yolu.Collections.Array`1.IndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_IndexOf__0_" data-uid="Yolu.Collections.Array`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IndexOf__0_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IndexOf(%600%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L58">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IndexOf_" data-uid="Yolu.Collections.Array`1.IndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_IndexOf__0_System_Int32_" data-uid="Yolu.Collections.Array`1.IndexOf(`0,System.Int32)">IndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int IndexOf(T item, int startIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IndexOf(%600%2CSystem.Int32%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L46">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IndexOf_" data-uid="Yolu.Collections.Array`1.IndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.IndexOf(`0,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">IndexOf(T, int, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int IndexOf(T item, int startIndex, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IndexOf(%600%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L71">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IndexOf_" data-uid="Yolu.Collections.Array`1.IndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Int32_" data-uid="Yolu.Collections.Array`1.IndexOf(`0,System.Int32,System.Int32)">IndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int IndexOf(T item, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.IndexOf(%600%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L84">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_IndexOf_" data-uid="Yolu.Collections.Array`1.IndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_IndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.IndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">IndexOf(T, int, int, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int IndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Insert_System_Int32__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Insert(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L242">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Insert_" data-uid="Yolu.Collections.Array`1.Insert*"></a>
+  <h4 id="Yolu_Collections_Array_1_Insert_System_Int32__0_" data-uid="Yolu.Collections.Array`1.Insert(System.Int32,`0)">Insert(int, T)</h4>
+  <div class="markdown level1 summary"><p>Returns a new array with the specified value inserted at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index into the array at which the new item should be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to insert at the start of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.InsertRange(System.Int32%2CSystem.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L265">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_InsertRange_" data-uid="Yolu.Collections.Array`1.InsertRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__" data-uid="Yolu.Collections.Array`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})">InsertRange(int, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified values at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; InsertRange(int index, IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new immutable collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_InsertRange_System_Int32_Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.InsertRange(System.Int32%2CYolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L298">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_InsertRange_" data-uid="Yolu.Collections.Array`1.InsertRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_InsertRange_System_Int32_Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.InsertRange(System.Int32,Yolu.Collections.Array{`0})">InsertRange(int, Array&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified values at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; InsertRange(int index, Array&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index at which to insert the value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The elements to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new immutable collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_LastIndexOf__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.LastIndexOf(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L116">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_LastIndexOf_" data-uid="Yolu.Collections.Array`1.LastIndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_LastIndexOf__0_" data-uid="Yolu.Collections.Array`1.LastIndexOf(`0)">LastIndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item in reverse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int LastIndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.LastIndexOf(%600%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L132">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_LastIndexOf_" data-uid="Yolu.Collections.Array`1.LastIndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_" data-uid="Yolu.Collections.Array`1.LastIndexOf(`0,System.Int32)">LastIndexOf(T, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item in reverse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int LastIndexOf(T item, int startIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.LastIndexOf(%600%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L149">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_LastIndexOf_" data-uid="Yolu.Collections.Array`1.LastIndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_System_Int32_" data-uid="Yolu.Collections.Array`1.LastIndexOf(`0,System.Int32,System.Int32)">LastIndexOf(T, int, int)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item in reverse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int LastIndexOf(T item, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.LastIndexOf(%600%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L162">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_LastIndexOf_" data-uid="Yolu.Collections.Array`1.LastIndexOf*"></a>
+  <h4 id="Yolu_Collections_Array_1_LastIndexOf__0_System_Int32_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.LastIndexOf(`0,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">LastIndexOf(T, int, int, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches the array for the specified item in reverse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public int LastIndexOf(T item, int startIndex, int count, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>The index at which to begin the search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The 0-based index into the array where the item was found; or -1 if it could not be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_OfType__1.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.OfType%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L722">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_OfType_" data-uid="Yolu.Collections.Array`1.OfType*"></a>
+  <h4 id="Yolu_Collections_Array_1_OfType__1" data-uid="Yolu.Collections.Array`1.OfType``1">OfType&lt;TResult&gt;()</h4>
+  <div class="markdown level1 summary"><p>Filters the elements of this array to those assignable to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public IEnumerable&lt;TResult&gt; OfType&lt;TResult&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains elements from
+the input sequence of type <code class="typeparamref">TResult</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type to filter the elements of the sequence on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Remove__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L418">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Remove_" data-uid="Yolu.Collections.Array`1.Remove*"></a>
+  <h4 id="Yolu_Collections_Array_1_Remove__0_" data-uid="Yolu.Collections.Array`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the first occurrence of the specified element removed from the array.
+If no match is found, the current array is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Remove__0_System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Remove(%600%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L432">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Remove_" data-uid="Yolu.Collections.Array`1.Remove*"></a>
+  <h4 id="Yolu_Collections_Array_1_Remove__0_System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.Remove(`0,System.Collections.Generic.IEqualityComparer{`0})">Remove(T, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the first occurrence of the specified element removed from the array.
+If no match is found, the current array is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Remove(T item, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveAll_System_Predicate__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveAll(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L549">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveAll_" data-uid="Yolu.Collections.Array`1.RemoveAll*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveAll_System_Predicate__0__" data-uid="Yolu.Collections.Array`1.RemoveAll(System.Predicate{`0})">RemoveAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes all the elements that match the conditions defined by the specified
+predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate&lt;T&gt;</a> delegate that defines the conditions of the elements
+to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L447">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveAt_" data-uid="Yolu.Collections.Array`1.RemoveAt*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveAt_System_Int32_" data-uid="Yolu.Collections.Array`1.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the element at the specified position removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index into the array for the element to omit from the returned array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveRange_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveRange(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L477">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveRange_" data-uid="Yolu.Collections.Array`1.RemoveRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveRange_System_Collections_Generic_IEnumerable__0__" data-uid="Yolu.Collections.Array`1.RemoveRange(System.Collections.Generic.IEnumerable{`0})">RemoveRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveRange(IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveRange_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveRange(System.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L492">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveRange_" data-uid="Yolu.Collections.Array`1.RemoveRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveRange_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.RemoveRange(System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEqualityComparer{`0})">RemoveRange(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveRange(IEnumerable&lt;T&gt; items, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L458">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveRange_" data-uid="Yolu.Collections.Array`1.RemoveRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveRange_System_Int32_System_Int32_" data-uid="Yolu.Collections.Array`1.RemoveRange(System.Int32,System.Int32)">RemoveRange(int, int)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the elements at the specified position removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveRange(int index, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The 0-based index into the array for the element to omit from the returned array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of elements to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveRange_Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveRange(Yolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L518">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveRange_" data-uid="Yolu.Collections.Array`1.RemoveRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveRange_Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.RemoveRange(Yolu.Collections.Array{`0})">RemoveRange(Array&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveRange(Array&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_RemoveRange_Yolu_Collections_Array__0__System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.RemoveRange(Yolu.Collections.Array%7B%600%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L533">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_RemoveRange_" data-uid="Yolu.Collections.Array`1.RemoveRange*"></a>
+  <h4 id="Yolu_Collections_Array_1_RemoveRange_Yolu_Collections_Array__0__System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.RemoveRange(Yolu.Collections.Array{`0},System.Collections.Generic.IEqualityComparer{`0})">RemoveRange(Array&lt;T&gt;, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified values from this list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; RemoveRange(Array&lt;T&gt; items, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items to remove if matches are found in this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>A new list with the elements removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Replace__0__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Replace(%600%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L386">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Replace_" data-uid="Yolu.Collections.Array`1.Replace*"></a>
+  <h4 id="Yolu_Collections_Array_1_Replace__0__0_" data-uid="Yolu.Collections.Array`1.Replace(`0,`0)">Replace(T, T)</h4>
+  <div class="markdown level1 summary"><p>Replaces the first equal element in the list with the specified element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Replace(T oldValue, T newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The element to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The element to replace the old element with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new list -- even if the value being replaced is equal to the new value for that position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when the old value does not exist in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Replace__0__0_System_Collections_Generic_IEqualityComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Replace(%600%2C%600%2CSystem.Collections.Generic.IEqualityComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L401">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Replace_" data-uid="Yolu.Collections.Array`1.Replace*"></a>
+  <h4 id="Yolu_Collections_Array_1_Replace__0__0_System_Collections_Generic_IEqualityComparer__0__" data-uid="Yolu.Collections.Array`1.Replace(`0,`0,System.Collections.Generic.IEqualityComparer{`0})">Replace(T, T, IEqualityComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Replaces the first equal element in the list with the specified element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Replace(T oldValue, T newValue, IEqualityComparer&lt;T&gt; equalityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td><p>The element to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The element to replace the old element with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">equalityComparer</span></td>
+        <td><p>The equality comparer to use in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new list -- even if the value being replaced is equal to the new value for that position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when the old value does not exist in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_SetItem_System_Int32__0_.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.SetItem(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L368">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_SetItem_" data-uid="Yolu.Collections.Array`1.SetItem*"></a>
+  <h4 id="Yolu_Collections_Array_1_SetItem_System_Int32__0_" data-uid="Yolu.Collections.Array`1.SetItem(System.Int32,`0)">SetItem(int, T)</h4>
+  <div class="markdown level1 summary"><p>Returns an array with the item at the specified position replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; SetItem(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the item to replace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The new item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><p>The new array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Sort.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Sort%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L576">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Sort_" data-uid="Yolu.Collections.Array`1.Sort*"></a>
+  <h4 id="Yolu_Collections_Array_1_Sort" data-uid="Yolu.Collections.Array`1.Sort">Sort()</h4>
+  <div class="markdown level1 summary"><p>Returns a sorted instance of this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Sort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Sort_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Sort(System.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L586">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Sort_" data-uid="Yolu.Collections.Array`1.Sort*"></a>
+  <h4 id="Yolu_Collections_Array_1_Sort_System_Collections_Generic_IComparer__0__" data-uid="Yolu.Collections.Array`1.Sort(System.Collections.Generic.IComparer{`0})">Sort(IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a sorted instance of this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Sort(IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The comparer to use in sorting. If <code>null</code>, the default comparer is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.Sort(System.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L598">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_Sort_" data-uid="Yolu.Collections.Array`1.Sort*"></a>
+  <h4 id="Yolu_Collections_Array_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__" data-uid="Yolu.Collections.Array`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})">Sort(int, int, IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a sorted instance of this array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Array&lt;T&gt; Sort(int index, int count, IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the first element to consider in the sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements to include in the sort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The comparer to use in sorting. If <code>null</code>, the default comparer is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_ToString.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L188">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_ToString_" data-uid="Yolu.Collections.Array`1.ToString*"></a>
+  <h4 id="Yolu_Collections_Array_1_ToString" data-uid="Yolu.Collections.Array`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_op_Equality_Yolu_Collections_Array__0__Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.op_Equality(Yolu.Collections.Array%7B%600%7D%2CYolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L149">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_op_Equality_" data-uid="Yolu.Collections.Array`1.op_Equality*"></a>
+  <h4 id="Yolu_Collections_Array_1_op_Equality_Yolu_Collections_Array__0__Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.op_Equality(Yolu.Collections.Array{`0},Yolu.Collections.Array{`0})">operator ==(Array&lt;T&gt;?, Array&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Checks equality between two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Array&lt;T&gt;? left, Array&lt;T&gt;? right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The instance to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The instance to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the values' underlying arrays are reference equal; <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1_op_Inequality_Yolu_Collections_Array__0__Yolu_Collections_Array__0__.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601.op_Inequality(Yolu.Collections.Array%7B%600%7D%2CYolu.Collections.Array%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.cs/#L163">View Source</a>
+  </span>
+  <a id="Yolu_Collections_Array_1_op_Inequality_" data-uid="Yolu.Collections.Array`1.op_Inequality*"></a>
+  <h4 id="Yolu_Collections_Array_1_op_Inequality_Yolu_Collections_Array__0__Yolu_Collections_Array__0__" data-uid="Yolu.Collections.Array`1.op_Inequality(Yolu.Collections.Array{`0},Yolu.Collections.Array{`0})">operator !=(Array&lt;T&gt;?, Array&lt;T&gt;?)</h4>
+  <div class="markdown level1 summary"><p>Checks inequality between two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Array&lt;T&gt;? left, Array&lt;T&gt;? right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The instance to the left of the operator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yolu.Collections.Array-1.html">Array</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The instance to the right of the operator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the values' underlying arrays are reference not equal; <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yolu.Collections.IArray-1.html">IArray&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_Append__1_System_Collections_Generic_IEnumerable___0____0___">CollectionUtils.Append&lt;T&gt;(IEnumerable&lt;T&gt;, params T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_ElementAt__1_System_Collections_Generic_IEnumerable___0__System_Int32___0__">CollectionUtils.ElementAt&lt;T&gt;(IEnumerable&lt;T&gt;, int, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__System_Threading_CancellationToken_">CollectionUtils.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, CancellationToken, ValueTask&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__">CollectionUtils.ForEach&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_Prepend__1_System_Collections_Generic_IEnumerable___0____0___">CollectionUtils.Prepend&lt;T&gt;(IEnumerable&lt;T&gt;, params T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__System_Boolean_">CollectionUtils.SequenceHashCode&lt;T&gt;(IEnumerable&lt;T&gt;, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_ToString__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_">CollectionUtils.ToString&lt;T&gt;(IEnumerable&lt;T&gt;, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Linq.WithIndexExtension.html#Yolu_Linq_WithIndexExtension_WithIndex__1_System_Collections_Generic_IEnumerable___0__">WithIndexExtension.WithIndex&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Collections.CollectionUtils.html#Yolu_Collections_CollectionUtils_Convert__2_System_Collections_Generic_IReadOnlyCollection___0__System_Converter___0___1__">CollectionUtils.Convert&lt;TInput, TOutput&gt;(IReadOnlyCollection&lt;TInput&gt;, Converter&lt;TInput, TOutput&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsTask__1___0_">TaskUtils.AsTask&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Yolu.Tasks.TaskUtils.html#Yolu_Tasks_TaskUtils_AsValueTask__1___0_">TaskUtils.AsValueTask&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/new/dev/apiSpec/new?filename=Yolu_Collections_Array_1.md&amp;value=---%0Auid%3A%20Yolu.Collections.Array%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/le-nn/yolu/blob/dev/src/Yolu/Collections/Array.Methods.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright © 2024 le-nn
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
