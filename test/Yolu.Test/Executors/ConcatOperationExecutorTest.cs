@@ -164,9 +164,21 @@ public class ConcatOperationExecutorTest {
     }
 
     [Fact]
-    public async Task Test2() {
-        foreach (var i in 0..1000) {
-            await Task.Delay(2);
-        }
+    public async Task Ensure_Exception() {
+        var executor = new ConcatAsyncOperationExecutor();
+        var results = new MutableArray<int>();
+
+        await Assert.ThrowsAsync<Exception>(async () => {
+            await executor.ExecuteAsync(() => {
+                throw new Exception("Test");
+            });
+        });
+
+        await Assert.ThrowsAsync<InvalidOperationException>(async () => {
+            await executor.ExecuteAsync(() => {
+                throw new InvalidOperationException("Test");
+            });
+        });
+
     }
 }

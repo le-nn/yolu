@@ -18,7 +18,7 @@ public class ConcatAsyncOperationExecutor {
         var source = new TaskCompletionSource<T>();
         _operations.Enqueue(new Operation<T>(operation, source));
 
-        Hadle();
+        Handle();
 
         return source.Task;
     }
@@ -35,12 +35,12 @@ public class ConcatAsyncOperationExecutor {
             return 0;
         }, source));
 
-        Hadle();
+        Handle();
 
         return source.Task;
     }
 
-    private async void Hadle() {
+    private async void Handle() {
         if (_processingCount is not 0) {
             return;
         }
@@ -63,16 +63,13 @@ public class ConcatAsyncOperationExecutor {
     }
 
     private readonly struct Operation<T>(Func<Task<T>> func, TaskCompletionSource<T> taskSource) : IOperation {
-        private readonly Func<Task<T>> _func = func;
-        private readonly TaskCompletionSource<T> _taskSource = taskSource;
-
         public async Task HandleAsync() {
             try {
-                var result = await _func.Invoke();
-                _taskSource.SetResult(result);
+                var result = await func.Invoke();
+                taskSource.SetResult(result);
             }
             catch (Exception ex) {
-                _taskSource.SetException(ex);
+                taskSource.SetException(ex);
             }
         }
     }
