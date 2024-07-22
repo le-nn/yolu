@@ -1,4 +1,7 @@
-﻿using Yolu.Executors;
+﻿using System;
+using Yolu.Collections;
+using Yolu.Executors;
+using Yolu.Randoms;
 
 namespace Yolu.Test.Executors;
 
@@ -115,5 +118,55 @@ public class ConcatOperationExecutorTest {
         await task7;
 
         Assert.True(results is [1, 2, 3, 4, 5, 6, 7]);
+    }
+
+    [Fact]
+    public async Task Ensure_OrderOfExecution() {
+        var executor = new ConcatAsyncOperationExecutor();
+        var results = new MutableArray<Task<int>>();
+        var random = new Random();
+
+        foreach (var i in 0..1000) {
+            var task = executor.ExecuteAsync(async () => {
+                await Task.Delay(random.Next(1, 5));
+                return i * 2;
+            });
+            results.Add(task);
+        }
+
+
+        foreach (var i in 0..1000) {
+            var result = await results[i];
+
+            Assert.Equal(i * 2, result);
+        }
+    }
+
+    [Fact]
+    public async Task Ensure_OrderOfExecution_With_TaskWhenAll() {
+        var executor = new ConcatAsyncOperationExecutor();
+        var results = new MutableArray<Task<int>>();
+        var random = new Random();
+
+        foreach (var i in 0..1000) {
+            var task = executor.ExecuteAsync(async () => {
+                await Task.Delay(random.Next(1, 5));
+                return i * 2;
+            });
+            results.Add(task);
+        }
+
+        await Task.WhenAll(results);
+
+        foreach (var i in 0..1000) {
+            Assert.Equal(i * 2, results[i].Result);
+        }
+    }
+
+    [Fact]
+    public async Task Test2() {
+        foreach (var i in 0..1000) {
+            await Task.Delay(2);
+        }
     }
 }
