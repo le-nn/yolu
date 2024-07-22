@@ -25,9 +25,7 @@ internal sealed class ICollectionDebugView<T> {
     private readonly ICollection<T> _collection;
 
     public ICollectionDebugView(ICollection<T> collection) {
-        if (collection == null) {
-            throw new ArgumentNullException(nameof(collection));
-        }
+        ArgumentNullException.ThrowIfNull(collection);
 
         _collection = collection;
     }
@@ -35,7 +33,7 @@ internal sealed class ICollectionDebugView<T> {
     [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
     public T[] Items {
         get {
-            T[] items = new T[_collection.Count];
+            var items = new T[_collection.Count];
             _collection.CopyTo(items, 0);
             return items;
         }

@@ -1,10 +1,36 @@
+using System.Collections.Immutable;
 using Yolu.Collections;
 
 namespace Yolu.Core.Collections.Tests;
 
 public partial class MutableArrayTests {
     [Fact]
-    public void Array_InitializedWithArray_ShouldHaveCorrectLengthAndElements() {
+    public void MutableArray_Create_Empty_MutableArray() {
+        // Arrange
+        var array = new MutableArray<int>();
+
+        // Act
+        var result = array.IsEmpty;
+
+        // Assert
+        Assert.True(result);
+    }
+
+    [Fact]
+    public void MutableArray_CreateEmpty_FromCollectionExpression() {
+        // Arrange
+        MutableArray<int> array = [];
+
+        // Act
+        var result = array.IsEmpty;
+
+        // Assert
+        Assert.True(result);
+    }
+
+
+    [Fact]
+    public void MutableArray_InitializedWithMutableArray_ShouldHaveCorrectLengthAndElements() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
 
@@ -19,7 +45,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_InitializedWithReadOnlySpan_ShouldHaveCorrectLengthAndElements() {
+    public void MutableArray_InitializedWithReadOnlySpan_ShouldHaveCorrectLengthAndElements() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
         ReadOnlySpan<int> span = values.AsSpan();
@@ -35,7 +61,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_InitializedWithCollection_ShouldHaveCorrectLengthAndElements() {
+    public void MutableArray_InitializedWithCollection_ShouldHaveCorrectLengthAndElements() {
         // Arrange
         var values = new List<int> { 1, 2, 3, 4, 5 };
 
@@ -50,7 +76,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_GetEnumerator_ShouldEnumerateAllElements() {
+    public void MutableArray_GetEnumerator_ShouldEnumerateAllElements() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
         var array = new MutableArray<int>(values);
@@ -66,7 +92,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_Equals_ShouldReturnFalseForDifferentArrays() {
+    public void MutableArray_Equals_ShouldReturnFalseForDifferentArrays() {
         // Arrange
         int[] values1 = [1, 2, 3, 4, 5];
         int[] values2 = [5, 4, 3, 2, 1];
@@ -81,7 +107,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_IsEmpty_ShouldReturnTrueForEmptyArray() {
+    public void MutableArray_IsEmpty_ShouldReturnTrueForEmptyArray() {
         // Arrange
         var array = MutableArray<int>.Empty;
 
@@ -93,7 +119,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_IsEmpty_ShouldReturnFalseForNonEmptyArray() {
+    public void MutableArray_IsEmpty_ShouldReturnFalseForNonEmptyArray() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
         var array = new MutableArray<int>(values);
@@ -106,7 +132,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_Length_ShouldReturnCorrectLength() {
+    public void MutableArray_Length_ShouldReturnCorrectLength() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
         var array = new MutableArray<int>(values);
@@ -119,7 +145,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void Array_Count_ShouldReturnCorrectCount() {
+    public void MutableArray_Count_ShouldReturnCorrectCount() {
         // Arrange
         int[] values = [1, 2, 3, 4, 5];
         var array = new MutableArray<int>(values);
@@ -132,7 +158,7 @@ public partial class MutableArrayTests {
     }
 
     [Fact]
-    public void List_to_Array_Conversion_ShouldReturnCorrectArray() {
+    public void List_to_MutableArray_Conversion_ShouldReturnCorrectArray() {
         // Arrange
         List<int> values = [1, 2, 3, 4, 5];
 
