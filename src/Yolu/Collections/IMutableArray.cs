@@ -2,7 +2,7 @@
 
 namespace Yolu.Collections;
 
-[CollectionBuilder(typeof(MutableArrayClassBuilder), nameof(MutableArrayClassBuilder.CreateIMutableArray))]
+[CollectionBuilder(typeof(MutableArrayBuilder), nameof(MutableArrayBuilder.CreateIMutableArray))]
 public interface IMutableArray<T> : IList<T>, IArray<T>;
 
 
