@@ -21,6 +21,11 @@ public readonly record struct Timestamp :
     private static readonly double TickFrequency = (double)TimeSpan.TicksPerSecond / Frequency;
     private readonly long ticks;
 
+    /// <summary>
+    /// Gets now.
+    /// </summary>
+    public static Timestamp Now => new(DateTime.UtcNow.Ticks);
+
     private Timestamp(long ticks) => this.ticks = ticks;
 
     /// <summary>
