@@ -1,9 +1,30 @@
 ﻿using System.Numerics;
 using System.Runtime.CompilerServices;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using Yolu.Threading;
 using static System.Diagnostics.Stopwatch;
+using System;
+using System.ComponentModel;
 
 namespace Yolu.DateTimes;
+
+
+public class TimestampJsonConverter : JsonConverter<Timestamp> {
+    public override Timestamp Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
+        if (reader.TokenType != JsonTokenType.Number) {
+            throw new JsonException();
+        }
+
+        return new Timestamp(reader.GetInt64());
+    }
+
+    public override void Write(Utf8JsonWriter writer, Timestamp value, JsonSerializerOptions options) {
+        // Convert the Timestamp to TimeSpan and write as string
+        writer.WriteNumberValue(value.Ticks);
+    }
+}
+
 
 /// <summary>
 /// Represents timestamp.
@@ -11,6 +32,9 @@ namespace Yolu.DateTimes;
 /// <remarks>
 /// This class can be used as allocation-free alternative to <see cref="System.Diagnostics.Stopwatch"/>.
 /// </remarks>
+[JsonConverter(typeof(TimestampJsonConverter))]
+[Serializable]
+[ImmutableObject(true)]
 public readonly record struct Timestamp :
     IEquatable<Timestamp>,
     IComparable<Timestamp>,
@@ -18,22 +42,25 @@ public readonly record struct Timestamp :
     IAdditionOperators<Timestamp, TimeSpan, Timestamp>,
     ISubtractionOperators<Timestamp, TimeSpan, Timestamp>,
     IInterlockedOperations<Timestamp> {
-    private static readonly double TickFrequency = (double)TimeSpan.TicksPerSecond / Frequency;
-    private readonly long ticks;
+    private static readonly double _tickFrequency = (double)TimeSpan.TicksPerSecond / Frequency;
+    private readonly long _ticks;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public long Ticks => _ticks;
 
     /// <summary>
     /// Gets now.
     /// </summary>
-    public static Timestamp Now => new(DateTime.UtcNow.Ticks);
+    public static Timestamp Now => new(Math.Max(GetTimestamp(), 1L));
 
-    private Timestamp(long ticks) => this.ticks = ticks;
+    public Timestamp(long ticks) => this._ticks = ticks;
 
     /// <summary>
     /// Captures the current point in time.
     /// </summary>
-    public Timestamp()
-        : this(Math.Max(GetTimestamp(), 1L)) // ensure that timestamp is not empty
-    {
+    public Timestamp() {
     }
 
     /// <summary>
@@ -48,23 +75,23 @@ public readonly record struct Timestamp :
     /// <summary>
     /// Gets a value indicating that the timestamp is zero.
     /// </summary>
-    public bool IsEmpty => ticks is 0L;
+    public bool IsEmpty => _ticks is 0L;
 
     /// <summary>
     /// Gets a value indcating that the current timestamp represents the future point in time.
     /// </summary>
-    public bool IsFuture => ticks > GetTimestamp();
+    public bool IsFuture => _ticks > GetTimestamp();
 
     /// <summary>
     /// Gets a value indcating that the current timestamp represents the past point in time.
     /// </summary>
-    public bool IsPast => ticks < GetTimestamp();
+    public bool IsPast => _ticks < GetTimestamp();
 
     private static long ToTicks(double duration)
-        => unchecked((long)(TickFrequency * duration));
+        => unchecked((long)(_tickFrequency * duration));
 
     private static long FromTimeSpan(TimeSpan value)
-        => unchecked((long)(value.Ticks / TickFrequency));
+        => unchecked((long)(value.Ticks / _tickFrequency));
 
     /// <summary>
     /// Gets <see cref="TimeSpan"/> representing this timestamp.
@@ -72,7 +99,7 @@ public readonly record struct Timestamp :
     /// <remarks>
     /// This property may return a value with lost precision.
     /// </remarks>
-    public TimeSpan Value => new(ToTicks(ticks));
+    public TimeSpan Value => new(ToTicks(_ticks));
 
     /// <summary>
     /// Gets precise difference between the current point in time and this timestamp.
@@ -85,7 +112,7 @@ public readonly record struct Timestamp :
     /// <summary>
     /// Gets the total elapsed time measured by the current instance, in timer ticks.
     /// </summary>
-    public long ElapsedTicks => Math.Max(0L, GetTimestamp() - ticks);
+    public long ElapsedTicks => Math.Max(0L, GetTimestamp() - _ticks);
 
     /// <summary>
     /// Gets the total elapsed time measured by the current instance, in milliseconds.
@@ -98,7 +125,7 @@ public readonly record struct Timestamp :
     /// <param name="past">The timestamp in the past.</param>
     /// <returns>The number of milliseconds since <paramref name="past"/>.</returns>
     public double ElapsedSince(Timestamp past)
-        => (double)(ticks - past.ticks) / Frequency * 1_000D;
+        => (double)(_ticks - past._ticks) / Frequency * 1_000D;
 
     /// <summary>
     /// Gets <see cref="TimeSpan"/> representing the given timestamp.
@@ -114,7 +141,7 @@ public readonly record struct Timestamp :
     /// </summary>
     /// <param name="other">The timestamp to compare.</param>
     /// <returns>The result of comparison.</returns>
-    public int CompareTo(Timestamp other) => ticks.CompareTo(other.ticks);
+    public int CompareTo(Timestamp other) => _ticks.CompareTo(other._ticks);
 
     /// <summary>
     /// Gets timestamp in the form of the string.
@@ -128,7 +155,7 @@ public readonly record struct Timestamp :
     /// <param name="first">The first timestamp to compare.</param>
     /// <param name="second">The second timestamp to compare.</param>
     /// <returns><see langword="true"/> if <paramref name="first"/> is greater than <paramref name="second"/>.</returns>
-    public static bool operator >(Timestamp first, Timestamp second) => first.ticks > second.ticks;
+    public static bool operator >(Timestamp first, Timestamp second) => first._ticks > second._ticks;
 
     /// <summary>
     /// Determines whether the first timestamp is less than the second.
@@ -136,7 +163,7 @@ public readonly record struct Timestamp :
     /// <param name="first">The first timestamp to compare.</param>
     /// <param name="second">The second timestamp to compare.</param>
     /// <returns><see langword="true"/> if <paramref name="first"/> is less than <paramref name="second"/>.</returns>
-    public static bool operator <(Timestamp first, Timestamp second) => first.ticks < second.ticks;
+    public static bool operator <(Timestamp first, Timestamp second) => first._ticks < second._ticks;
 
     /// <summary>
     /// Determines whether the first timestamp is greater than or equal to the second.
@@ -144,7 +171,7 @@ public readonly record struct Timestamp :
     /// <param name="first">The first timestamp to compare.</param>
     /// <param name="second">The second timestamp to compare.</param>
     /// <returns><see langword="true"/> if <paramref name="first"/> is greater than or equal to <paramref name="second"/>.</returns>
-    public static bool operator >=(Timestamp first, Timestamp second) => first.ticks >= second.ticks;
+    public static bool operator >=(Timestamp first, Timestamp second) => first._ticks >= second._ticks;
 
     /// <summary>
     /// Determines whether the first timestamp is less than or equal to the second.
@@ -152,7 +179,7 @@ public readonly record struct Timestamp :
     /// <param name="first">The first timestamp to compare.</param>
     /// <param name="second">The second timestamp to compare.</param>
     /// <returns><see langword="true"/> if <paramref name="first"/> is less than or equal to <paramref name="second"/>.</returns>
-    public static bool operator <=(Timestamp first, Timestamp second) => first.ticks <= second.ticks;
+    public static bool operator <=(Timestamp first, Timestamp second) => first._ticks <= second._ticks;
 
     /// <summary>
     /// Adds the specified duration to the timestamp.
@@ -162,7 +189,7 @@ public readonly record struct Timestamp :
     /// <returns>The modified timestamp.</returns>
     /// <exception cref="OverflowException"><paramref name="y"/> is too large.</exception>
     public static Timestamp operator checked +(Timestamp x, TimeSpan y) {
-        var ticks = checked(x.ticks + FromTimeSpan(y));
+        var ticks = checked(x._ticks + FromTimeSpan(y));
         return ticks >= 0L ? new(ticks) : throw new OverflowException();
     }
 
@@ -173,7 +200,7 @@ public readonly record struct Timestamp :
     /// <param name="y">The delta.</param>
     /// <returns>The modified timestamp.</returns>
     public static Timestamp operator +(Timestamp x, TimeSpan y) {
-        var ticks = x.ticks + FromTimeSpan(y);
+        var ticks = x._ticks + FromTimeSpan(y);
         return ticks > 0L ? new(ticks) : default;
     }
 
@@ -185,7 +212,7 @@ public readonly record struct Timestamp :
     /// <returns>The modified timestamp.</returns>
     /// <exception cref="OverflowException"><paramref name="y"/> is too large.</exception>
     public static Timestamp operator checked -(Timestamp x, TimeSpan y) {
-        var ticks = checked(x.ticks - FromTimeSpan(y));
+        var ticks = checked(x._ticks - FromTimeSpan(y));
         return ticks >= 0L ? new(ticks) : throw new OverflowException();
     }
 
@@ -197,7 +224,7 @@ public readonly record struct Timestamp :
     /// <returns>The modified timestamp.</returns>
     /// <exception cref="OverflowException"><paramref name="y"/> is too large.</exception>
     public static Timestamp operator -(Timestamp x, TimeSpan y) {
-        var ticks = x.ticks - FromTimeSpan(y);
+        var ticks = x._ticks - FromTimeSpan(y);
         return ticks > 0L ? new(ticks) : default;
     }
 
@@ -207,7 +234,7 @@ public readonly record struct Timestamp :
     /// <param name="location">The managed pointer to the timestamp.</param>
     /// <returns>The value at the specified location.</returns>
     public static Timestamp VolatileRead(ref readonly Timestamp location)
-        => new(Volatile.Read(in location.ticks));
+        => new(Volatile.Read(in location._ticks));
 
     /// <summary>
     /// Writes the timestamp and prevents the proces from reordering memory operations.
@@ -215,16 +242,16 @@ public readonly record struct Timestamp :
     /// <param name="location">The managed pointer to the timestamp.</param>
     /// <param name="newValue">The value to write.</param>
     public static void VolatileWrite(ref Timestamp location, Timestamp newValue)
-        => Volatile.Write(ref Unsafe.AsRef(in location.ticks), newValue.ticks);
+        => Volatile.Write(ref Unsafe.AsRef(in location._ticks), newValue._ticks);
 
     /// <summary>
     /// Updates the timestamp to the current point in time and prevents the proces from reordering memory operations.
     /// </summary>
     /// <param name="location">The location of the timestampt to update.</param>
     public static void Refresh(ref Timestamp location)
-        => Volatile.Write(ref Unsafe.AsRef(in location.ticks), Math.Max(1L, GetTimestamp()));
+        => Volatile.Write(ref Unsafe.AsRef(in location._ticks), Math.Max(1L, GetTimestamp()));
 
     /// <inheritdoc cref="IInterlockedOperations{T}.CompareExchange(ref T, T, T)"/>
     public static Timestamp CompareExchange(ref Timestamp location, Timestamp value, Timestamp comparand)
-        => new(Interlocked.CompareExchange(ref Unsafe.AsRef(in location.ticks), value.ticks, comparand.ticks));
+        => new(Interlocked.CompareExchange(ref Unsafe.AsRef(in location._ticks), value._ticks, comparand._ticks));
 }
