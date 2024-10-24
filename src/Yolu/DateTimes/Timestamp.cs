@@ -110,6 +110,11 @@ public readonly record struct Timestamp :
     public TimeSpan Elapsed => new(ToTicks(ElapsedTicks));
 
     /// <summary>
+    /// Gets as DateTime.
+    /// </summary>
+    public DateTime DateTime => new(Ticks);
+
+    /// <summary>
     /// Gets the total elapsed time measured by the current instance, in timer ticks.
     /// </summary>
     public long ElapsedTicks => Math.Max(0L, GetTimestamp() - _ticks);
