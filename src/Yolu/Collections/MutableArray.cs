@@ -107,6 +107,14 @@ public class MutableArray<T> : List<T>, IMutableArray<T> {
     }
 
     /// <summary>
+    /// Wrap with <see cref="Array{T}"/>.
+    /// </summary>
+    /// <returns>Immutable array.</returns>
+    public Array<T> ToImmutable() {
+        return new(this);
+    }
+
+    /// <summary>
     /// Returns a string that represents the current object.
     /// </summary>
     /// <param name="isTypeOnly"> If set true MutableArray<T>, otherwise MutableArray<T>[1, 2, 3, 4 ...]. </param>
