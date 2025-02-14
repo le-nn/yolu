@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 namespace Yolu.Collections;
 
@@ -35,7 +34,7 @@ public partial class Array<T> : IArray<T> {
     /// <summary>
     /// Gets an empty array.
     /// </summary>
-    public static Array<T> Empty { get; } = new Array<T>(Array.Empty<T>());
+    public static Array<T> Empty { get; } = [.. Array.Empty<T>()];
 
     private readonly T[] _array;
 

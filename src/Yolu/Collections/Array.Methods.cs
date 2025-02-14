@@ -253,7 +253,7 @@ public partial class Array<T> {
         Array.Copy(self._array, 0, tmp, 0, index);
         tmp[index] = item;
         Array.Copy(self._array, index, tmp, index + 1, self.Length - index);
-        return new Array<T>(tmp);
+        return [.. tmp];
     }
 
     /// <summary>
@@ -286,7 +286,7 @@ public partial class Array<T> {
         }
 
         Array.Copy(self._array, index, tmp, index + count, self.Length - index);
-        return new Array<T>(tmp);
+        return [.. tmp];
     }
 
     /// <summary>
@@ -303,10 +303,10 @@ public partial class Array<T> {
         Requires.Range(index >= 0 && index <= self.Length, "index");
 
         if (self.IsEmpty) {
-            return new Array<T>(items._array);
+            return [.. items._array];
         }
         else if (items.IsEmpty) {
-            return new Array<T>(self._array);
+            return [.. self._array];
         }
 
         return self.InsertRange(index, items._array);
@@ -350,7 +350,7 @@ public partial class Array<T> {
         ThrowNullRefIfNotInitialized(items);
         if (self.IsEmpty) {
             // Be sure what we return is marked as initialized.
-            return new Array<T>(items._array);
+            return [.. items._array];
         }
         else if (items.IsEmpty) {
             return self;
@@ -373,7 +373,7 @@ public partial class Array<T> {
         var tmp = new T[self.Length];
         Array.Copy(self._array, tmp, self.Length);
         tmp[index] = item;
-        return new Array<T>(tmp);
+        return [.. tmp];
     }
 
     /// <summary>
@@ -435,7 +435,7 @@ public partial class Array<T> {
         self.ThrowNullRefIfNotInitialized();
         var index = self.IndexOf(item, equalityComparer);
         return index < 0
-            ? new Array<T>(self._array)
+            ? [.. self._array]
             : self.RemoveAt(index);
     }
 
@@ -464,7 +464,7 @@ public partial class Array<T> {
         var tmp = new T[self.Length - length];
         Array.Copy(self._array, 0, tmp, 0, index);
         Array.Copy(self._array, index + length, tmp, index, self.Length - index - length);
-        return new Array<T>(tmp);
+        return [.. tmp];
     }
 
     /// <summary>
@@ -553,7 +553,7 @@ public partial class Array<T> {
         Requires.NotNull(match, "match");
 
         if (self.IsEmpty) {
-            return new Array<T>(self._array);
+            return [.. self._array];
         }
 
         List<int>? removeIndexes = null;
@@ -619,11 +619,11 @@ public partial class Array<T> {
                 var tmp = new T[self.Length];
                 Array.Copy(self._array, tmp, self.Length);
                 Array.Sort(tmp, index, count, comparer);
-                return new Array<T>(tmp);
+                return [.. tmp];
             }
         }
 
-        return new Array<T>(self._array);
+        return [.. self._array];
     }
 
     /// <summary>
@@ -678,7 +678,7 @@ public partial class Array<T> {
     [Pure]
     public static Array<T> CastUp<TDerived>(Array<TDerived> items)
         where TDerived : class, T {
-        return new Array<T>(items._array);
+        return [.. items._array];
     }
 
     /// <summary>
@@ -688,7 +688,7 @@ public partial class Array<T> {
     /// <exception cref="InvalidCastException">Thrown if the cast is illegal.</exception>
     [Pure]
     public Array<TOther> CastArray<TOther>() where TOther : class {
-        return new Array<TOther>((TOther[])(object)_array);
+        return [.. (TOther[])(object)_array];
     }
 
     /// <summary>
@@ -708,7 +708,7 @@ public partial class Array<T> {
     /// </remarks>
     [Pure]
     public Array<TOther> As<TOther>() where TOther : class {
-        return new Array<TOther>(_array as TOther[]);
+        return [.. _array as TOther[]];
     }
 
     /// <summary>
@@ -755,7 +755,7 @@ public partial class Array<T> {
 
         if (indexesToRemove.Count == 0) {
             // Be sure to return a !IsDefault instance.
-            return new Array<T>(self._array);
+            return [.. self._array];
         }
 
         var newArray = new T[self.Length - indexesToRemove.Count];
@@ -773,6 +773,6 @@ public partial class Array<T> {
 
         Array.Copy(self._array, copied + removed, newArray, copied, self.Length - (copied + removed));
 
-        return new Array<T>(newArray);
+        return [.. newArray];
     }
 }

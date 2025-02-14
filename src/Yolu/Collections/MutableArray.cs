@@ -111,7 +111,7 @@ public class MutableArray<T> : List<T>, IMutableArray<T> {
     /// </summary>
     /// <returns>Immutable array.</returns>
     public Array<T> ToImmutable() {
-        return new(this);
+        return [.. this];
     }
 
     /// <summary>

@@ -174,7 +174,7 @@ public class Error : Exception {
             ex = ex.InnerException;
         }
 
-        return new(messages);
+        return [.. messages];
     }
 }
 
