@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using Xunit;
 using Yolu.Executors;
 
-namespace Yolu.Test.Executors;
+namespace Yolu.Test.Threading.Tasks;
 
-public class SerialTaskExecutorTest {
+public class SerialCancellationTaskManagerTest {
     [Fact]
     public async Task ExecuteAsync_ShouldRunTask() {
-        var executor = new SerialTaskExecutor();
+        var executor = new SerialCancellationTaskManager();
         var result = 0;
 
         await executor.ExecuteAsync(async token => {
@@ -22,7 +22,7 @@ public class SerialTaskExecutorTest {
 
     [Fact]
     public async Task ExecuteAsync_ShouldCancelPreviousTask() {
-        var executor = new SerialTaskExecutor();
+        var executor = new SerialCancellationTaskManager();
         var result = 0;
 
         var task1 = executor.ExecuteAsync(async token => {
