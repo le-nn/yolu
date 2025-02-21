@@ -4,7 +4,7 @@ namespace Yolu.Threading.Tasks;
 /// Manages the execution of asynchronous tasks, ensuring that only one task runs at a time.
 /// If a new task is started, the previous one is cancelled.
 /// </summary>
-public class SerialCancellationTaskManager {
+public class SerialCancellationTaskManager : IDisposable {
     private CancellationTokenSource? _cancellationTokenSource;
     private readonly Lock _syncLock = new();
 
@@ -32,7 +32,7 @@ public class SerialCancellationTaskManager {
     /// <summary>
     /// Cancels the previously running task and creates a new <see cref="CancellationToken"/> for the next task.
     /// </summary>
-    /// <returns>A new <see cref="CancellationToken"/>.</returns>
+    /// <returns>A new <see cref="CancellationTokenSource"/>.</returns>
     public CancellationTokenSource CancelPreviousAndCreateNewToken() {
         lock (_syncLock) {
             _cancellationTokenSource?.Cancel();
@@ -51,5 +51,12 @@ public class SerialCancellationTaskManager {
             _cancellationTokenSource?.Dispose();
             _cancellationTokenSource = null;
         }
+    }
+
+    /// <summary>
+    /// Disposes of the <see cref="SerialCancellationTaskManager"/> and cancels the currently running task.
+    /// </summary>
+    public void Dispose() {
+        Cancel();
     }
 }

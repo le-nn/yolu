@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 using Yolu.Executors;
+using Yolu.Threading.Tasks;
 
 namespace Yolu.Test.Threading.Tasks;
 
