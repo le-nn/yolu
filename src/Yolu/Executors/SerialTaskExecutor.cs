@@ -33,7 +33,7 @@ public class SerialTaskExecutor : IDisposable {
     /// Cancels the previously running task and creates a new <see cref="CancellationToken"/> for the next task.
     /// </summary>
     /// <returns>A new <see cref="CancellationToken"/>.</returns>
-    private CancellationToken CancelPreviousAndCreateNewToken() {
+    public CancellationToken CancelPreviousAndCreateNewToken() {
         lock (_syncLock) {
             _cancellationTokenSource?.Cancel();
             _cancellationTokenSource?.Dispose();
