@@ -38,9 +38,9 @@ public class Error : Exception {
     public Error(
         string message,
         string? displayMessage = null,
-        object? payload = null,
+        Exception? exception = null,
         PrefixedUlid? eventId = null,
-        Exception? exception = null
+        object? payload = null
     ) : base(
         message,
         exception
@@ -188,12 +188,12 @@ public class Error<TPayload>(
     string? displayMessage = null,
     PrefixedUlid? eventId = null,
     Exception? error = null
-    ) : Error(
+) : Error(
     message,
     displayMessage,
-    payload,
+    error,
     eventId,
-    error
-    ) {
+    payload
+) {
     public new TPayload? Payload => (TPayload?)base.Payload;
 }
