@@ -1,4 +1,4 @@
-﻿namespace Yolu;
+namespace Yolu;
 
 public class LibrarySettings {
     public static int StackallocThreshold {

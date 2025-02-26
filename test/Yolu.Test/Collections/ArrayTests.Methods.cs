@@ -1,6 +1,6 @@
-﻿using Yolu.Collections;
+using Yolu.Collections;
 
-namespace Yolu.Core.Collections.Tests;
+namespace Yolu.Test.Collections;
 
 public partial class ArrayMethodsTests {
     [Fact]

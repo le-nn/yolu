@@ -1,6 +1,6 @@
 using Yolu.Collections;
 
-namespace Yolu.Core.Collections.Tests;
+namespace Yolu.Test.Collections;
 
 public class ArrayTests {
     [Fact]
