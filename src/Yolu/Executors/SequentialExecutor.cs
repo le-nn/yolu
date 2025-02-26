@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Threading.Channels;
 
 namespace Yolu.Executors;
 
@@ -6,39 +7,34 @@ namespace Yolu.Executors;
 /// Provides a feature to wait for the end of asynchronous processing and connect to the next processing.
 /// </summary>
 public class SequentialExecutor {
-    private readonly Thread _thread;
-    private readonly BlockingCollection<Func<Task>> _taskQueue = [];
+    readonly Channel<Func<Task>> _taskQueue = Channel.CreateUnbounded<Func<Task>>();
+    readonly Task _task;
 
     public SequentialExecutor() {
-        // Initialize and start the dedicated thread
-        _thread = new(Run) {
-            IsBackground = true,
-        };
-        _thread.Start();
+        _task = Run();
     }
 
-    public Task ExecuteAsync(Func<Task> func) {
-        var tcs = new TaskCompletionSource();
+    public async ValueTask ExecuteAsync(Func<Task> func, CancellationToken cancellationToken = default) {
+        var tcs = new TaskCompletionSource<object?>();
 
-        // Enqueue the task to be executed
-        _taskQueue.Add(async () => {
+        await _taskQueue.Writer.WriteAsync(async () => {
             try {
                 await func();
-                tcs.SetResult();
+                tcs.SetResult(null);
             }
             catch (Exception ex) {
                 tcs.SetException(ex);
             }
-        });
+        }, cancellationToken);
 
-        return tcs.Task;
+        await tcs.Task;
     }
 
-    public Task<T> ExecuteAsync<T>(Func<Task<T>> func) {
+    public async Task<T> ExecuteAsync<T>(Func<Task<T>> func, CancellationToken cancellationToken = default) {
         var tcs = new TaskCompletionSource<T>();
 
         // Enqueue the task with a return value
-        _taskQueue.Add(async () => {
+        await _taskQueue.Writer.WriteAsync(async () => {
             try {
                 var result = await func();
                 tcs.SetResult(result);
@@ -46,23 +42,24 @@ public class SequentialExecutor {
             catch (Exception ex) {
                 tcs.SetException(ex);
             }
-        });
+        }, cancellationToken);
 
-        return tcs.Task;
+        return await tcs.Task;
     }
 
-    private void Run() {
-        // Process tasks sequentially on the dedicated thread
-        foreach (var taskFunc in _taskQueue.GetConsumingEnumerable()) {
-            // Execute the task synchronously
-            taskFunc().Wait();
+    private async Task Run() {
+        await foreach (var item in _taskQueue.Reader.ReadAllAsync()) {
+            await item();
         }
     }
 
     public void Dispose() {
         // Signal completion and wait for the thread to finish
-        _taskQueue.CompleteAdding();
-        _thread.Join();
-        _taskQueue.Dispose();
+        _taskQueue.Writer.Complete();
+    }
+
+    public async ValueTask DisposeAsync() {
+        _taskQueue.Writer.Complete();
+        await _task;
     }
 }
