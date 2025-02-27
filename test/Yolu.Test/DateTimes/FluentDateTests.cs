@@ -15,7 +15,7 @@ public class FluentDateTests {
         [11] = (year, day) => year.November(day),
         [12] = (year, day) => year.December(day)
     };
-    private static Dictionary<int, Func<int, int, DateOnly>> _fluentDatesShort = new() {
+    private static readonly Dictionary<int, Func<int, int, DateOnly>> _fluentDatesShort = new() {
         [1] = (year, day) => year.Jan(day),
         [2] = (year, day) => year.Feb(day),
         [3] = (year, day) => year.Mar(day),

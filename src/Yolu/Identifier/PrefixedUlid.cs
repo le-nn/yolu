@@ -35,8 +35,9 @@ public abstract record PrefixedUlid {
     }
 
     public static T NewPrefixedUlid<T>() where T : PrefixedUlid, new() {
-        var pid = new T();
-        pid.Value = Ulid.NewUlid();
+        var pid = new T {
+            Value = Ulid.NewUlid()
+        };
         return pid;
     }
 

@@ -50,4 +50,3 @@ public partial class CollectionUtils {
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
-

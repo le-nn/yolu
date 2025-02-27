@@ -96,8 +96,8 @@ public class MutableArray<T> : List<T>, IMutableArray<T> {
     [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     public int Length {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        get =>this.Count;
-        
+        get => this.Count;
+
     }
 
     /// <inheritdoc/>
@@ -119,7 +119,7 @@ public class MutableArray<T> : List<T>, IMutableArray<T> {
     /// </summary>
     /// <param name="isTypeOnly"> If set true MutableArray<T>, otherwise MutableArray<T>[1, 2, 3, 4 ...]. </param>
     /// <returns>A string that represents the current object.</returns>
-    public string? ToString(bool isTypeOnly = false ) {
+    public string? ToString(bool isTypeOnly = false) {
         if (isTypeOnly) {
             return base.ToString();
         }

@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 
 namespace Yolu.Executors;
 
@@ -12,7 +12,7 @@ namespace Yolu.Executors;
 /// <param name="tasks">The collection of tasks to execute.</param>
 /// <param name="parallelCount">The number of tasks to execute in parallel.</param>
 public class ParallelCollectionExecutor<T>(IEnumerable<T> tasks, int parallelCount = 100) {
-    private readonly ConcurrentQueue<T> _tasks = new ConcurrentQueue<T>(tasks);
+    private readonly ConcurrentQueue<T> _tasks = new(tasks);
     private readonly int _parallelCount = parallelCount;
     private int _progress = 0;
     private bool _isInvoked = false;

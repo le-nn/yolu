@@ -113,7 +113,7 @@ public class FluentTimeSpanTests {
 
     [Fact]
     public void EnsureWhenConvertedIsCorrect() {
-        TimeSpan timeSpan = 10.Years();
+        var timeSpan = 10.Years();
         Assert.Equal(3650d, timeSpan.TotalDays);
     }
 

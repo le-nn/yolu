@@ -65,8 +65,7 @@ public static partial class RandomUtils {
     [Pure]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static string NextString(this Random random, int length) {
-        return new string(Enumerable.Repeat(Chars, length)
-            .Select(s => s[random.Next(s.Length)]).ToArray());
+        return new string([.. Enumerable.Repeat(Chars, length).Select(s => s[random.Next(s.Length)])]);
     }
 
     /// <summary>

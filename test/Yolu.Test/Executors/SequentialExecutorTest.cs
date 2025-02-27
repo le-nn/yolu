@@ -113,7 +113,7 @@ public class SequentialExecutorTest {
 
     class OP {
         int cursor = 0;
-        Random random = new Random();
+        readonly Random random = new();
         int _callCount;
 
         public int CallCount => _callCount;
